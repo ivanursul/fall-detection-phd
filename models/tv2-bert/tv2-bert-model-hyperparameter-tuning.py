@@ -156,14 +156,19 @@ class T2VBERTModel(nn.Module):
 
 
 def objective(trial):
-    # Hyperparameters to optimize
-    hidden_dim = trial.suggest_categorical('hidden_dim', [64, 128, 256, 512])
+    # Predefine valid hidden_dim and num_heads combinations as tuples
+    hidden_dim_num_heads_combinations = [
+        (8, 1), (8, 2),
+        (16, 2), (16, 4),
+        (32, 2), (32, 4), (32, 8),
+        (64, 2), (64, 4), (64, 8),
+        (128, 2), (128, 4), (128, 8),
+        (256, 4), (256, 8),
+        (512, 8)
+    ]
 
-    # num_heads must be a divisor of hidden_dim
-    possible_num_heads = [n for n in range(2, 9) if hidden_dim % n == 0]
-    if not possible_num_heads:
-        possible_num_heads = [1]
-    num_heads = trial.suggest_categorical('num_heads', possible_num_heads)
+    # Optuna will now suggest a fixed combination of hidden_dim and num_heads
+    hidden_dim, num_heads = trial.suggest_categorical('hidden_dim_num_heads', hidden_dim_num_heads_combinations)
 
     num_layers = trial.suggest_int('num_layers', 1, 4)
     dropout = trial.suggest_float('dropout', 0.1, 0.5, step=0.1)
@@ -205,27 +210,25 @@ def objective(trial):
 
         # Evaluate on validation set
         model.eval()
-        val_correct = 0
-        val_total = 0
-        val_loss = 0.0
+        val_preds = []
+        val_labels = []
 
         with torch.no_grad():
             for inputs, labels in val_loader:
                 inputs, labels = inputs.to(device), labels.to(device)
                 outputs = model(inputs)
-                loss = criterion(outputs, labels)
-                val_loss += loss.item()
                 _, predicted = torch.max(outputs, 1)
-                val_total += labels.size(0)
-                val_correct += (predicted == labels).sum().item()
+                val_preds.extend(predicted.cpu().numpy())
+                val_labels.extend(labels.cpu().numpy())
 
-        val_acc = 100 * val_correct / val_total
+        # Calculate validation accuracy
+        val_acc = accuracy_score(val_labels, val_preds)
 
         # Log the training and validation results
         logger.info(f'Trial {trial.number}, Epoch {epoch + 1}/{num_epochs}, '
-                    f'Train Loss: {running_loss:.4f}, Val Loss: {val_loss:.4f}, Val Accuracy: {val_acc:.2f}%')
+                    f'Train Loss: {running_loss:.4f}, Val Accuracy: {val_acc * 100:.2f}%')
 
-        # Report intermediate objective value to Optuna
+        # Report intermediate objective value (validation accuracy) to Optuna
         trial.report(val_acc, epoch)
 
         # Handle pruning
@@ -233,7 +236,7 @@ def objective(trial):
             logger.info(f'Trial {trial.number} pruned at epoch {epoch + 1}')
             raise optuna.exceptions.TrialPruned()
 
-    return val_acc
+    return val_acc  # Use validation accuracy as the objective for Optuna
 
 
 # Run the Optuna study

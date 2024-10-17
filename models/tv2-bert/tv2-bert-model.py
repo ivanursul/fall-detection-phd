@@ -175,6 +175,12 @@ def train_model(model, train_loader, test_loader, criterion, optimizer, epochs=n
 train_model(model, train_loader, test_loader, criterion, optimizer, epochs=num_epochs)
 
 
+# Save the trained model
+model_save_path = 't2v_bert_model.pth'
+torch.save(model.state_dict(), model_save_path)
+print(f'Model saved to {model_save_path}')
+
+
 # Evaluate the model
 def evaluate_model(model, test_loader):
     model.eval()
