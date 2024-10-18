@@ -9,14 +9,21 @@ import json
 from scipy.signal import butter, filtfilt
 import RPi.GPIO as GPIO
 from collections import deque
-
+import board
+import busio
+import adafruit_bmp3xx
+import matplotlib.pyplot as plt
+from collections import deque
 
 # Define GPIO pin for the buzzer
 buzzer_pin = 23
 
 # Set up GPIO mode (only done once, no need to clean up after each call)
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(buzzer_pin, GPIO.OUT)
+GPIO.setup(23, GPIO.OUT)
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(24, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 # MPU6050 Registers and their Addresses
 MPU6050_ADDR = 0x68
@@ -26,19 +33,71 @@ ACCEL_XOUT_H = 0x3B
 ACCEL_YOUT_H = 0x3D
 ACCEL_ZOUT_H = 0x3F
 
-# BMP388 I2C address
-BMP388_ADDRESS = 0x77  # Adjust based on your device address
-# BMP388 Register for pressure
-BMP388_REG_PRESS_MSB = 0x04  # Pressure MSB register
 
 bus = smbus.SMBus(1)  # I2C bus number on Raspberry Pi
 
-# Set the sampling interval for 100Hz (0.01 seconds per sample)
-sampling_interval = 0.01
-# Use a deque to hold the last 100 altitude readings for moving average
-window_size = 100  # Moving average over 1 second (100 samples)
+# Create I2C bus at standard speed
+i2c = busio.I2C(board.SCL, board.SDA, frequency=100000)
+
+# Create sensor object, using the I2C bus
+bmp = adafruit_bmp3xx.BMP3XX_I2C(i2c)
+
+# Set accurate sea level pressure
+bmp.sea_level_pressure = 1013.25  # Replace with local value
+
+# Initialize variables for filtering
+previous_filtered_altitude = None
+alpha = 0.1  # Smoothing factor for low-pass filter
+
+# Define the sampling rate and corresponding sleep time
+sampling_rate = 25  # Hz
+sleep_duration = 1.0 / sampling_rate
+
+window_size = 50  # Define the window size (number of readings to consider in the moving average)
 altitude_window = deque(maxlen=window_size)
 
+collection_of_data_enabled = False
+
+def read_and_filter_altitude():
+    global previous_filtered_altitude
+
+    # Read sensor data
+    try:
+        altitude = bmp.altitude  # Altitude in meters
+    except Exception as e:
+        print(f"Error reading sensor data: {e}")
+        return None  # Skip this iteration if there's an error
+
+    # Apply low-pass filter
+    if previous_filtered_altitude is None:
+        filtered_altitude = altitude
+    else:
+        filtered_altitude = alpha * altitude + (1 - alpha) * previous_filtered_altitude
+    previous_filtered_altitude = filtered_altitude
+
+    # Calculate moving window altitude
+    moving_avg_altitude = calculate_moving_window_altitude(filtered_altitude)
+
+    return filtered_altitude, moving_avg_altitude
+
+
+def calculate_moving_window_altitude(new_altitude):
+    """
+    Calculate the moving window average of the altitude.
+
+    Parameters:
+    new_altitude (float): The latest altitude reading.
+
+    Returns:
+    float: The moving window average of the altitude.
+    """
+    # Add the new altitude reading to the deque
+    altitude_window.append(new_altitude)
+
+    # Compute the moving window average
+    moving_avg_altitude = sum(altitude_window) / len(altitude_window)
+
+    return moving_avg_altitude
 
 def read_raw_data(addr):
     # Reads the raw data from the specified address (high byte and low byte)
@@ -50,18 +109,6 @@ def read_raw_data(addr):
     if value > 32768:
         value = value - 65536
     return value
-
-
-# Function to read raw pressure data from BMP388
-def read_bmp388_pressure():
-    # Read 3 bytes of pressure data (MSB, LSB, XLSB)
-    press_msb = bus.read_byte_data(BMP388_ADDRESS, BMP388_REG_PRESS_MSB)
-    press_lsb = bus.read_byte_data(BMP388_ADDRESS, BMP388_REG_PRESS_MSB + 1)
-    press_xlsb = bus.read_byte_data(BMP388_ADDRESS, BMP388_REG_PRESS_MSB + 2)
-
-    # Combine pressure data
-    pressure_raw = (press_msb << 16) | (press_lsb << 8) | press_xlsb
-    return pressure_raw
 
 
 def calculate_altitude(pressure, sea_level_pressure=1013.25):
@@ -303,6 +350,8 @@ def filter_data(df):
     fall_spikes = expand_fall_spike_for_multiple_spikes(df, fall_spikes, threshold_factor=0.3)
     df = apply_butter_lowpass_filter_for_non_fall_segments(df, fall_spikes, cutoff, fs)
 
+    df['altitude_filtered'] = butter_lowpass_filter(df['Altitude'], cutoff, fs, 4)
+
     df['acc_z_filtered'] = df['acc_z_filtered'] - 1
 
     # Calculate the magnitude of the accelerometer (AccX, AccY, AccZ)
@@ -350,24 +399,68 @@ def signal_app_start(beep_count=3, beep_duration=0.1, pause_duration=0.05):
         time.sleep(pause_duration)  # Short pause between beeps
 
 
+def is_button_pressed():
+    input_state = GPIO.input(24)
+    return input_state == GPIO.LOW  # Return True if button is pressed (LOW state)
+
+
+def sleep(seconds, frequency_hz):
+    interval = 1.0 / frequency_hz  # Calculate the interval based on the frequency
+    end_time = time.time() + seconds  # Set the target end time 5 seconds from now
+
+    while time.time() < end_time:
+        # Sleep for the calculated interval
+        time.sleep(interval)
+
+        if is_button_pressed():
+            flip_collect_property()
+
+    print(f"Finished sleeping for {seconds} seconds")
+
+
+def flip_collect_property():
+    global collection_of_data_enabled
+    collection_of_data_enabled = not collection_of_data_enabled
+
+    if collection_of_data_enabled:
+        print("Collection of data was enabled")
+    else:
+        print("Collection of data was disabled")
+
+    play_alarm(beep_count=3, beep_duration=0.2, pause_duration=0.2)
+
+
 def collect():
-    play_alarm(beep_count=1, beep_duration=0.2, pause_duration=0.2)
-    data_records = collect_interval_records()
+    global collection_of_data_enabled
 
-    filtered_data = filter_data(data_records)
+    if collection_of_data_enabled:
+        print("Iteration started")
+        play_alarm(beep_count=1, beep_duration=0.2, pause_duration=0.2)
+        data_records = collect_interval_records()
 
-    save_csv(filtered_data)
+        if not collection_of_data_enabled:
+            print("Collection of data was disabled, skipping")
+            return
 
-    start_time = time.time()
+        filtered_data = filter_data(data_records)
+        save_csv(filtered_data)
 
-    end_time = time.time()
-    collection_time = end_time - start_time
-    print(f"Time to check if there was a fall: {collection_time:.4f} seconds")
+        play_alarm(beep_count=2, beep_duration=0.2, pause_duration=0.2)
 
-    play_alarm(beep_count=2, beep_duration=0.2, pause_duration=0.2)
+        sleep(5, 100)
+
+    if is_button_pressed():
+        flip_collect_property()
+        sleep(1, 100)
 
 
 def save_csv(filtered_data):
+    global collection_of_data_enabled
+    if not collection_of_data_enabled:
+        print("Collection of data was disabled, skipping")
+        return
+
+    print("Started saving csv")
     # Ensure the folder exists
     folder_path = '/home/ivanursul/accelerometer_data_raw'
     if not os.path.exists(folder_path):
@@ -383,33 +476,31 @@ def save_csv(filtered_data):
 def collect_interval_records():
     data_records = pd.DataFrame(
         0.0, index=np.arange(800),
-        columns=['AccX', 'AccY', 'AccZ', 'Magnitude', 'MovAvgAltitude']
+        columns=['AccX', 'AccY', 'AccZ', 'Magnitude', 'Altitude', 'MovingAvgAltitude']
     )
 
     # Collect 800 records at 100Hz
     for i in range(800):
+
+        if is_button_pressed():
+            flip_collect_property()
+            break
+
         # Read the sensor data
         acc_x, acc_y, acc_z = read_accelerometer(scaling_factor)
 
-        pressure_raw = read_bmp388_pressure()
-        current_altitude = calculate_altitude(pressure_raw)
-
-        # Append the current altitude to the moving window
-        altitude_window.append(current_altitude)
-
-        # Calculate the moving average if we have enough data points
-        if len(altitude_window) == window_size:
-            moving_avg_altitude = sum(altitude_window) / len(altitude_window)
-            print(f"Moving Average Altitude: {moving_avg_altitude:.2f} meters")
-
         # Calculate magnitude
-        magnitude = calculate_magnitude(acc_x, acc_y, acc_z - 1, )
+        magnitude = calculate_magnitude(acc_x, acc_y, acc_z - 1)
+
+        # Read and filter altitude, also get moving average altitude
+        altitude, moving_avg_altitude = read_and_filter_altitude()
 
         # Assign the data to the DataFrame
-        data_records.iloc[i] = [acc_x, acc_y, acc_z - 1, magnitude]
+        data_records.iloc[i] = [acc_x, acc_y, acc_z - 1, magnitude, altitude, moving_avg_altitude]
 
         # Wait for 10ms (100Hz frequency)
         time.sleep(0.01)
+
     return data_records
 
 
