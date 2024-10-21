@@ -1,45 +1,57 @@
-import optuna
-import torch
-from torch.utils.data import DataLoader
-from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
-import torch.optim as optim
-import torch.nn as nn
-from sklearn.model_selection import train_test_split
-import numpy as np
-from sklearn.preprocessing import StandardScaler
-from torch.utils.data import Dataset, DataLoader
 import os
 import pandas as pd
-import logging
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+import torch
+from torch.utils.data import Dataset, DataLoader
+import torch.nn as nn
+import torch.optim as optim
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+import optuna  # Import Optuna
+import logging  # Import logging module
 
-# Setup logging
-logging.basicConfig(filename='training_log.log', level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+# Set up logging
+logger = logging.getLogger('T2VBERTModel')
+logger.setLevel(logging.INFO)
 
-logger = logging.getLogger()
+# Create handlers
+console_handler = logging.StreamHandler()
+file_handler = logging.FileHandler('training.log')
 
-# Constants
-MAX_SEQUENCE_LENGTH = 800
-BATCH_SIZE = 32
-input_dim = 4  # AccX, AccY, AccZ
-num_classes = 2  # Fall or non-fall
-num_epochs = 10  # You can reduce for faster tuning
+# Set level for handlers
+console_handler.setLevel(logging.INFO)
+file_handler.setLevel(logging.INFO)
+
+# Create formatter and add it to handlers
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+console_handler.setFormatter(formatter)
+file_handler.setFormatter(formatter)
+
+# Add handlers to logger
+logger.addHandler(console_handler)
+logger.addHandler(file_handler)
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+logger.info(f'Using device: {device}')
 
-def log(message):
-    logger.info(message)
-    print(message)
-
-log(f'Using device: {device}')
+# Constants
+MAX_SEQUENCE_LENGTH = 800  # Adjust based on your dataset
+input_dim = 4  # AccX, AccY, AccZ, Acc_magnitude_i
+num_classes = 2  # Fall or non-fall
 
 
 # Custom Dataset class
 class FallDetectionDataset(Dataset):
-    def __init__(self, file_paths, labels):
+    def __init__(self, file_paths, labels, scaler=None):
         self.file_paths = file_paths
         self.labels = labels
-        self.scaler = StandardScaler()
+        if scaler is None:
+            self.scaler = StandardScaler()
+        else:
+            self.scaler = scaler
 
     def __len__(self):
         return len(self.file_paths)
@@ -47,7 +59,9 @@ class FallDetectionDataset(Dataset):
     def __getitem__(self, idx):
         data = pd.read_csv(self.file_paths[idx])
         acc_data = data[['AccX_filtered_i', 'AccY_filtered_i', 'Corrected_AccZ_i', 'Acc_magnitude_i']].values
-        acc_data = self.scaler.fit_transform(acc_data)
+
+        # Apply scaling
+        acc_data = self.scaler.transform(acc_data)
 
         if len(acc_data) < MAX_SEQUENCE_LENGTH:
             padded = np.zeros((MAX_SEQUENCE_LENGTH, input_dim))
@@ -74,64 +88,171 @@ def load_dataset(fall_folder, non_fall_folder):
     return file_paths, labels
 
 
+# Replace these paths with your dataset paths
 fall_folder = 'C:\\Users\\Ivan\\Downloads\\Sensor Data 6\\Fall'
 non_fall_folder = 'C:\\Users\\Ivan\\Downloads\\Sensor Data 6\\ADL'
 
 file_paths, labels = load_dataset(fall_folder, non_fall_folder)
 
-# Split data into training and test sets
-train_files, test_files, train_labels, test_labels = train_test_split(file_paths, labels, test_size=0.2,
-                                                                      random_state=42)
+# Split data into training, validation, and test sets
+train_files, temp_files, train_labels, temp_labels = train_test_split(file_paths, labels, test_size=0.3, random_state=42)
+val_files, test_files, val_labels, test_labels = train_test_split(temp_files, temp_labels, test_size=0.5, random_state=42)
 
-# Create PyTorch datasets and loaders
-train_dataset = FallDetectionDataset(train_files, train_labels)
-test_dataset = FallDetectionDataset(test_files, test_labels)
+# Fit scaler on training data
+scaler = StandardScaler()
+all_train_data = []
+for file in train_files:
+    data = pd.read_csv(file)
+    acc_data = data[['AccX_filtered_i', 'AccY_filtered_i', 'Corrected_AccZ_i', 'Acc_magnitude_i']].values
+    all_train_data.append(acc_data)
+all_train_data = np.vstack(all_train_data)
+scaler.fit(all_train_data)
 
-train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True)
-test_loader = DataLoader(test_dataset, batch_size=BATCH_SIZE)
+# Create PyTorch datasets
+train_dataset = FallDetectionDataset(train_files, train_labels, scaler=scaler)
+val_dataset = FallDetectionDataset(val_files, val_labels, scaler=scaler)
+test_dataset = FallDetectionDataset(test_files, test_labels, scaler=scaler)
 
+# Positional Encoding Class
+class PositionalEncoding(nn.Module):
+    def __init__(self, d_model, max_len=MAX_SEQUENCE_LENGTH):
+        super(PositionalEncoding, self).__init__()
 
-# Define model, loss, and optimizer
-class MultiScaleTransformerModel(nn.Module):
-    def __init__(self, input_dim, num_heads, num_layers, num_classes, hidden_dim, dropout):
-        super(MultiScaleTransformerModel, self).__init__()
+        pe = torch.zeros(max_len, d_model)
+        position = torch.arange(0, max_len).unsqueeze(1).float()
+        div_term = torch.exp(torch.arange(0, d_model, 2).float() * (-np.log(10000.0) / d_model))
 
-        # Embedding layer
-        self.embedding = nn.Linear(input_dim, hidden_dim)
+        pe[:, 0::2] = torch.sin(position * div_term)
+        pe[:, 1::2] = torch.cos(position * div_term)
 
-        # Positional encoding
-        self.pos_encoder = nn.Parameter(torch.randn(1, MAX_SEQUENCE_LENGTH, hidden_dim))
-
-        # Multi-scale attention with hierarchical structures
-        self.multi_scale_transformer_layers = nn.ModuleList([
-            nn.TransformerEncoderLayer(d_model=hidden_dim, nhead=num_heads, dropout=dropout)
-            for _ in range(num_layers)
-        ])
-
-        # Global average pooling for multiple scales
-        self.fc1 = nn.Linear(hidden_dim, hidden_dim // 2)
-        self.fc2 = nn.Linear(hidden_dim // 2, num_classes)
-        self.dropout = nn.Dropout(dropout)
+        pe = pe.unsqueeze(0)  # Shape: (1, max_len, d_model)
+        self.register_buffer('pe', pe)
 
     def forward(self, x):
-        x = self.embedding(x) + self.pos_encoder[:, :x.size(1), :]
-
-        for transformer_layer in self.multi_scale_transformer_layers:
-            x = transformer_layer(x)
-
-        x = x.mean(dim=1)  # Global average pooling
-        x = self.dropout(self.fc1(x))
-        x = self.fc2(x)
+        # x shape: batch_size x seq_len x d_model
+        x = x + self.pe[:, :x.size(1), :].to(x.device)
         return x
 
+# Multi-Scale Transformer Model
+class MultiScaleTransformerModel(nn.Module):
+    def __init__(self, input_dim, num_heads, num_layers, num_classes, hidden_dim=128, dropout=0.1):
+        super(MultiScaleTransformerModel, self).__init__()
 
-# Train model function
-def train_model(model, train_loader, test_loader, criterion, optimizer, epochs=num_epochs):
-    for epoch in range(epochs):
+        self.input_dim = input_dim
+        self.num_heads = num_heads
+        self.num_layers = num_layers
+        self.num_classes = num_classes
+        self.hidden_dim = hidden_dim
+        self.dropout = dropout
+
+        # Define multiple scales
+        self.scale_factors = [1, 2, 4]  # Adjust scales as needed
+
+        self.transformers = nn.ModuleList()
+        self.position_encodings = nn.ModuleList()
+
+        for scale in self.scale_factors:
+            # Create transformer encoder
+            encoder_layer = nn.TransformerEncoderLayer(d_model=hidden_dim, nhead=num_heads, dropout=dropout, batch_first=True)
+            transformer = nn.TransformerEncoder(encoder_layer, num_layers=num_layers)
+            self.transformers.append(transformer)
+
+            # Positional encoding
+            max_len = int(np.ceil(MAX_SEQUENCE_LENGTH / scale))
+            pe = PositionalEncoding(hidden_dim, max_len=max_len)
+            self.position_encodings.append(pe)
+
+        # Linear layer to match the transformer d_model
+        self.linear = nn.Linear(input_dim, hidden_dim)
+
+        # Classification layer
+        self.fc = nn.Linear(hidden_dim * len(self.scale_factors), num_classes)
+        self.relu = nn.ReLU()
+        self.dropout_layer = nn.Dropout(dropout)
+
+    def forward(self, x):
+        # x shape: batch_size x seq_len x input_dim
+        outputs = []
+        for idx, scale in enumerate(self.scale_factors):
+            # Downsample the sequence
+            if scale > 1:
+                x_scaled = x[:, ::scale, :]
+            else:
+                x_scaled = x
+            # Linear projection
+            x_scaled = self.linear(x_scaled)
+            # Add positional encoding
+            x_scaled = self.position_encodings[idx](x_scaled)
+            # Pass through transformer
+            x_scaled = self.transformers[idx](x_scaled)
+            # Pooling (e.g., global average pooling)
+            x_pooled = x_scaled.mean(dim=1)
+            outputs.append(x_pooled)
+
+        # Concatenate outputs from different scales
+        x_concat = torch.cat(outputs, dim=1)  # Shape: batch_size x (hidden_dim * num_scales)
+        x_concat = self.dropout_layer(self.relu(x_concat))
+        # Classification layer
+        x_out = self.fc(x_concat)
+        return x_out
+
+def log_model_size(model):
+    # Calculate the total number of parameters in the model
+    num_params = sum(p.numel() for p in model.parameters())
+
+    # Assume each parameter is a float32 (4 bytes)
+    param_size_in_bytes = num_params * 4
+
+    # Convert bytes to megabytes
+    model_size_in_mb = param_size_in_bytes / (1024 * 1024)
+
+    return model_size_in_mb
+
+hidden_dim_num_heads_map = {
+    '2_1': (2, 1), '2_2': (2, 2),
+    '4_1': (4, 1), '4_2': (4, 2), '4_4': (4, 4),
+    '8_1': (8, 1), '8_2': (8, 2), '8_4': (8, 4), '8_8': (8, 8),
+    '12_1': (12, 1), '12_2': (12, 2), '12_4': (12, 4),
+    '16_1': (16, 1), '16_2': (16, 2), '16_4': (16, 4), '16_8': (16, 8),
+    '24_2': (24, 2), '24_4': (24, 4), '24_8': (24, 8),
+    '32_2': (32, 2), '32_4': (32, 4), '32_8': (32, 8), '32_16': (32, 16),
+    '40_4': (40, 4), '40_8': (40, 8),
+    '48_4': (48, 4), '48_8': (48, 8),
+    '64_4': (64, 4), '64_8': (64, 8), '64_16': (64, 16),
+    '128_4': (128, 4), '128_8': (128, 8), '128_16': (128, 16)
+}
+
+def objective(trial):
+    # Suggest hidden_dim and num_heads as a string key, then map it to a tuple
+    hidden_dim_num_heads_str = trial.suggest_categorical('hidden_dim_num_heads', list(hidden_dim_num_heads_map.keys()))
+    hidden_dim, num_heads = hidden_dim_num_heads_map[hidden_dim_num_heads_str]
+
+    num_layers = trial.suggest_int('num_layers', 1, 4)
+    dropout = trial.suggest_float('dropout', 0.1, 0.5, step=0.1)
+    learning_rate = trial.suggest_float('learning_rate', 1e-5, 1e-3, log=True)
+    batch_size = trial.suggest_categorical('batch_size', [16, 32, 64])
+
+    # Create DataLoaders with the current batch size
+    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+    val_loader = DataLoader(val_dataset, batch_size=batch_size)
+
+    # Build the model with hyperparameters
+    model = MultiScaleTransformerModel(input_dim, num_heads, num_layers, num_classes,
+                                          hidden_dim=hidden_dim, dropout=dropout).to(device)
+
+    # Loss and optimizer
+    criterion = nn.CrossEntropyLoss()
+    optimizer = optim.Adam(model.parameters(), lr=learning_rate)
+
+    # Training loop
+    num_epochs = 10  # Fewer epochs for hyperparameter optimization
+
+    for epoch in range(num_epochs):
         model.train()
         running_loss = 0.0
         correct = 0
         total = 0
+
         for inputs, labels in train_loader:
             inputs, labels = inputs.to(device), labels.to(device)
             optimizer.zero_grad()
@@ -145,17 +266,109 @@ def train_model(model, train_loader, test_loader, criterion, optimizer, epochs=n
             total += labels.size(0)
             correct += (predicted == labels).sum().item()
 
-        train_acc = 100 * correct / total
-        log(f'Epoch {epoch + 1}/{epochs}, Loss: {running_loss:.4f}, Accuracy: {train_acc:.2f}%')
+        # Evaluate on validation set
+        model.eval()
+        val_preds = []
+        val_labels = []
 
-        # After every epoch, evaluate the model on the test set
-        test_acc = evaluate_model(model, test_loader)
-        log(f'Test Accuracy: {test_acc:.2f}%')
+        with torch.no_grad():
+            for inputs, labels in val_loader:
+                inputs, labels = inputs.to(device), labels.to(device)
+                outputs = model(inputs)
+                _, predicted = torch.max(outputs, 1)
+                val_preds.extend(predicted.cpu().numpy())
+                val_labels.extend(labels.cpu().numpy())
 
-    return test_acc
 
 
-# Evaluation function
+        # Calculate validation accuracy
+        val_acc = accuracy_score(val_labels, val_preds)
+
+        # Log the training and validation results
+        logger.info(f'Trial {trial.number}, Epoch {epoch + 1}/{num_epochs}, '
+                    f'Train Loss: {running_loss:.4f}, Val Accuracy: {val_acc * 100:.2f}%')
+
+        # Report intermediate objective value (validation accuracy) to Optuna
+        trial.report(val_acc, epoch)
+
+        # Handle pruning
+        if trial.should_prune():
+            logger.info(f'Trial {trial.number} pruned at epoch {epoch + 1}')
+            raise optuna.exceptions.TrialPruned()
+
+    # Log the model size after training
+    model_size_in_mb = log_model_size(model)
+    logger.info(f"Model size after training: {model_size_in_mb:.2f} MB")
+
+    # If model size exceeds 5 MB, prune the trial after training
+    if model_size_in_mb > 5:
+        logger.info(f"Pruning trial {trial.number} because model size exceeds 5 MB after training ({model_size_in_mb:.2f} MB)")
+        raise optuna.exceptions.TrialPruned()
+
+    return val_acc  # Use validation accuracy as the objective for Optuna
+
+
+# Run the Optuna study
+study = optuna.create_study(direction='maximize')
+study.optimize(objective, n_trials=1500)
+
+# Retrieve the best hyperparameters
+best_params = study.best_trial.params
+logger.info(f"Best hyperparameters: {best_params}")
+
+# best_hidden_dim = best_params['hidden_dim']
+# best_num_heads = best_params['num_heads']
+
+best_hidden_dim, best_num_heads = best_params['hidden_dim_num_heads']
+
+best_num_layers = best_params['num_layers']
+best_dropout = best_params['dropout']
+best_learning_rate = best_params['learning_rate']
+best_batch_size = best_params['batch_size']
+
+# Combine train and validation datasets
+combined_train_files = train_files + val_files
+combined_train_labels = train_labels + val_labels
+combined_train_dataset = FallDetectionDataset(combined_train_files, combined_train_labels, scaler=scaler)
+
+# Create DataLoaders with the best batch size
+train_loader = DataLoader(combined_train_dataset, batch_size=best_batch_size, shuffle=True)
+test_loader = DataLoader(test_dataset, batch_size=best_batch_size)
+
+# Build the model with the best hyperparameters
+best_model = MultiScaleTransformerModel(input_dim, best_num_heads, best_num_layers, num_classes,
+                                           hidden_dim=best_hidden_dim, dropout=best_dropout).to(device)
+
+# Loss and optimizer
+criterion = nn.CrossEntropyLoss()
+optimizer = optim.Adam(best_model.parameters(), lr=best_learning_rate)
+
+# Retrain the model with best hyperparameters
+num_epochs = 50  # Increase epochs for final training
+
+for epoch in range(num_epochs):
+    best_model.train()
+    running_loss = 0.0
+    correct = 0
+    total = 0
+
+    for inputs, labels in train_loader:
+        inputs, labels = inputs.to(device), labels.to(device)
+        optimizer.zero_grad()
+        outputs = best_model(inputs)
+        loss = criterion(outputs, labels)
+        loss.backward()
+        optimizer.step()
+
+        running_loss += loss.item()
+        _, predicted = torch.max(outputs, 1)
+        total += labels.size(0)
+        correct += (predicted == labels).sum().item()
+
+    train_acc = 100 * correct / total
+    logger.info(f'Epoch {epoch + 1}/{num_epochs}, Loss: {running_loss:.4f}, Train Accuracy: {train_acc:.2f}%')
+
+# Evaluate the model on the test set
 def evaluate_model(model, test_loader):
     model.eval()
     all_preds = []
@@ -169,52 +382,19 @@ def evaluate_model(model, test_loader):
             all_labels.extend(labels.cpu().numpy())
 
     accuracy = accuracy_score(all_labels, all_preds)
-    return accuracy * 100
+    logger.info(f"Test Accuracy: {accuracy * 100:.2f}%")
+    logger.info("Classification Report:")
+    logger.info(classification_report(all_labels, all_preds, target_names=['Non-Fall', 'Fall']))
 
-valid_combinations = [
-    (4, 4),(4, 8), (4, 16),(4, 32),(4, 64),(4, 128),
-]
+    # Confusion matrix
+    cm = confusion_matrix(all_labels, all_preds)
+    plt.figure(figsize=(8, 6))
+    sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", xticklabels=['Non-Fall', 'Fall'],
+                yticklabels=['Non-Fall', 'Fall'])
+    plt.xlabel('Predicted')
+    plt.ylabel('True')
+    plt.title('Confusion Matrix')
+    plt.show()
 
-# Optuna objective function
-def objective(trial):
-    # Hyperparameters to tune
-    learning_rate = trial.suggest_loguniform('learning_rate', 1e-5, 1e-3)
-
-    #hidden_dim = trial.suggest_categorical('hidden_dim', [64, 128, 256])
-    #num_heads = trial.suggest_categorical('num_heads', [2, 4, 8])
-    num_heads, hidden_dim = trial.suggest_categorical('num_heads_hidden_dim', valid_combinations)
-
-    dropout = trial.suggest_uniform('dropout', 0.01, 0.5)
-    num_layers = trial.suggest_int('num_layers', 1, 2, 4)
-
-    # Log current trial parameters
-    log(f"Trial {trial.number}: LR: {learning_rate}, Dropout: {dropout}, Hidden Dim: {hidden_dim}, "
-                f"Num Heads: {num_heads}, Num Layers: {num_layers}")
-
-    # Initialize model, optimizer, and loss function with trial hyperparameters
-    model = MultiScaleTransformerModel(input_dim, num_heads, num_layers, num_classes, hidden_dim, dropout).to(device)
-    optimizer = optim.Adam(model.parameters(), lr=learning_rate)
-    criterion = nn.CrossEntropyLoss()
-
-    # Train the model
-    test_acc = train_model(model, train_loader, test_loader, criterion, optimizer, num_epochs)
-
-    return test_acc
-
-
-# Main optuna function
-if __name__ == '__main__':
-    # Create a study object
-    study = optuna.create_study(direction='maximize')  # We aim to maximize accuracy
-
-    # Optimize the study using 50 trials
-    study.optimize(objective, n_trials=1000)
-
-    # Print the best trial and hyperparameters
-    log('Best trial:')
-    trial = study.best_trial
-
-    log(f'Accuracy: {trial.value}')
-    log('Best hyperparameters: ')
-    for key, value in trial.params.items():
-        log(f'{key}: {value}')
+# Evaluate the best model
+evaluate_model(best_model, test_loader)
