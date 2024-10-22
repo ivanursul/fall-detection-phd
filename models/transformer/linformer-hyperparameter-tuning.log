@@ -1,0 +1,1241 @@
+2024-10-10 13:50:56,122 - INFO - Using device: cuda
+2024-10-10 13:50:56,123 - INFO - 2.4.1+cu118
+2024-10-10 13:51:07,378 - INFO - Epoch 1/10, Loss: 38.1963, Accuracy: 50.12%
+2024-10-10 13:51:14,641 - INFO - Epoch 2/10, Loss: 23.4093, Accuracy: 79.25%
+2024-10-10 13:51:21,994 - INFO - Epoch 3/10, Loss: 9.2042, Accuracy: 94.35%
+2024-10-10 13:51:29,383 - INFO - Epoch 4/10, Loss: 7.6225, Accuracy: 95.03%
+2024-10-10 13:51:36,701 - INFO - Epoch 5/10, Loss: 5.4041, Accuracy: 96.21%
+2024-10-10 13:51:43,982 - INFO - Epoch 6/10, Loss: 5.1769, Accuracy: 96.65%
+2024-10-10 13:51:51,355 - INFO - Epoch 7/10, Loss: 5.1763, Accuracy: 96.58%
+2024-10-10 13:51:58,639 - INFO - Epoch 8/10, Loss: 4.6422, Accuracy: 96.58%
+2024-10-10 13:52:06,017 - INFO - Epoch 9/10, Loss: 4.2895, Accuracy: 97.02%
+2024-10-10 13:52:13,328 - INFO - Epoch 10/10, Loss: 4.1603, Accuracy: 97.64%
+2024-10-10 13:52:51,112 - INFO - Using device: cuda
+2024-10-10 13:52:51,112 - INFO - 2.4.1+cu118
+2024-10-10 13:53:01,712 - INFO - Epoch 1/10, Loss: 35.5400, Accuracy: 49.32%
+2024-10-10 13:53:08,369 - INFO - Epoch 2/10, Loss: 35.1783, Accuracy: 53.35%
+2024-10-10 13:53:14,988 - INFO - Epoch 3/10, Loss: 34.9715, Accuracy: 64.91%
+2024-10-10 13:53:21,531 - INFO - Epoch 4/10, Loss: 34.9192, Accuracy: 53.98%
+2024-10-10 13:53:28,118 - INFO - Epoch 5/10, Loss: 34.6551, Accuracy: 60.31%
+2024-10-10 13:53:34,565 - INFO - Epoch 6/10, Loss: 34.4903, Accuracy: 63.85%
+2024-10-10 13:53:41,278 - INFO - Epoch 7/10, Loss: 34.2397, Accuracy: 65.96%
+2024-10-10 13:53:47,760 - INFO - Epoch 8/10, Loss: 34.0965, Accuracy: 64.35%
+2024-10-10 13:53:54,407 - INFO - Epoch 9/10, Loss: 33.7847, Accuracy: 82.61%
+2024-10-10 13:54:00,858 - INFO - Epoch 10/10, Loss: 33.5222, Accuracy: 81.06%
+2024-10-10 13:54:02,153 - INFO - Model size: 0.58 MB, Accuracy: 0.7196, Precision: 0.8201
+2024-10-10 13:54:02,178 - INFO - Pareto-optimal trials:
+2024-10-10 13:54:02,178 - INFO - Trial number: 0
+2024-10-10 13:54:02,179 - INFO -   Accuracy: 0.7196
+2024-10-10 13:54:29,835 - INFO - Using device: cuda
+2024-10-10 13:54:29,835 - INFO - 2.4.1+cu118
+2024-10-10 13:54:41,154 - INFO - Epoch 1/10, Loss: 18.4433, Accuracy: 50.00%
+2024-10-10 13:54:48,354 - INFO - Epoch 2/10, Loss: 17.6332, Accuracy: 56.58%
+2024-10-10 13:54:55,551 - INFO - Epoch 3/10, Loss: 14.3766, Accuracy: 85.28%
+2024-10-10 13:55:02,772 - INFO - Epoch 4/10, Loss: 8.1400, Accuracy: 91.12%
+2024-10-10 13:55:09,969 - INFO - Epoch 5/10, Loss: 6.4105, Accuracy: 90.25%
+2024-10-10 13:55:17,209 - INFO - Epoch 6/10, Loss: 5.0297, Accuracy: 93.29%
+2024-10-10 13:55:24,465 - INFO - Epoch 7/10, Loss: 4.0710, Accuracy: 95.59%
+2024-10-10 13:55:31,677 - INFO - Epoch 8/10, Loss: 3.6625, Accuracy: 95.78%
+2024-10-10 13:55:38,852 - INFO - Epoch 9/10, Loss: 3.2451, Accuracy: 96.09%
+2024-10-10 13:55:45,977 - INFO - Epoch 10/10, Loss: 3.1133, Accuracy: 96.02%
+2024-10-10 13:55:47,294 - INFO - Model size: 4.93 MB, Accuracy: 0.9578, Precision: 0.9603
+2024-10-10 13:55:47,297 - INFO - Pareto-optimal trials:
+2024-10-10 13:55:47,297 - INFO - Trial number: 0
+2024-10-10 13:55:47,297 - INFO -   Accuracy: 0.9578
+2024-10-10 13:55:47,297 - INFO -   Params:
+2024-10-10 13:55:47,298 - INFO -     num_heads_hidden_dim: (4, 128)
+2024-10-10 13:55:47,298 - INFO -     num_layers: 2
+2024-10-10 13:55:47,298 - INFO -     dropout: 0.019801057819815025
+2024-10-10 13:55:47,298 - INFO -     learning_rate: 0.00021581214662565784
+2024-10-10 13:55:47,298 - INFO -     batch_size: 64
+2024-10-10 14:01:35,543 - INFO - Using device: cuda
+2024-10-10 14:01:35,543 - INFO - 2.4.1+cu118
+2024-10-10 14:01:47,746 - INFO - Epoch 1/10, Loss: 20.2807, Accuracy: 51.06%
+2024-10-10 14:01:55,977 - INFO - Epoch 2/10, Loss: 18.1659, Accuracy: 49.88%
+2024-10-10 14:02:04,346 - INFO - Epoch 3/10, Loss: 18.0728, Accuracy: 50.31%
+2024-10-10 14:02:12,632 - INFO - Epoch 4/10, Loss: 18.3475, Accuracy: 51.24%
+2024-10-10 14:02:20,995 - INFO - Epoch 5/10, Loss: 18.5143, Accuracy: 47.83%
+2024-10-10 14:02:29,224 - INFO - Epoch 6/10, Loss: 18.0671, Accuracy: 50.43%
+2024-10-10 14:02:37,551 - INFO - Epoch 7/10, Loss: 18.0694, Accuracy: 50.31%
+2024-10-10 14:02:45,781 - INFO - Epoch 8/10, Loss: 18.1268, Accuracy: 51.06%
+2024-10-10 14:02:54,025 - INFO - Epoch 9/10, Loss: 18.0511, Accuracy: 50.00%
+2024-10-10 14:03:02,371 - INFO - Epoch 10/10, Loss: 18.1140, Accuracy: 48.70%
+2024-10-10 14:03:03,757 - INFO - Model size: 4.50 MB, Accuracy: 0.4988, Precision: 0.2494
+2024-10-10 14:03:03,760 - INFO - Pareto-optimal trials:
+2024-10-10 14:03:03,760 - INFO - Trial number: 0
+2024-10-10 14:03:03,760 - INFO -   Accuracy: 0.4988
+2024-10-10 14:03:03,760 - INFO -   Params:
+2024-10-10 14:03:03,760 - INFO -     num_heads_hidden_dim: (4, 64)
+2024-10-10 14:03:03,760 - INFO -     num_layers: 4
+2024-10-10 14:03:03,761 - INFO -     dropout: 0.08711382827272006
+2024-10-10 14:03:03,761 - INFO -     learning_rate: 0.0009076233472510439
+2024-10-10 14:03:03,761 - INFO -     batch_size: 64
+2024-10-10 14:03:12,091 - INFO - Epoch 1/10, Loss: 21.0151, Accuracy: 50.81%
+2024-10-10 14:03:20,332 - INFO - Epoch 2/10, Loss: 18.0843, Accuracy: 51.74%
+2024-10-10 14:03:28,625 - INFO - Epoch 3/10, Loss: 18.1839, Accuracy: 49.94%
+2024-10-10 14:03:36,929 - INFO - Epoch 4/10, Loss: 18.2992, Accuracy: 47.08%
+2024-10-10 14:03:45,225 - INFO - Epoch 5/10, Loss: 18.0997, Accuracy: 49.88%
+2024-10-10 14:03:53,514 - INFO - Epoch 6/10, Loss: 18.5971, Accuracy: 49.25%
+2024-10-10 14:04:01,806 - INFO - Epoch 7/10, Loss: 18.2517, Accuracy: 46.58%
+2024-10-10 14:04:10,037 - INFO - Epoch 8/10, Loss: 18.1099, Accuracy: 48.39%
+2024-10-10 14:04:18,263 - INFO - Epoch 9/10, Loss: 18.0533, Accuracy: 49.69%
+2024-10-10 14:04:26,536 - INFO - Epoch 10/10, Loss: 18.0491, Accuracy: 49.75%
+2024-10-10 14:04:27,905 - INFO - Accuracy: 49.88%
+2024-10-10 14:04:27,906 - INFO - Classification Report:
+2024-10-10 14:04:27,913 - INFO -               precision    recall  f1-score   support
+
+    Non-Fall       0.00      0.00      0.00       202
+        Fall       0.50      1.00      0.67       201
+
+    accuracy                           0.50       403
+   macro avg       0.25      0.50      0.33       403
+weighted avg       0.25      0.50      0.33       403
+
+2024-10-10 14:04:43,246 - INFO - Using device: cuda
+2024-10-10 14:04:43,246 - INFO - 2.4.1+cu118
+2024-10-10 14:04:53,907 - INFO - Epoch 1/10, Loss: 18.0604, Accuracy: 49.75%
+2024-10-10 14:05:00,747 - INFO - Epoch 2/10, Loss: 17.9168, Accuracy: 52.92%
+2024-10-10 14:05:07,644 - INFO - Epoch 3/10, Loss: 18.0457, Accuracy: 48.01%
+2024-10-10 14:05:14,483 - INFO - Epoch 4/10, Loss: 17.8159, Accuracy: 70.25%
+2024-10-10 14:05:21,314 - INFO - Epoch 5/10, Loss: 17.7824, Accuracy: 56.27%
+2024-10-10 14:05:28,178 - INFO - Epoch 6/10, Loss: 17.6913, Accuracy: 60.99%
+2024-10-10 14:05:35,082 - INFO - Epoch 7/10, Loss: 17.5484, Accuracy: 81.37%
+2024-10-10 14:05:41,975 - INFO - Epoch 8/10, Loss: 17.4247, Accuracy: 71.80%
+2024-10-10 14:05:48,850 - INFO - Epoch 9/10, Loss: 17.2521, Accuracy: 79.57%
+2024-10-10 14:05:55,686 - INFO - Epoch 10/10, Loss: 17.0689, Accuracy: 73.04%
+2024-10-10 14:05:57,012 - INFO - Model size: 0.44 MB, Accuracy: 0.5955, Precision: 0.7640
+2024-10-10 14:06:04,405 - INFO - Epoch 1/10, Loss: 35.4160, Accuracy: 54.91%
+2024-10-10 14:06:11,650 - INFO - Epoch 2/10, Loss: 14.5574, Accuracy: 90.06%
+2024-10-10 14:06:18,904 - INFO - Epoch 3/10, Loss: 8.6319, Accuracy: 93.54%
+2024-10-10 14:06:26,211 - INFO - Epoch 4/10, Loss: 6.1036, Accuracy: 95.84%
+2024-10-10 14:06:33,529 - INFO - Epoch 5/10, Loss: 5.5428, Accuracy: 96.40%
+2024-10-10 14:06:41,013 - INFO - Epoch 6/10, Loss: 4.5949, Accuracy: 96.71%
+2024-10-10 14:06:48,268 - INFO - Epoch 7/10, Loss: 5.6781, Accuracy: 95.71%
+2024-10-10 14:06:55,568 - INFO - Epoch 8/10, Loss: 4.0011, Accuracy: 96.83%
+2024-10-10 14:07:02,919 - INFO - Epoch 9/10, Loss: 5.2279, Accuracy: 96.77%
+2024-10-10 14:07:10,229 - INFO - Epoch 10/10, Loss: 4.9445, Accuracy: 96.71%
+2024-10-10 14:07:11,582 - INFO - Model size: 4.93 MB, Accuracy: 0.9777, Precision: 0.9782
+2024-10-10 14:07:19,366 - INFO - Epoch 1/10, Loss: 35.8399, Accuracy: 49.88%
+2024-10-10 14:07:27,030 - INFO - Epoch 2/10, Loss: 35.0881, Accuracy: 51.61%
+2024-10-10 14:07:34,727 - INFO - Epoch 3/10, Loss: 34.5220, Accuracy: 61.61%
+2024-10-10 14:07:42,431 - INFO - Epoch 4/10, Loss: 33.5670, Accuracy: 65.84%
+2024-10-10 14:07:50,088 - INFO - Epoch 5/10, Loss: 30.9906, Accuracy: 80.06%
+2024-10-10 14:07:57,741 - INFO - Epoch 6/10, Loss: 28.8326, Accuracy: 80.31%
+2024-10-10 14:08:05,470 - INFO - Epoch 7/10, Loss: 26.7338, Accuracy: 87.45%
+2024-10-10 14:08:13,143 - INFO - Epoch 8/10, Loss: 25.2131, Accuracy: 87.08%
+2024-10-10 14:08:20,811 - INFO - Epoch 9/10, Loss: 24.6834, Accuracy: 88.57%
+2024-10-10 14:08:28,472 - INFO - Epoch 10/10, Loss: 23.5395, Accuracy: 87.64%
+2024-10-10 14:08:29,831 - INFO - Model size: 0.58 MB, Accuracy: 0.7965, Precision: 0.8486
+2024-10-10 14:08:38,541 - INFO - Epoch 1/10, Loss: 37.7843, Accuracy: 49.57%
+2024-10-10 14:08:47,401 - INFO - Epoch 2/10, Loss: 35.5021, Accuracy: 50.19%
+2024-10-10 14:08:56,018 - INFO - Epoch 3/10, Loss: 35.3864, Accuracy: 51.24%
+2024-10-10 14:09:04,674 - INFO - Epoch 4/10, Loss: 35.7244, Accuracy: 50.19%
+2024-10-10 14:09:13,388 - INFO - Epoch 5/10, Loss: 35.3987, Accuracy: 50.99%
+2024-10-10 14:09:22,035 - INFO - Epoch 6/10, Loss: 35.5505, Accuracy: 49.32%
+2024-10-10 14:09:30,692 - INFO - Epoch 7/10, Loss: 35.8177, Accuracy: 48.20%
+2024-10-10 14:09:39,344 - INFO - Epoch 8/10, Loss: 28.3562, Accuracy: 71.06%
+2024-10-10 14:09:47,984 - INFO - Epoch 9/10, Loss: 14.9752, Accuracy: 90.06%
+2024-10-10 14:09:56,583 - INFO - Epoch 10/10, Loss: 9.9670, Accuracy: 93.91%
+2024-10-10 14:09:58,014 - INFO - Model size: 4.50 MB, Accuracy: 0.9628, Precision: 0.9641
+2024-10-10 14:10:05,073 - INFO - Epoch 1/10, Loss: 9.0605, Accuracy: 50.25%
+2024-10-10 14:10:11,687 - INFO - Epoch 2/10, Loss: 9.0492, Accuracy: 48.82%
+2024-10-10 14:10:18,266 - INFO - Epoch 3/10, Loss: 9.0088, Accuracy: 51.68%
+2024-10-10 14:10:24,838 - INFO - Epoch 4/10, Loss: 8.9897, Accuracy: 50.56%
+2024-10-10 14:10:31,347 - INFO - Epoch 5/10, Loss: 8.9727, Accuracy: 54.47%
+2024-10-10 14:10:37,886 - INFO - Epoch 6/10, Loss: 8.9479, Accuracy: 70.56%
+2024-10-10 14:10:44,760 - INFO - Epoch 7/10, Loss: 8.9312, Accuracy: 51.30%
+2024-10-10 14:10:51,340 - INFO - Epoch 8/10, Loss: 8.9134, Accuracy: 63.60%
+2024-10-10 14:10:57,837 - INFO - Epoch 9/10, Loss: 8.9040, Accuracy: 56.58%
+2024-10-10 14:11:04,377 - INFO - Epoch 10/10, Loss: 8.8961, Accuracy: 52.80%
+2024-10-10 14:11:05,648 - INFO - Model size: 2.35 MB, Accuracy: 0.8834, Precision: 0.8855
+2024-10-10 14:11:13,012 - INFO - Epoch 1/10, Loss: 38.6945, Accuracy: 52.61%
+2024-10-10 14:11:20,340 - INFO - Epoch 2/10, Loss: 31.2916, Accuracy: 59.01%
+2024-10-10 14:11:27,731 - INFO - Epoch 3/10, Loss: 10.7893, Accuracy: 93.23%
+2024-10-10 14:11:35,087 - INFO - Epoch 4/10, Loss: 7.5323, Accuracy: 95.34%
+2024-10-10 14:11:42,342 - INFO - Epoch 5/10, Loss: 6.0202, Accuracy: 96.34%
+2024-10-10 14:11:49,632 - INFO - Epoch 6/10, Loss: 4.9284, Accuracy: 96.58%
+2024-10-10 14:11:56,968 - INFO - Epoch 7/10, Loss: 5.1879, Accuracy: 96.09%
+2024-10-10 14:12:04,386 - INFO - Epoch 8/10, Loss: 4.3686, Accuracy: 96.71%
+2024-10-10 14:12:11,686 - INFO - Epoch 9/10, Loss: 4.0572, Accuracy: 97.39%
+2024-10-10 14:12:18,962 - INFO - Epoch 10/10, Loss: 3.5923, Accuracy: 97.58%
+2024-10-10 14:12:20,290 - INFO - Model size: 4.93 MB, Accuracy: 0.9727, Precision: 0.9737
+2024-10-10 14:12:27,045 - INFO - Epoch 1/10, Loss: 36.3290, Accuracy: 51.12%
+2024-10-10 14:12:33,540 - INFO - Epoch 2/10, Loss: 34.9509, Accuracy: 52.30%
+2024-10-10 14:12:40,199 - INFO - Epoch 3/10, Loss: 32.4671, Accuracy: 66.52%
+2024-10-10 14:12:46,721 - INFO - Epoch 4/10, Loss: 27.2887, Accuracy: 81.55%
+2024-10-10 14:12:53,370 - INFO - Epoch 5/10, Loss: 23.0615, Accuracy: 84.29%
+2024-10-10 14:13:00,025 - INFO - Epoch 6/10, Loss: 20.4921, Accuracy: 86.52%
+2024-10-10 14:13:06,534 - INFO - Epoch 7/10, Loss: 17.2808, Accuracy: 90.00%
+2024-10-10 14:13:13,053 - INFO - Epoch 8/10, Loss: 15.0646, Accuracy: 91.30%
+2024-10-10 14:13:19,817 - INFO - Epoch 9/10, Loss: 13.6905, Accuracy: 91.37%
+2024-10-10 14:13:26,560 - INFO - Epoch 10/10, Loss: 12.4936, Accuracy: 92.42%
+2024-10-10 14:13:27,825 - INFO - Model size: 0.30 MB, Accuracy: 0.9181, Precision: 0.9199
+2024-10-10 14:13:35,667 - INFO - Epoch 1/10, Loss: 35.4080, Accuracy: 50.50%
+2024-10-10 14:13:43,258 - INFO - Epoch 2/10, Loss: 35.2888, Accuracy: 55.03%
+2024-10-10 14:13:50,954 - INFO - Epoch 3/10, Loss: 35.2250, Accuracy: 55.71%
+2024-10-10 14:13:58,563 - INFO - Epoch 4/10, Loss: 35.1370, Accuracy: 52.24%
+2024-10-10 14:14:06,215 - INFO - Epoch 5/10, Loss: 35.0063, Accuracy: 58.70%
+2024-10-10 14:14:13,817 - INFO - Epoch 6/10, Loss: 34.8680, Accuracy: 56.71%
+2024-10-10 14:14:21,512 - INFO - Epoch 7/10, Loss: 34.5871, Accuracy: 55.65%
+2024-10-10 14:14:29,182 - INFO - Epoch 8/10, Loss: 34.3227, Accuracy: 64.04%
+2024-10-10 14:14:36,772 - INFO - Epoch 9/10, Loss: 33.9536, Accuracy: 62.55%
+2024-10-10 14:14:44,371 - INFO - Epoch 10/10, Loss: 33.4946, Accuracy: 74.91%
+2024-10-10 14:14:45,896 - INFO - Model size: 1.11 MB, Accuracy: 0.9007, Precision: 0.9074
+2024-10-10 14:14:56,183 - INFO - Epoch 1/10, Loss: 18.2251, Accuracy: 49.32%
+2024-10-10 14:15:06,074 - INFO - Epoch 2/10, Loss: 18.1976, Accuracy: 51.49%
+2024-10-10 14:15:15,834 - INFO - Epoch 3/10, Loss: 17.7353, Accuracy: 55.71%
+2024-10-10 14:15:25,635 - INFO - Epoch 4/10, Loss: 17.4784, Accuracy: 57.64%
+2024-10-10 14:15:35,457 - INFO - Epoch 5/10, Loss: 16.9145, Accuracy: 68.07%
+2024-10-10 14:15:45,270 - INFO - Epoch 6/10, Loss: 15.8267, Accuracy: 82.55%
+2024-10-10 14:15:55,013 - INFO - Epoch 7/10, Loss: 13.9071, Accuracy: 81.18%
+2024-10-10 14:16:04,836 - INFO - Epoch 8/10, Loss: 11.7136, Accuracy: 83.23%
+2024-10-10 14:16:14,612 - INFO - Epoch 9/10, Loss: 9.2737, Accuracy: 90.81%
+2024-10-10 14:16:24,382 - INFO - Epoch 10/10, Loss: 7.9405, Accuracy: 92.17%
+2024-10-10 14:16:25,889 - INFO - Model size: 9.46 MB, Accuracy: 0.9057, Precision: 0.9082
+2024-10-10 14:16:32,924 - INFO - Epoch 1/10, Loss: 9.8146, Accuracy: 49.81%
+2024-10-10 14:16:39,943 - INFO - Epoch 2/10, Loss: 9.1065, Accuracy: 49.32%
+2024-10-10 14:16:46,875 - INFO - Epoch 3/10, Loss: 9.0381, Accuracy: 50.31%
+2024-10-10 14:16:53,842 - INFO - Epoch 4/10, Loss: 9.0154, Accuracy: 50.56%
+2024-10-10 14:17:00,896 - INFO - Epoch 5/10, Loss: 9.0244, Accuracy: 49.75%
+2024-10-10 14:17:07,876 - INFO - Epoch 6/10, Loss: 9.0172, Accuracy: 50.56%
+2024-10-10 14:17:14,891 - INFO - Epoch 7/10, Loss: 9.0489, Accuracy: 48.45%
+2024-10-10 14:17:21,873 - INFO - Epoch 8/10, Loss: 9.0523, Accuracy: 50.56%
+2024-10-10 14:17:28,785 - INFO - Epoch 9/10, Loss: 9.0276, Accuracy: 49.19%
+2024-10-10 14:17:35,762 - INFO - Epoch 10/10, Loss: 9.0300, Accuracy: 51.80%
+2024-10-10 14:17:37,109 - INFO - Model size: 0.85 MB, Accuracy: 0.4988, Precision: 0.4167
+2024-10-10 14:17:43,608 - INFO - Epoch 1/10, Loss: 17.8830, Accuracy: 53.29%
+2024-10-10 14:17:50,059 - INFO - Epoch 2/10, Loss: 17.3148, Accuracy: 59.63%
+2024-10-10 14:17:56,384 - INFO - Epoch 3/10, Loss: 16.0964, Accuracy: 83.60%
+2024-10-10 14:18:02,816 - INFO - Epoch 4/10, Loss: 14.7845, Accuracy: 75.16%
+2024-10-10 14:18:09,132 - INFO - Epoch 5/10, Loss: 13.2159, Accuracy: 84.72%
+2024-10-10 14:18:15,390 - INFO - Epoch 6/10, Loss: 11.4734, Accuracy: 86.83%
+2024-10-10 14:18:21,638 - INFO - Epoch 7/10, Loss: 9.9655, Accuracy: 89.19%
+2024-10-10 14:18:28,077 - INFO - Epoch 8/10, Loss: 8.5300, Accuracy: 91.74%
+2024-10-10 14:18:34,357 - INFO - Epoch 9/10, Loss: 7.3362, Accuracy: 92.98%
+2024-10-10 14:18:40,654 - INFO - Epoch 10/10, Loss: 6.9184, Accuracy: 91.80%
+2024-10-10 14:18:41,891 - INFO - Model size: 1.16 MB, Accuracy: 0.9305, Precision: 0.9341
+2024-10-10 14:18:49,414 - INFO - Epoch 1/10, Loss: 37.2835, Accuracy: 54.47%
+2024-10-10 14:18:56,796 - INFO - Epoch 2/10, Loss: 28.5415, Accuracy: 68.76%
+2024-10-10 14:19:04,036 - INFO - Epoch 3/10, Loss: 14.0127, Accuracy: 89.69%
+2024-10-10 14:19:11,267 - INFO - Epoch 4/10, Loss: 8.8254, Accuracy: 94.53%
+2024-10-10 14:19:18,606 - INFO - Epoch 5/10, Loss: 7.2005, Accuracy: 95.47%
+2024-10-10 14:19:25,889 - INFO - Epoch 6/10, Loss: 6.4942, Accuracy: 95.40%
+2024-10-10 14:19:33,174 - INFO - Epoch 7/10, Loss: 5.6827, Accuracy: 96.21%
+2024-10-10 14:19:40,451 - INFO - Epoch 8/10, Loss: 5.2096, Accuracy: 96.40%
+2024-10-10 14:19:47,692 - INFO - Epoch 9/10, Loss: 4.9346, Accuracy: 97.20%
+2024-10-10 14:19:55,221 - INFO - Epoch 10/10, Loss: 4.4834, Accuracy: 96.89%
+2024-10-10 14:19:56,545 - INFO - Model size: 4.93 MB, Accuracy: 0.9702, Precision: 0.9706
+2024-10-10 14:20:05,307 - INFO - Epoch 1/10, Loss: 38.2370, Accuracy: 51.93%
+2024-10-10 14:20:14,013 - INFO - Epoch 2/10, Loss: 35.6195, Accuracy: 50.87%
+2024-10-10 14:20:22,907 - INFO - Epoch 3/10, Loss: 35.6364, Accuracy: 51.55%
+2024-10-10 14:20:31,535 - INFO - Epoch 4/10, Loss: 20.2615, Accuracy: 82.73%
+2024-10-10 14:20:40,121 - INFO - Epoch 5/10, Loss: 12.6932, Accuracy: 91.37%
+2024-10-10 14:20:48,807 - INFO - Epoch 6/10, Loss: 15.7485, Accuracy: 87.45%
+2024-10-10 14:20:57,649 - INFO - Epoch 7/10, Loss: 17.6721, Accuracy: 85.03%
+2024-10-10 14:21:06,317 - INFO - Epoch 8/10, Loss: 32.9456, Accuracy: 67.89%
+2024-10-10 14:21:14,944 - INFO - Epoch 9/10, Loss: 27.6063, Accuracy: 73.85%
+2024-10-10 14:21:23,635 - INFO - Epoch 10/10, Loss: 35.1281, Accuracy: 64.29%
+2024-10-10 14:21:25,055 - INFO - Model size: 7.19 MB, Accuracy: 0.6476, Precision: 0.7779
+2024-10-10 14:21:31,604 - INFO - Epoch 1/10, Loss: 35.4613, Accuracy: 50.31%
+2024-10-10 14:21:38,226 - INFO - Epoch 2/10, Loss: 35.3603, Accuracy: 49.81%
+2024-10-10 14:21:44,944 - INFO - Epoch 3/10, Loss: 35.3892, Accuracy: 49.25%
+2024-10-10 14:21:51,677 - INFO - Epoch 4/10, Loss: 35.2986, Accuracy: 51.61%
+2024-10-10 14:21:58,666 - INFO - Epoch 5/10, Loss: 35.2624, Accuracy: 53.29%
+2024-10-10 14:22:05,451 - INFO - Epoch 6/10, Loss: 35.1985, Accuracy: 55.47%
+2024-10-10 14:22:11,998 - INFO - Epoch 7/10, Loss: 35.1651, Accuracy: 59.75%
+2024-10-10 14:22:18,605 - INFO - Epoch 8/10, Loss: 35.0776, Accuracy: 56.46%
+2024-10-10 14:22:25,321 - INFO - Epoch 9/10, Loss: 35.0364, Accuracy: 56.89%
+2024-10-10 14:22:32,071 - INFO - Epoch 10/10, Loss: 35.0315, Accuracy: 54.47%
+2024-10-10 14:22:33,364 - INFO - Model size: 0.16 MB, Accuracy: 0.5261, Precision: 0.6322
+2024-10-10 14:22:40,889 - INFO - Epoch 1/10, Loss: 36.2474, Accuracy: 58.88%
+2024-10-10 14:22:48,109 - INFO - Epoch 2/10, Loss: 22.0945, Accuracy: 81.30%
+2024-10-10 14:22:55,415 - INFO - Epoch 3/10, Loss: 9.0053, Accuracy: 94.84%
+2024-10-10 14:23:02,768 - INFO - Epoch 4/10, Loss: 6.9740, Accuracy: 95.59%
+2024-10-10 14:23:10,056 - INFO - Epoch 5/10, Loss: 6.6740, Accuracy: 95.40%
+2024-10-10 14:23:17,289 - INFO - Epoch 6/10, Loss: 5.5545, Accuracy: 97.02%
+2024-10-10 14:23:24,544 - INFO - Epoch 7/10, Loss: 5.0280, Accuracy: 96.58%
+2024-10-10 14:23:31,839 - INFO - Epoch 8/10, Loss: 4.6978, Accuracy: 96.89%
+2024-10-10 14:23:39,152 - INFO - Epoch 9/10, Loss: 4.3847, Accuracy: 97.20%
+2024-10-10 14:23:46,454 - INFO - Epoch 10/10, Loss: 4.8798, Accuracy: 96.89%
+2024-10-10 14:23:47,870 - INFO - Model size: 4.93 MB, Accuracy: 0.9727, Precision: 0.9730
+2024-10-10 14:23:56,978 - INFO - Epoch 1/10, Loss: 9.3009, Accuracy: 48.45%
+2024-10-10 14:24:05,699 - INFO - Epoch 2/10, Loss: 8.9652, Accuracy: 50.43%
+2024-10-10 14:24:14,382 - INFO - Epoch 3/10, Loss: 8.8092, Accuracy: 70.00%
+2024-10-10 14:24:23,073 - INFO - Epoch 4/10, Loss: 8.8021, Accuracy: 52.98%
+2024-10-10 14:24:31,698 - INFO - Epoch 5/10, Loss: 8.4104, Accuracy: 64.35%
+2024-10-10 14:24:40,419 - INFO - Epoch 6/10, Loss: 7.8430, Accuracy: 85.28%
+2024-10-10 14:24:49,057 - INFO - Epoch 7/10, Loss: 6.7572, Accuracy: 88.82%
+2024-10-10 14:24:57,864 - INFO - Epoch 8/10, Loss: 5.0091, Accuracy: 92.86%
+2024-10-10 14:25:06,714 - INFO - Epoch 9/10, Loss: 3.8207, Accuracy: 91.61%
+2024-10-10 14:25:15,381 - INFO - Epoch 10/10, Loss: 2.9900, Accuracy: 93.73%
+2024-10-10 14:25:16,796 - INFO - Model size: 7.19 MB, Accuracy: 0.9355, Precision: 0.9355
+2024-10-10 14:25:23,291 - INFO - Epoch 1/10, Loss: 35.7139, Accuracy: 51.43%
+2024-10-10 14:25:29,955 - INFO - Epoch 2/10, Loss: 35.5278, Accuracy: 48.82%
+2024-10-10 14:25:36,687 - INFO - Epoch 3/10, Loss: 35.3957, Accuracy: 49.94%
+2024-10-10 14:25:43,408 - INFO - Epoch 4/10, Loss: 35.1689, Accuracy: 54.22%
+2024-10-10 14:25:50,106 - INFO - Epoch 5/10, Loss: 35.0583, Accuracy: 52.24%
+2024-10-10 14:25:56,850 - INFO - Epoch 6/10, Loss: 34.7865, Accuracy: 65.03%
+2024-10-10 14:26:03,665 - INFO - Epoch 7/10, Loss: 34.3668, Accuracy: 64.78%
+2024-10-10 14:26:10,373 - INFO - Epoch 8/10, Loss: 33.6943, Accuracy: 62.73%
+2024-10-10 14:26:17,006 - INFO - Epoch 9/10, Loss: 31.7258, Accuracy: 73.35%
+2024-10-10 14:26:23,618 - INFO - Epoch 10/10, Loss: 29.3664, Accuracy: 77.20%
+2024-10-10 14:26:24,924 - INFO - Model size: 0.16 MB, Accuracy: 0.7568, Precision: 0.7767
+2024-10-10 14:26:32,325 - INFO - Epoch 1/10, Loss: 35.8387, Accuracy: 49.94%
+2024-10-10 14:26:39,263 - INFO - Epoch 2/10, Loss: 33.9394, Accuracy: 59.32%
+2024-10-10 14:26:46,244 - INFO - Epoch 3/10, Loss: 26.3021, Accuracy: 84.04%
+2024-10-10 14:26:53,232 - INFO - Epoch 4/10, Loss: 20.4200, Accuracy: 87.27%
+2024-10-10 14:27:00,268 - INFO - Epoch 5/10, Loss: 17.9489, Accuracy: 87.76%
+2024-10-10 14:27:07,291 - INFO - Epoch 6/10, Loss: 14.8202, Accuracy: 91.24%
+2024-10-10 14:27:14,235 - INFO - Epoch 7/10, Loss: 12.9507, Accuracy: 93.48%
+2024-10-10 14:27:21,241 - INFO - Epoch 8/10, Loss: 11.7683, Accuracy: 93.42%
+2024-10-10 14:27:28,189 - INFO - Epoch 9/10, Loss: 11.7569, Accuracy: 92.48%
+2024-10-10 14:27:35,151 - INFO - Epoch 10/10, Loss: 9.8306, Accuracy: 93.85%
+2024-10-10 14:27:36,442 - INFO - Model size: 1.68 MB, Accuracy: 0.9677, Precision: 0.9686
+2024-10-10 14:27:43,955 - INFO - Epoch 1/10, Loss: 12.7248, Accuracy: 49.38%
+2024-10-10 14:27:51,196 - INFO - Epoch 2/10, Loss: 9.2741, Accuracy: 50.43%
+2024-10-10 14:27:58,437 - INFO - Epoch 3/10, Loss: 9.0498, Accuracy: 48.70%
+2024-10-10 14:28:05,788 - INFO - Epoch 4/10, Loss: 8.9822, Accuracy: 51.68%
+2024-10-10 14:28:13,042 - INFO - Epoch 5/10, Loss: 8.8892, Accuracy: 53.42%
+2024-10-10 14:28:20,313 - INFO - Epoch 6/10, Loss: 8.5017, Accuracy: 79.38%
+2024-10-10 14:28:27,579 - INFO - Epoch 7/10, Loss: 6.0973, Accuracy: 81.12%
+2024-10-10 14:28:34,933 - INFO - Epoch 8/10, Loss: 3.5448, Accuracy: 89.32%
+2024-10-10 14:28:42,186 - INFO - Epoch 9/10, Loss: 2.7707, Accuracy: 92.42%
+2024-10-10 14:28:49,469 - INFO - Epoch 10/10, Loss: 2.0866, Accuracy: 95.34%
+2024-10-10 14:28:50,789 - INFO - Model size: 4.93 MB, Accuracy: 0.9653, Precision: 0.9669
+2024-10-10 14:28:58,122 - INFO - Epoch 1/10, Loss: 19.4776, Accuracy: 50.00%
+2024-10-10 14:29:05,255 - INFO - Epoch 2/10, Loss: 17.3297, Accuracy: 59.13%
+2024-10-10 14:29:12,390 - INFO - Epoch 3/10, Loss: 14.7784, Accuracy: 73.91%
+2024-10-10 14:29:19,528 - INFO - Epoch 4/10, Loss: 8.1532, Accuracy: 91.12%
+2024-10-10 14:29:26,669 - INFO - Epoch 5/10, Loss: 5.7012, Accuracy: 92.17%
+2024-10-10 14:29:33,831 - INFO - Epoch 6/10, Loss: 4.0384, Accuracy: 95.53%
+2024-10-10 14:29:40,927 - INFO - Epoch 7/10, Loss: 4.4431, Accuracy: 95.22%
+2024-10-10 14:29:48,348 - INFO - Epoch 8/10, Loss: 4.3069, Accuracy: 94.53%
+2024-10-10 14:29:55,578 - INFO - Epoch 9/10, Loss: 3.2157, Accuracy: 95.71%
+2024-10-10 14:30:02,743 - INFO - Epoch 10/10, Loss: 3.0354, Accuracy: 96.34%
+2024-10-10 14:30:04,038 - INFO - Model size: 4.93 MB, Accuracy: 0.9752, Precision: 0.9754
+2024-10-10 14:30:12,577 - INFO - Epoch 1/10, Loss: 18.8148, Accuracy: 48.57%
+2024-10-10 14:30:21,066 - INFO - Epoch 2/10, Loss: 17.3106, Accuracy: 59.81%
+2024-10-10 14:30:29,519 - INFO - Epoch 3/10, Loss: 13.9231, Accuracy: 73.48%
+2024-10-10 14:30:38,003 - INFO - Epoch 4/10, Loss: 7.3959, Accuracy: 90.00%
+2024-10-10 14:30:46,460 - INFO - Epoch 5/10, Loss: 4.7459, Accuracy: 94.10%
+2024-10-10 14:30:54,880 - INFO - Epoch 6/10, Loss: 3.9215, Accuracy: 95.53%
+2024-10-10 14:31:03,430 - INFO - Epoch 7/10, Loss: 3.7185, Accuracy: 95.47%
+2024-10-10 14:31:11,894 - INFO - Epoch 8/10, Loss: 3.3106, Accuracy: 95.96%
+2024-10-10 14:31:20,424 - INFO - Epoch 9/10, Loss: 3.0597, Accuracy: 96.21%
+2024-10-10 14:31:28,922 - INFO - Epoch 10/10, Loss: 2.7026, Accuracy: 96.89%
+2024-10-10 14:31:30,326 - INFO - Model size: 7.19 MB, Accuracy: 0.9727, Precision: 0.9727
+2024-10-10 14:31:37,609 - INFO - Epoch 1/10, Loss: 20.2422, Accuracy: 50.81%
+2024-10-10 14:31:44,715 - INFO - Epoch 2/10, Loss: 17.9492, Accuracy: 53.79%
+2024-10-10 14:31:51,811 - INFO - Epoch 3/10, Loss: 11.6013, Accuracy: 83.23%
+2024-10-10 14:31:58,959 - INFO - Epoch 4/10, Loss: 5.6600, Accuracy: 93.29%
+2024-10-10 14:32:06,262 - INFO - Epoch 5/10, Loss: 4.8600, Accuracy: 93.48%
+2024-10-10 14:32:13,347 - INFO - Epoch 6/10, Loss: 4.3773, Accuracy: 94.72%
+2024-10-10 14:32:20,528 - INFO - Epoch 7/10, Loss: 3.6485, Accuracy: 95.53%
+2024-10-10 14:32:27,630 - INFO - Epoch 8/10, Loss: 3.2556, Accuracy: 95.96%
+2024-10-10 14:32:34,778 - INFO - Epoch 9/10, Loss: 3.1351, Accuracy: 95.59%
+2024-10-10 14:32:41,860 - INFO - Epoch 10/10, Loss: 3.0061, Accuracy: 96.15%
+2024-10-10 14:32:43,164 - INFO - Model size: 4.93 MB, Accuracy: 0.9653, Precision: 0.9669
+2024-10-10 14:32:50,379 - INFO - Epoch 1/10, Loss: 18.4002, Accuracy: 57.76%
+2024-10-10 14:32:57,541 - INFO - Epoch 2/10, Loss: 16.7917, Accuracy: 66.58%
+2024-10-10 14:33:05,038 - INFO - Epoch 3/10, Loss: 12.6304, Accuracy: 77.45%
+2024-10-10 14:33:12,223 - INFO - Epoch 4/10, Loss: 6.0841, Accuracy: 93.42%
+2024-10-10 14:33:19,359 - INFO - Epoch 5/10, Loss: 4.6010, Accuracy: 94.60%
+2024-10-10 14:33:26,504 - INFO - Epoch 6/10, Loss: 3.5340, Accuracy: 95.84%
+2024-10-10 14:33:33,648 - INFO - Epoch 7/10, Loss: 3.4636, Accuracy: 97.14%
+2024-10-10 14:33:40,887 - INFO - Epoch 8/10, Loss: 3.2999, Accuracy: 95.47%
+2024-10-10 14:33:48,002 - INFO - Epoch 9/10, Loss: 2.7683, Accuracy: 96.65%
+2024-10-10 14:33:55,198 - INFO - Epoch 10/10, Loss: 2.6079, Accuracy: 96.83%
+2024-10-10 14:33:56,510 - INFO - Model size: 4.93 MB, Accuracy: 0.9677, Precision: 0.9691
+2024-10-10 14:34:03,745 - INFO - Epoch 1/10, Loss: 20.9587, Accuracy: 49.25%
+2024-10-10 14:34:10,899 - INFO - Epoch 2/10, Loss: 17.6946, Accuracy: 53.79%
+2024-10-10 14:34:17,983 - INFO - Epoch 3/10, Loss: 10.7734, Accuracy: 91.18%
+2024-10-10 14:34:25,146 - INFO - Epoch 4/10, Loss: 5.2547, Accuracy: 93.35%
+2024-10-10 14:34:32,268 - INFO - Epoch 5/10, Loss: 4.8749, Accuracy: 92.86%
+2024-10-10 14:34:39,763 - INFO - Epoch 6/10, Loss: 3.8859, Accuracy: 96.27%
+2024-10-10 14:34:46,894 - INFO - Epoch 7/10, Loss: 3.9915, Accuracy: 94.97%
+2024-10-10 14:34:54,046 - INFO - Epoch 8/10, Loss: 2.7479, Accuracy: 96.34%
+2024-10-10 14:35:01,189 - INFO - Epoch 9/10, Loss: 3.0988, Accuracy: 97.52%
+2024-10-10 14:35:08,385 - INFO - Epoch 10/10, Loss: 3.5193, Accuracy: 94.84%
+2024-10-10 14:35:09,700 - INFO - Model size: 4.93 MB, Accuracy: 0.9404, Precision: 0.9467
+2024-10-10 14:35:17,049 - INFO - Epoch 1/10, Loss: 37.0719, Accuracy: 53.17%
+2024-10-10 14:35:24,343 - INFO - Epoch 2/10, Loss: 25.5323, Accuracy: 77.39%
+2024-10-10 14:35:31,614 - INFO - Epoch 3/10, Loss: 9.9083, Accuracy: 94.10%
+2024-10-10 14:35:38,810 - INFO - Epoch 4/10, Loss: 7.9370, Accuracy: 95.28%
+2024-10-10 14:35:46,104 - INFO - Epoch 5/10, Loss: 7.4097, Accuracy: 94.91%
+2024-10-10 14:35:53,406 - INFO - Epoch 6/10, Loss: 6.0876, Accuracy: 96.09%
+2024-10-10 14:36:00,757 - INFO - Epoch 7/10, Loss: 5.5584, Accuracy: 96.21%
+2024-10-10 14:36:07,994 - INFO - Epoch 8/10, Loss: 4.4386, Accuracy: 96.77%
+2024-10-10 14:36:15,266 - INFO - Epoch 9/10, Loss: 4.1198, Accuracy: 97.14%
+2024-10-10 14:36:22,545 - INFO - Epoch 10/10, Loss: 4.7295, Accuracy: 96.27%
+2024-10-10 14:36:23,862 - INFO - Model size: 4.93 MB, Accuracy: 0.9653, Precision: 0.9653
+2024-10-10 14:36:30,397 - INFO - Epoch 1/10, Loss: 18.0583, Accuracy: 49.13%
+2024-10-10 14:36:36,785 - INFO - Epoch 2/10, Loss: 17.9578, Accuracy: 52.05%
+2024-10-10 14:36:43,114 - INFO - Epoch 3/10, Loss: 17.5993, Accuracy: 53.66%
+2024-10-10 14:36:49,421 - INFO - Epoch 4/10, Loss: 17.0204, Accuracy: 73.23%
+2024-10-10 14:36:55,870 - INFO - Epoch 5/10, Loss: 16.1136, Accuracy: 73.11%
+2024-10-10 14:37:02,211 - INFO - Epoch 6/10, Loss: 14.7512, Accuracy: 83.29%
+2024-10-10 14:37:08,518 - INFO - Epoch 7/10, Loss: 13.2548, Accuracy: 81.74%
+2024-10-10 14:37:14,796 - INFO - Epoch 8/10, Loss: 11.5204, Accuracy: 87.89%
+2024-10-10 14:37:21,171 - INFO - Epoch 9/10, Loss: 10.1150, Accuracy: 90.19%
+2024-10-10 14:37:27,577 - INFO - Epoch 10/10, Loss: 8.7634, Accuracy: 92.24%
+2024-10-10 14:37:28,815 - INFO - Model size: 1.16 MB, Accuracy: 0.9355, Precision: 0.9355
+2024-10-10 14:37:36,552 - INFO - Epoch 1/10, Loss: 37.0790, Accuracy: 51.06%
+2024-10-10 14:37:44,125 - INFO - Epoch 2/10, Loss: 35.3413, Accuracy: 50.99%
+2024-10-10 14:37:51,728 - INFO - Epoch 3/10, Loss: 21.3608, Accuracy: 79.94%
+2024-10-10 14:37:59,320 - INFO - Epoch 4/10, Loss: 10.8547, Accuracy: 92.92%
+2024-10-10 14:38:06,899 - INFO - Epoch 5/10, Loss: 8.6369, Accuracy: 94.16%
+2024-10-10 14:38:14,499 - INFO - Epoch 6/10, Loss: 7.1399, Accuracy: 95.65%
+2024-10-10 14:38:22,118 - INFO - Epoch 7/10, Loss: 6.5835, Accuracy: 95.71%
+2024-10-10 14:38:29,673 - INFO - Epoch 8/10, Loss: 5.7611, Accuracy: 96.83%
+2024-10-10 14:38:37,246 - INFO - Epoch 9/10, Loss: 5.2267, Accuracy: 96.96%
+2024-10-10 14:38:44,785 - INFO - Epoch 10/10, Loss: 5.8995, Accuracy: 96.40%
+2024-10-10 14:38:46,134 - INFO - Model size: 3.43 MB, Accuracy: 0.9653, Precision: 0.9660
+2024-10-10 14:38:52,726 - INFO - Epoch 1/10, Loss: 35.2222, Accuracy: 53.29%
+2024-10-10 14:38:59,167 - INFO - Epoch 2/10, Loss: 34.5614, Accuracy: 58.07%
+2024-10-10 14:39:06,119 - INFO - Epoch 3/10, Loss: 32.1352, Accuracy: 74.53%
+2024-10-10 14:39:12,720 - INFO - Epoch 4/10, Loss: 27.8780, Accuracy: 84.53%
+2024-10-10 14:39:19,247 - INFO - Epoch 5/10, Loss: 22.3820, Accuracy: 88.76%
+2024-10-10 14:39:25,799 - INFO - Epoch 6/10, Loss: 19.5377, Accuracy: 90.56%
+2024-10-10 14:39:32,471 - INFO - Epoch 7/10, Loss: 17.5538, Accuracy: 92.30%
+2024-10-10 14:39:38,894 - INFO - Epoch 8/10, Loss: 16.2403, Accuracy: 93.04%
+2024-10-10 14:39:45,370 - INFO - Epoch 9/10, Loss: 15.5949, Accuracy: 91.49%
+2024-10-10 14:39:51,836 - INFO - Epoch 10/10, Loss: 14.1964, Accuracy: 93.66%
+2024-10-10 14:39:53,118 - INFO - Model size: 0.58 MB, Accuracy: 0.9206, Precision: 0.9265
+2024-10-10 14:39:59,189 - INFO - Epoch 1/10, Loss: 9.1016, Accuracy: 48.94%
+2024-10-10 14:40:05,263 - INFO - Epoch 2/10, Loss: 9.0186, Accuracy: 50.56%
+2024-10-10 14:40:11,414 - INFO - Epoch 3/10, Loss: 9.0037, Accuracy: 51.12%
+2024-10-10 14:40:17,343 - INFO - Epoch 4/10, Loss: 9.0012, Accuracy: 55.22%
+2024-10-10 14:40:23,330 - INFO - Epoch 5/10, Loss: 9.0136, Accuracy: 50.56%
+2024-10-10 14:40:29,319 - INFO - Epoch 6/10, Loss: 9.0421, Accuracy: 47.52%
+2024-10-10 14:40:35,302 - INFO - Epoch 7/10, Loss: 9.0003, Accuracy: 51.93%
+2024-10-10 14:40:41,313 - INFO - Epoch 8/10, Loss: 8.9954, Accuracy: 51.06%
+2024-10-10 14:40:47,288 - INFO - Epoch 9/10, Loss: 8.9963, Accuracy: 53.73%
+2024-10-10 14:40:53,288 - INFO - Epoch 10/10, Loss: 9.0117, Accuracy: 50.81%
+2024-10-10 14:40:54,506 - INFO - Model size: 0.16 MB, Accuracy: 0.4988, Precision: 0.2500
+2024-10-10 14:41:01,401 - INFO - Epoch 1/10, Loss: 17.9523, Accuracy: 53.11%
+2024-10-10 14:41:08,197 - INFO - Epoch 2/10, Loss: 17.6048, Accuracy: 57.64%
+2024-10-10 14:41:15,073 - INFO - Epoch 3/10, Loss: 16.9919, Accuracy: 71.68%
+2024-10-10 14:41:22,275 - INFO - Epoch 4/10, Loss: 16.6545, Accuracy: 67.14%
+2024-10-10 14:41:29,182 - INFO - Epoch 5/10, Loss: 16.1227, Accuracy: 71.61%
+2024-10-10 14:41:35,974 - INFO - Epoch 6/10, Loss: 15.4568, Accuracy: 81.37%
+2024-10-10 14:41:42,784 - INFO - Epoch 7/10, Loss: 14.7943, Accuracy: 81.43%
+2024-10-10 14:41:49,597 - INFO - Epoch 8/10, Loss: 14.2492, Accuracy: 81.43%
+2024-10-10 14:41:56,476 - INFO - Epoch 9/10, Loss: 13.9604, Accuracy: 76.40%
+2024-10-10 14:42:03,386 - INFO - Epoch 10/10, Loss: 13.1947, Accuracy: 82.55%
+2024-10-10 14:42:04,654 - INFO - Model size: 0.44 MB, Accuracy: 0.7568, Precision: 0.8020
+2024-10-10 14:42:13,167 - INFO - Epoch 1/10, Loss: 21.7883, Accuracy: 50.81%
+2024-10-10 14:42:21,674 - INFO - Epoch 2/10, Loss: 18.2515, Accuracy: 51.80%
+2024-10-10 14:42:30,067 - INFO - Epoch 3/10, Loss: 18.1984, Accuracy: 50.19%
+2024-10-10 14:42:38,472 - INFO - Epoch 4/10, Loss: 18.0609, Accuracy: 49.69%
+2024-10-10 14:42:46,926 - INFO - Epoch 5/10, Loss: 18.0535, Accuracy: 49.44%
+2024-10-10 14:42:55,346 - INFO - Epoch 6/10, Loss: 18.0671, Accuracy: 51.68%
+2024-10-10 14:43:04,088 - INFO - Epoch 7/10, Loss: 18.0994, Accuracy: 50.75%
+2024-10-10 14:43:12,496 - INFO - Epoch 8/10, Loss: 16.7170, Accuracy: 66.09%
+2024-10-10 14:43:20,916 - INFO - Epoch 9/10, Loss: 7.9209, Accuracy: 89.50%
+2024-10-10 14:43:29,383 - INFO - Epoch 10/10, Loss: 5.4345, Accuracy: 92.80%
+2024-10-10 14:43:30,796 - INFO - Model size: 7.19 MB, Accuracy: 0.9529, Precision: 0.9543
+2024-10-10 14:43:38,201 - INFO - Epoch 1/10, Loss: 36.4085, Accuracy: 52.67%
+2024-10-10 14:43:45,530 - INFO - Epoch 2/10, Loss: 20.4880, Accuracy: 82.11%
+2024-10-10 14:43:52,796 - INFO - Epoch 3/10, Loss: 9.2455, Accuracy: 93.91%
+2024-10-10 14:44:00,062 - INFO - Epoch 4/10, Loss: 7.7351, Accuracy: 95.16%
+2024-10-10 14:44:07,374 - INFO - Epoch 5/10, Loss: 5.5280, Accuracy: 96.02%
+2024-10-10 14:44:14,652 - INFO - Epoch 6/10, Loss: 5.4557, Accuracy: 96.34%
+2024-10-10 14:44:21,964 - INFO - Epoch 7/10, Loss: 5.1388, Accuracy: 96.34%
+2024-10-10 14:44:29,299 - INFO - Epoch 8/10, Loss: 4.9675, Accuracy: 96.96%
+2024-10-10 14:44:36,611 - INFO - Epoch 9/10, Loss: 4.7654, Accuracy: 96.83%
+2024-10-10 14:44:43,872 - INFO - Epoch 10/10, Loss: 4.2004, Accuracy: 97.27%
+2024-10-10 14:44:45,192 - INFO - Model size: 4.93 MB, Accuracy: 0.9801, Precision: 0.9802
+2024-10-10 14:44:52,678 - INFO - Epoch 1/10, Loss: 39.4932, Accuracy: 50.68%
+2024-10-10 14:44:59,942 - INFO - Epoch 2/10, Loss: 25.4455, Accuracy: 78.32%
+2024-10-10 14:45:07,582 - INFO - Epoch 3/10, Loss: 9.9413, Accuracy: 93.66%
+2024-10-10 14:45:14,865 - INFO - Epoch 4/10, Loss: 7.6816, Accuracy: 95.16%
+2024-10-10 14:45:22,132 - INFO - Epoch 5/10, Loss: 5.7982, Accuracy: 96.83%
+2024-10-10 14:45:29,407 - INFO - Epoch 6/10, Loss: 5.2512, Accuracy: 96.58%
+2024-10-10 14:45:36,766 - INFO - Epoch 7/10, Loss: 5.5571, Accuracy: 95.96%
+2024-10-10 14:45:44,017 - INFO - Epoch 8/10, Loss: 4.7950, Accuracy: 96.83%
+2024-10-10 14:45:51,274 - INFO - Epoch 9/10, Loss: 4.8732, Accuracy: 96.52%
+2024-10-10 14:45:58,576 - INFO - Epoch 10/10, Loss: 4.2350, Accuracy: 96.46%
+2024-10-10 14:45:59,899 - INFO - Model size: 4.93 MB, Accuracy: 0.9727, Precision: 0.9728
+2024-10-10 14:46:07,384 - INFO - Epoch 1/10, Loss: 37.9276, Accuracy: 51.49%
+2024-10-10 14:46:14,645 - INFO - Epoch 2/10, Loss: 28.6971, Accuracy: 71.74%
+2024-10-10 14:46:21,955 - INFO - Epoch 3/10, Loss: 10.6227, Accuracy: 93.91%
+2024-10-10 14:46:29,257 - INFO - Epoch 4/10, Loss: 8.8895, Accuracy: 94.41%
+2024-10-10 14:46:36,593 - INFO - Epoch 5/10, Loss: 6.8428, Accuracy: 95.84%
+2024-10-10 14:46:43,905 - INFO - Epoch 6/10, Loss: 6.6297, Accuracy: 95.59%
+2024-10-10 14:46:51,211 - INFO - Epoch 7/10, Loss: 5.5741, Accuracy: 96.34%
+2024-10-10 14:46:58,543 - INFO - Epoch 8/10, Loss: 5.1315, Accuracy: 96.46%
+2024-10-10 14:47:05,869 - INFO - Epoch 9/10, Loss: 4.8310, Accuracy: 96.96%
+2024-10-10 14:47:13,133 - INFO - Epoch 10/10, Loss: 4.4957, Accuracy: 96.83%
+2024-10-10 14:47:14,457 - INFO - Model size: 4.93 MB, Accuracy: 0.9628, Precision: 0.9628
+2024-10-10 14:47:21,102 - INFO - Epoch 1/10, Loss: 35.2756, Accuracy: 52.80%
+2024-10-10 14:47:27,676 - INFO - Epoch 2/10, Loss: 34.8900, Accuracy: 54.41%
+2024-10-10 14:47:34,335 - INFO - Epoch 3/10, Loss: 33.6745, Accuracy: 64.97%
+2024-10-10 14:47:40,810 - INFO - Epoch 4/10, Loss: 31.2045, Accuracy: 75.28%
+2024-10-10 14:47:47,379 - INFO - Epoch 5/10, Loss: 28.1701, Accuracy: 80.00%
+2024-10-10 14:47:53,942 - INFO - Epoch 6/10, Loss: 25.9695, Accuracy: 84.22%
+2024-10-10 14:48:00,449 - INFO - Epoch 7/10, Loss: 24.1233, Accuracy: 87.95%
+2024-10-10 14:48:06,902 - INFO - Epoch 8/10, Loss: 22.4087, Accuracy: 89.25%
+2024-10-10 14:48:13,461 - INFO - Epoch 9/10, Loss: 21.0558, Accuracy: 91.12%
+2024-10-10 14:48:20,141 - INFO - Epoch 10/10, Loss: 20.2145, Accuracy: 90.62%
+2024-10-10 14:48:21,439 - INFO - Model size: 0.30 MB, Accuracy: 0.8139, Precision: 0.8582
+2024-10-10 14:48:28,262 - INFO - Epoch 1/10, Loss: 35.2466, Accuracy: 53.23%
+2024-10-10 14:48:34,939 - INFO - Epoch 2/10, Loss: 32.6516, Accuracy: 67.14%
+2024-10-10 14:48:41,579 - INFO - Epoch 3/10, Loss: 24.5049, Accuracy: 86.46%
+2024-10-10 14:48:48,228 - INFO - Epoch 4/10, Loss: 16.6254, Accuracy: 91.24%
+2024-10-10 14:48:54,924 - INFO - Epoch 5/10, Loss: 13.4913, Accuracy: 91.61%
+2024-10-10 14:49:01,743 - INFO - Epoch 6/10, Loss: 10.5867, Accuracy: 94.22%
+2024-10-10 14:49:08,573 - INFO - Epoch 7/10, Loss: 9.2662, Accuracy: 94.72%
+2024-10-10 14:49:15,364 - INFO - Epoch 8/10, Loss: 8.8872, Accuracy: 94.78%
+2024-10-10 14:49:21,962 - INFO - Epoch 9/10, Loss: 8.8950, Accuracy: 94.60%
+2024-10-10 14:49:28,535 - INFO - Epoch 10/10, Loss: 7.7832, Accuracy: 95.34%
+2024-10-10 14:49:29,814 - INFO - Model size: 2.35 MB, Accuracy: 0.9653, Precision: 0.9654
+2024-10-10 14:49:37,223 - INFO - Epoch 1/10, Loss: 40.1015, Accuracy: 49.50%
+2024-10-10 14:49:44,511 - INFO - Epoch 2/10, Loss: 32.6148, Accuracy: 66.02%
+2024-10-10 14:49:51,765 - INFO - Epoch 3/10, Loss: 12.2608, Accuracy: 91.99%
+2024-10-10 14:49:59,097 - INFO - Epoch 4/10, Loss: 8.2023, Accuracy: 94.84%
+2024-10-10 14:50:06,377 - INFO - Epoch 5/10, Loss: 6.2290, Accuracy: 96.40%
+2024-10-10 14:50:13,697 - INFO - Epoch 6/10, Loss: 5.7916, Accuracy: 96.21%
+2024-10-10 14:50:21,053 - INFO - Epoch 7/10, Loss: 5.6616, Accuracy: 96.21%
+2024-10-10 14:50:28,340 - INFO - Epoch 8/10, Loss: 5.1645, Accuracy: 96.40%
+2024-10-10 14:50:35,652 - INFO - Epoch 9/10, Loss: 4.3672, Accuracy: 96.58%
+2024-10-10 14:50:42,895 - INFO - Epoch 10/10, Loss: 4.2329, Accuracy: 96.96%
+2024-10-10 14:50:44,218 - INFO - Model size: 4.93 MB, Accuracy: 0.9777, Precision: 0.9782
+2024-10-10 14:50:51,584 - INFO - Epoch 1/10, Loss: 35.6992, Accuracy: 58.82%
+2024-10-10 14:50:58,852 - INFO - Epoch 2/10, Loss: 21.1100, Accuracy: 81.74%
+2024-10-10 14:51:06,634 - INFO - Epoch 3/10, Loss: 10.0174, Accuracy: 93.11%
+2024-10-10 14:51:13,919 - INFO - Epoch 4/10, Loss: 6.8312, Accuracy: 95.96%
+2024-10-10 14:51:21,250 - INFO - Epoch 5/10, Loss: 5.8982, Accuracy: 96.40%
+2024-10-10 14:51:28,590 - INFO - Epoch 6/10, Loss: 5.3666, Accuracy: 96.27%
+2024-10-10 14:51:35,929 - INFO - Epoch 7/10, Loss: 5.3685, Accuracy: 96.40%
+2024-10-10 14:51:43,200 - INFO - Epoch 8/10, Loss: 4.8578, Accuracy: 96.96%
+2024-10-10 14:51:50,475 - INFO - Epoch 9/10, Loss: 4.2417, Accuracy: 97.20%
+2024-10-10 14:51:57,769 - INFO - Epoch 10/10, Loss: 5.0620, Accuracy: 97.08%
+2024-10-10 14:51:59,089 - INFO - Model size: 4.93 MB, Accuracy: 0.9702, Precision: 0.9709
+2024-10-10 14:52:07,818 - INFO - Epoch 1/10, Loss: 38.0103, Accuracy: 50.62%
+2024-10-10 14:52:16,427 - INFO - Epoch 2/10, Loss: 35.7090, Accuracy: 52.98%
+2024-10-10 14:52:25,016 - INFO - Epoch 3/10, Loss: 23.7316, Accuracy: 80.00%
+2024-10-10 14:52:33,624 - INFO - Epoch 4/10, Loss: 11.9292, Accuracy: 92.73%
+2024-10-10 14:52:42,239 - INFO - Epoch 5/10, Loss: 10.6557, Accuracy: 92.67%
+2024-10-10 14:52:50,815 - INFO - Epoch 6/10, Loss: 8.0848, Accuracy: 95.09%
+2024-10-10 14:52:59,378 - INFO - Epoch 7/10, Loss: 6.8085, Accuracy: 95.78%
+2024-10-10 14:53:07,974 - INFO - Epoch 8/10, Loss: 6.4667, Accuracy: 96.27%
+2024-10-10 14:53:16,585 - INFO - Epoch 9/10, Loss: 5.5937, Accuracy: 96.52%
+2024-10-10 14:53:25,185 - INFO - Epoch 10/10, Loss: 5.5899, Accuracy: 96.65%
+2024-10-10 14:53:26,620 - INFO - Model size: 4.50 MB, Accuracy: 0.9653, Precision: 0.9669
+2024-10-10 14:53:32,853 - INFO - Epoch 1/10, Loss: 9.5460, Accuracy: 48.32%
+2024-10-10 14:53:38,959 - INFO - Epoch 2/10, Loss: 9.0753, Accuracy: 49.44%
+2024-10-10 14:53:45,092 - INFO - Epoch 3/10, Loss: 9.0554, Accuracy: 50.06%
+2024-10-10 14:53:51,191 - INFO - Epoch 4/10, Loss: 9.0106, Accuracy: 50.56%
+2024-10-10 14:53:57,324 - INFO - Epoch 5/10, Loss: 8.9759, Accuracy: 65.03%
+2024-10-10 14:54:03,483 - INFO - Epoch 6/10, Loss: 8.9476, Accuracy: 55.03%
+2024-10-10 14:54:09,593 - INFO - Epoch 7/10, Loss: 8.9483, Accuracy: 48.57%
+2024-10-10 14:54:15,685 - INFO - Epoch 8/10, Loss: 8.7685, Accuracy: 58.39%
+2024-10-10 14:54:21,774 - INFO - Epoch 9/10, Loss: 8.2058, Accuracy: 67.70%
+2024-10-10 14:54:27,876 - INFO - Epoch 10/10, Loss: 6.9910, Accuracy: 86.71%
+2024-10-10 14:54:29,111 - INFO - Model size: 0.58 MB, Accuracy: 0.9256, Precision: 0.9277
+2024-10-10 14:54:36,514 - INFO - Epoch 1/10, Loss: 40.9149, Accuracy: 50.00%
+2024-10-10 14:54:43,766 - INFO - Epoch 2/10, Loss: 34.7227, Accuracy: 52.11%
+2024-10-10 14:54:51,040 - INFO - Epoch 3/10, Loss: 14.2443, Accuracy: 89.81%
+2024-10-10 14:54:58,297 - INFO - Epoch 4/10, Loss: 6.9911, Accuracy: 95.47%
+2024-10-10 14:55:05,702 - INFO - Epoch 5/10, Loss: 5.8495, Accuracy: 96.40%
+2024-10-10 14:55:12,978 - INFO - Epoch 6/10, Loss: 4.9407, Accuracy: 96.40%
+2024-10-10 14:55:20,305 - INFO - Epoch 7/10, Loss: 5.3906, Accuracy: 96.21%
+2024-10-10 14:55:27,571 - INFO - Epoch 8/10, Loss: 5.4486, Accuracy: 96.52%
+2024-10-10 14:55:34,877 - INFO - Epoch 9/10, Loss: 4.8113, Accuracy: 96.21%
+2024-10-10 14:55:42,136 - INFO - Epoch 10/10, Loss: 3.8891, Accuracy: 97.58%
+2024-10-10 14:55:43,456 - INFO - Model size: 4.93 MB, Accuracy: 0.9752, Precision: 0.9760
+2024-10-10 14:55:50,820 - INFO - Epoch 1/10, Loss: 39.2977, Accuracy: 50.50%
+2024-10-10 14:55:58,108 - INFO - Epoch 2/10, Loss: 33.0023, Accuracy: 60.50%
+2024-10-10 14:56:05,376 - INFO - Epoch 3/10, Loss: 12.7085, Accuracy: 91.93%
+2024-10-10 14:56:12,635 - INFO - Epoch 4/10, Loss: 7.4511, Accuracy: 94.84%
+2024-10-10 14:56:19,919 - INFO - Epoch 5/10, Loss: 6.4006, Accuracy: 95.53%
+2024-10-10 14:56:27,214 - INFO - Epoch 6/10, Loss: 6.6428, Accuracy: 95.40%
+2024-10-10 14:56:34,532 - INFO - Epoch 7/10, Loss: 4.8767, Accuracy: 96.71%
+2024-10-10 14:56:41,746 - INFO - Epoch 8/10, Loss: 4.2342, Accuracy: 97.14%
+2024-10-10 14:56:48,985 - INFO - Epoch 9/10, Loss: 4.0327, Accuracy: 97.45%
+2024-10-10 14:56:56,243 - INFO - Epoch 10/10, Loss: 4.0501, Accuracy: 97.45%
+2024-10-10 14:56:57,566 - INFO - Model size: 4.93 MB, Accuracy: 0.9603, Precision: 0.9631
+2024-10-10 14:57:05,059 - INFO - Epoch 1/10, Loss: 38.3917, Accuracy: 51.43%
+2024-10-10 14:57:12,395 - INFO - Epoch 2/10, Loss: 27.0207, Accuracy: 76.89%
+2024-10-10 14:57:19,676 - INFO - Epoch 3/10, Loss: 10.2378, Accuracy: 93.17%
+2024-10-10 14:57:26,982 - INFO - Epoch 4/10, Loss: 7.3212, Accuracy: 95.22%
+2024-10-10 14:57:34,324 - INFO - Epoch 5/10, Loss: 6.0207, Accuracy: 95.96%
+2024-10-10 14:57:41,599 - INFO - Epoch 6/10, Loss: 5.7204, Accuracy: 96.09%
+2024-10-10 14:57:48,903 - INFO - Epoch 7/10, Loss: 5.6212, Accuracy: 96.34%
+2024-10-10 14:57:56,172 - INFO - Epoch 8/10, Loss: 4.6158, Accuracy: 97.08%
+2024-10-10 14:58:03,457 - INFO - Epoch 9/10, Loss: 4.6488, Accuracy: 96.40%
+2024-10-10 14:58:10,723 - INFO - Epoch 10/10, Loss: 4.6413, Accuracy: 96.71%
+2024-10-10 14:58:12,046 - INFO - Model size: 4.93 MB, Accuracy: 0.9727, Precision: 0.9728
+2024-10-10 14:58:19,413 - INFO - Epoch 1/10, Loss: 39.8128, Accuracy: 49.01%
+2024-10-10 14:58:26,797 - INFO - Epoch 2/10, Loss: 33.4630, Accuracy: 61.24%
+2024-10-10 14:58:34,090 - INFO - Epoch 3/10, Loss: 12.8305, Accuracy: 91.49%
+2024-10-10 14:58:41,354 - INFO - Epoch 4/10, Loss: 8.4944, Accuracy: 95.47%
+2024-10-10 14:58:48,658 - INFO - Epoch 5/10, Loss: 6.9671, Accuracy: 95.71%
+2024-10-10 14:58:55,916 - INFO - Epoch 6/10, Loss: 5.1980, Accuracy: 96.34%
+2024-10-10 14:59:03,223 - INFO - Epoch 7/10, Loss: 6.5958, Accuracy: 95.78%
+2024-10-10 14:59:10,496 - INFO - Epoch 8/10, Loss: 5.3463, Accuracy: 95.96%
+2024-10-10 14:59:17,827 - INFO - Epoch 9/10, Loss: 4.3608, Accuracy: 96.65%
+2024-10-10 14:59:25,188 - INFO - Epoch 10/10, Loss: 4.6672, Accuracy: 96.65%
+2024-10-10 14:59:26,495 - INFO - Model size: 4.93 MB, Accuracy: 0.9479, Precision: 0.9527
+2024-10-10 14:59:34,017 - INFO - Epoch 1/10, Loss: 35.3910, Accuracy: 49.81%
+2024-10-10 14:59:41,317 - INFO - Epoch 2/10, Loss: 35.0304, Accuracy: 56.40%
+2024-10-10 14:59:48,602 - INFO - Epoch 3/10, Loss: 34.8550, Accuracy: 62.61%
+2024-10-10 14:59:55,851 - INFO - Epoch 4/10, Loss: 34.6219, Accuracy: 56.02%
+2024-10-10 15:00:03,225 - INFO - Epoch 5/10, Loss: 34.3645, Accuracy: 57.08%
+2024-10-10 15:00:10,500 - INFO - Epoch 6/10, Loss: 33.9050, Accuracy: 70.37%
+2024-10-10 15:00:17,795 - INFO - Epoch 7/10, Loss: 33.4885, Accuracy: 64.78%
+2024-10-10 15:00:25,356 - INFO - Epoch 8/10, Loss: 33.0280, Accuracy: 69.01%
+2024-10-10 15:00:32,599 - INFO - Epoch 9/10, Loss: 32.3146, Accuracy: 79.44%
+2024-10-10 15:00:39,865 - INFO - Epoch 10/10, Loss: 31.3432, Accuracy: 73.79%
+2024-10-10 15:00:41,183 - INFO - Model size: 4.93 MB, Accuracy: 0.8635, Precision: 0.8926
+2024-10-10 15:00:47,622 - INFO - Epoch 1/10, Loss: 35.2128, Accuracy: 54.29%
+2024-10-10 15:00:54,120 - INFO - Epoch 2/10, Loss: 34.7974, Accuracy: 56.02%
+2024-10-10 15:01:00,691 - INFO - Epoch 3/10, Loss: 29.5501, Accuracy: 80.50%
+2024-10-10 15:01:07,336 - INFO - Epoch 4/10, Loss: 24.8326, Accuracy: 87.14%
+2024-10-10 15:01:13,823 - INFO - Epoch 5/10, Loss: 21.4789, Accuracy: 90.99%
+2024-10-10 15:01:20,386 - INFO - Epoch 6/10, Loss: 18.9977, Accuracy: 92.42%
+2024-10-10 15:01:27,006 - INFO - Epoch 7/10, Loss: 17.0581, Accuracy: 92.98%
+2024-10-10 15:01:33,527 - INFO - Epoch 8/10, Loss: 15.0785, Accuracy: 93.98%
+2024-10-10 15:01:40,068 - INFO - Epoch 9/10, Loss: 13.8694, Accuracy: 93.73%
+2024-10-10 15:01:46,666 - INFO - Epoch 10/10, Loss: 12.4794, Accuracy: 94.91%
+2024-10-10 15:01:48,012 - INFO - Model size: 0.30 MB, Accuracy: 0.9380, Precision: 0.9427
+2024-10-10 15:01:55,372 - INFO - Epoch 1/10, Loss: 19.0685, Accuracy: 54.53%
+2024-10-10 15:02:02,591 - INFO - Epoch 2/10, Loss: 17.0685, Accuracy: 59.32%
+2024-10-10 15:02:09,808 - INFO - Epoch 3/10, Loss: 9.6439, Accuracy: 89.25%
+2024-10-10 15:02:17,016 - INFO - Epoch 4/10, Loss: 4.8531, Accuracy: 94.04%
+2024-10-10 15:02:24,167 - INFO - Epoch 5/10, Loss: 4.2299, Accuracy: 94.60%
+2024-10-10 15:02:31,297 - INFO - Epoch 6/10, Loss: 3.4926, Accuracy: 95.78%
+2024-10-10 15:02:38,398 - INFO - Epoch 7/10, Loss: 2.9759, Accuracy: 96.21%
+2024-10-10 15:02:45,517 - INFO - Epoch 8/10, Loss: 2.5496, Accuracy: 96.77%
+2024-10-10 15:02:52,699 - INFO - Epoch 9/10, Loss: 2.3061, Accuracy: 97.45%
+2024-10-10 15:02:59,822 - INFO - Epoch 10/10, Loss: 2.3687, Accuracy: 96.77%
+2024-10-10 15:03:01,281 - INFO - Model size: 4.93 MB, Accuracy: 0.9578, Precision: 0.9612
+2024-10-10 15:03:09,236 - INFO - Epoch 1/10, Loss: 35.9166, Accuracy: 52.36%
+2024-10-10 15:03:17,062 - INFO - Epoch 2/10, Loss: 33.5139, Accuracy: 59.81%
+2024-10-10 15:03:24,867 - INFO - Epoch 3/10, Loss: 19.6948, Accuracy: 87.64%
+2024-10-10 15:03:32,625 - INFO - Epoch 4/10, Loss: 13.9769, Accuracy: 92.67%
+2024-10-10 15:03:40,403 - INFO - Epoch 5/10, Loss: 11.6614, Accuracy: 93.04%
+2024-10-10 15:03:48,159 - INFO - Epoch 6/10, Loss: 10.6101, Accuracy: 94.29%
+2024-10-10 15:03:55,969 - INFO - Epoch 7/10, Loss: 9.5606, Accuracy: 94.72%
+2024-10-10 15:04:03,768 - INFO - Epoch 8/10, Loss: 8.2790, Accuracy: 95.34%
+2024-10-10 15:04:11,585 - INFO - Epoch 9/10, Loss: 8.0672, Accuracy: 95.71%
+2024-10-10 15:04:19,456 - INFO - Epoch 10/10, Loss: 7.6872, Accuracy: 95.47%
+2024-10-10 15:04:20,813 - INFO - Model size: 2.21 MB, Accuracy: 0.9429, Precision: 0.9487
+2024-10-10 15:04:27,527 - INFO - Epoch 1/10, Loss: 35.3585, Accuracy: 51.80%
+2024-10-10 15:04:34,252 - INFO - Epoch 2/10, Loss: 35.2526, Accuracy: 52.73%
+2024-10-10 15:04:40,900 - INFO - Epoch 3/10, Loss: 35.1537, Accuracy: 54.91%
+2024-10-10 15:04:47,668 - INFO - Epoch 4/10, Loss: 35.1287, Accuracy: 56.21%
+2024-10-10 15:04:54,290 - INFO - Epoch 5/10, Loss: 35.0525, Accuracy: 57.76%
+2024-10-10 15:05:01,007 - INFO - Epoch 6/10, Loss: 34.9682, Accuracy: 57.89%
+2024-10-10 15:05:07,731 - INFO - Epoch 7/10, Loss: 34.9367, Accuracy: 55.84%
+2024-10-10 15:05:14,534 - INFO - Epoch 8/10, Loss: 34.8187, Accuracy: 73.66%
+2024-10-10 15:05:21,380 - INFO - Epoch 9/10, Loss: 34.7572, Accuracy: 60.12%
+2024-10-10 15:05:28,061 - INFO - Epoch 10/10, Loss: 34.5571, Accuracy: 63.04%
+2024-10-10 15:05:29,389 - INFO - Model size: 0.16 MB, Accuracy: 0.5037, Precision: 0.7512
+2024-10-10 15:05:36,956 - INFO - Epoch 1/10, Loss: 12.5665, Accuracy: 49.19%
+2024-10-10 15:05:44,193 - INFO - Epoch 2/10, Loss: 9.1119, Accuracy: 51.99%
+2024-10-10 15:05:51,441 - INFO - Epoch 3/10, Loss: 9.0742, Accuracy: 48.14%
+2024-10-10 15:05:58,690 - INFO - Epoch 4/10, Loss: 8.9825, Accuracy: 50.00%
+2024-10-10 15:06:05,980 - INFO - Epoch 5/10, Loss: 8.8901, Accuracy: 52.42%
+2024-10-10 15:06:13,263 - INFO - Epoch 6/10, Loss: 8.4691, Accuracy: 73.54%
+2024-10-10 15:06:20,560 - INFO - Epoch 7/10, Loss: 5.8535, Accuracy: 87.45%
+2024-10-10 15:06:27,813 - INFO - Epoch 8/10, Loss: 3.0391, Accuracy: 91.49%
+2024-10-10 15:06:35,065 - INFO - Epoch 9/10, Loss: 2.1548, Accuracy: 95.40%
+2024-10-10 15:06:42,306 - INFO - Epoch 10/10, Loss: 1.6889, Accuracy: 96.15%
+2024-10-10 15:06:43,616 - INFO - Model size: 4.93 MB, Accuracy: 0.9702, Precision: 0.9709
+2024-10-10 15:06:50,290 - INFO - Epoch 1/10, Loss: 36.1020, Accuracy: 50.43%
+2024-10-10 15:06:57,068 - INFO - Epoch 2/10, Loss: 35.3542, Accuracy: 51.24%
+2024-10-10 15:07:03,598 - INFO - Epoch 3/10, Loss: 34.2460, Accuracy: 55.96%
+2024-10-10 15:07:10,162 - INFO - Epoch 4/10, Loss: 26.4640, Accuracy: 83.04%
+2024-10-10 15:07:16,879 - INFO - Epoch 5/10, Loss: 19.1878, Accuracy: 89.13%
+2024-10-10 15:07:23,402 - INFO - Epoch 6/10, Loss: 14.0787, Accuracy: 94.10%
+2024-10-10 15:07:29,876 - INFO - Epoch 7/10, Loss: 12.1201, Accuracy: 93.11%
+2024-10-10 15:07:36,442 - INFO - Epoch 8/10, Loss: 10.3097, Accuracy: 94.35%
+2024-10-10 15:07:43,126 - INFO - Epoch 9/10, Loss: 8.6260, Accuracy: 95.59%
+2024-10-10 15:07:49,616 - INFO - Epoch 10/10, Loss: 7.6703, Accuracy: 95.47%
+2024-10-10 15:07:50,947 - INFO - Model size: 0.58 MB, Accuracy: 0.9529, Precision: 0.9553
+2024-10-10 15:07:58,475 - INFO - Epoch 1/10, Loss: 35.9426, Accuracy: 60.37%
+2024-10-10 15:08:05,725 - INFO - Epoch 2/10, Loss: 19.4842, Accuracy: 82.73%
+2024-10-10 15:08:12,962 - INFO - Epoch 3/10, Loss: 8.7292, Accuracy: 94.22%
+2024-10-10 15:08:20,191 - INFO - Epoch 4/10, Loss: 6.3935, Accuracy: 95.84%
+2024-10-10 15:08:27,423 - INFO - Epoch 5/10, Loss: 5.4640, Accuracy: 96.40%
+2024-10-10 15:08:34,733 - INFO - Epoch 6/10, Loss: 5.9180, Accuracy: 95.53%
+2024-10-10 15:08:42,016 - INFO - Epoch 7/10, Loss: 5.1765, Accuracy: 96.34%
+2024-10-10 15:08:49,328 - INFO - Epoch 8/10, Loss: 4.8520, Accuracy: 96.52%
+2024-10-10 15:08:56,614 - INFO - Epoch 9/10, Loss: 4.3531, Accuracy: 96.71%
+2024-10-10 15:09:03,937 - INFO - Epoch 10/10, Loss: 4.2734, Accuracy: 97.08%
+2024-10-10 15:09:05,259 - INFO - Model size: 4.93 MB, Accuracy: 0.9727, Precision: 0.9732
+2024-10-10 15:09:12,665 - INFO - Epoch 1/10, Loss: 39.3695, Accuracy: 51.24%
+2024-10-10 15:09:19,897 - INFO - Epoch 2/10, Loss: 28.1507, Accuracy: 71.74%
+2024-10-10 15:09:27,166 - INFO - Epoch 3/10, Loss: 9.9917, Accuracy: 93.42%
+2024-10-10 15:09:34,603 - INFO - Epoch 4/10, Loss: 7.1514, Accuracy: 95.16%
+2024-10-10 15:09:42,108 - INFO - Epoch 5/10, Loss: 6.1631, Accuracy: 96.27%
+2024-10-10 15:09:49,332 - INFO - Epoch 6/10, Loss: 6.9979, Accuracy: 95.65%
+2024-10-10 15:09:56,582 - INFO - Epoch 7/10, Loss: 5.4746, Accuracy: 96.09%
+2024-10-10 15:10:03,900 - INFO - Epoch 8/10, Loss: 6.2765, Accuracy: 95.84%
+2024-10-10 15:10:11,203 - INFO - Epoch 9/10, Loss: 4.9955, Accuracy: 96.40%
+2024-10-10 15:10:18,436 - INFO - Epoch 10/10, Loss: 4.5326, Accuracy: 97.33%
+2024-10-10 15:10:19,740 - INFO - Model size: 4.93 MB, Accuracy: 0.9777, Precision: 0.9782
+2024-10-10 15:10:27,135 - INFO - Epoch 1/10, Loss: 39.3961, Accuracy: 49.63%
+2024-10-10 15:10:34,413 - INFO - Epoch 2/10, Loss: 31.2626, Accuracy: 66.40%
+2024-10-10 15:10:41,665 - INFO - Epoch 3/10, Loss: 10.6572, Accuracy: 93.48%
+2024-10-10 15:10:48,873 - INFO - Epoch 4/10, Loss: 6.6142, Accuracy: 95.78%
+2024-10-10 15:10:56,093 - INFO - Epoch 5/10, Loss: 5.7151, Accuracy: 96.09%
+2024-10-10 15:11:03,340 - INFO - Epoch 6/10, Loss: 5.5020, Accuracy: 96.27%
+2024-10-10 15:11:10,607 - INFO - Epoch 7/10, Loss: 4.2280, Accuracy: 97.45%
+2024-10-10 15:11:17,811 - INFO - Epoch 8/10, Loss: 4.6070, Accuracy: 96.65%
+2024-10-10 15:11:25,101 - INFO - Epoch 9/10, Loss: 4.8211, Accuracy: 96.89%
+2024-10-10 15:11:32,451 - INFO - Epoch 10/10, Loss: 3.9180, Accuracy: 97.14%
+2024-10-10 15:11:33,762 - INFO - Model size: 4.93 MB, Accuracy: 0.9777, Precision: 0.9779
+2024-10-10 15:11:41,408 - INFO - Epoch 1/10, Loss: 38.6199, Accuracy: 51.74%
+2024-10-10 15:11:48,618 - INFO - Epoch 2/10, Loss: 24.9774, Accuracy: 77.95%
+2024-10-10 15:11:55,825 - INFO - Epoch 3/10, Loss: 9.9806, Accuracy: 92.67%
+2024-10-10 15:12:03,173 - INFO - Epoch 4/10, Loss: 6.6129, Accuracy: 95.40%
+2024-10-10 15:12:10,479 - INFO - Epoch 5/10, Loss: 6.2141, Accuracy: 96.09%
+2024-10-10 15:12:17,703 - INFO - Epoch 6/10, Loss: 5.4719, Accuracy: 96.46%
+2024-10-10 15:12:24,918 - INFO - Epoch 7/10, Loss: 6.5647, Accuracy: 95.47%
+2024-10-10 15:12:32,185 - INFO - Epoch 8/10, Loss: 5.0667, Accuracy: 96.34%
+2024-10-10 15:12:39,426 - INFO - Epoch 9/10, Loss: 5.0208, Accuracy: 96.65%
+2024-10-10 15:12:46,683 - INFO - Epoch 10/10, Loss: 4.1571, Accuracy: 97.14%
+2024-10-10 15:12:47,997 - INFO - Model size: 4.93 MB, Accuracy: 0.9752, Precision: 0.9754
+2024-10-10 15:12:55,305 - INFO - Epoch 1/10, Loss: 21.2452, Accuracy: 49.13%
+2024-10-10 15:13:02,492 - INFO - Epoch 2/10, Loss: 17.5759, Accuracy: 60.75%
+2024-10-10 15:13:09,701 - INFO - Epoch 3/10, Loss: 13.3095, Accuracy: 81.18%
+2024-10-10 15:13:16,801 - INFO - Epoch 4/10, Loss: 5.1248, Accuracy: 94.16%
+2024-10-10 15:13:23,926 - INFO - Epoch 5/10, Loss: 3.7571, Accuracy: 95.96%
+2024-10-10 15:13:31,010 - INFO - Epoch 6/10, Loss: 3.5779, Accuracy: 95.47%
+2024-10-10 15:13:38,083 - INFO - Epoch 7/10, Loss: 2.9959, Accuracy: 96.27%
+2024-10-10 15:13:45,476 - INFO - Epoch 8/10, Loss: 3.2879, Accuracy: 96.27%
+2024-10-10 15:13:52,583 - INFO - Epoch 9/10, Loss: 3.1562, Accuracy: 95.84%
+2024-10-10 15:13:59,808 - INFO - Epoch 10/10, Loss: 2.8300, Accuracy: 96.46%
+2024-10-10 15:14:01,139 - INFO - Model size: 4.93 MB, Accuracy: 0.9181, Precision: 0.9295
+2024-10-10 15:14:08,518 - INFO - Epoch 1/10, Loss: 35.6034, Accuracy: 52.73%
+2024-10-10 15:14:15,809 - INFO - Epoch 2/10, Loss: 23.3788, Accuracy: 82.48%
+2024-10-10 15:14:23,093 - INFO - Epoch 3/10, Loss: 9.4599, Accuracy: 94.72%
+2024-10-10 15:14:30,366 - INFO - Epoch 4/10, Loss: 6.7739, Accuracy: 96.34%
+2024-10-10 15:14:37,912 - INFO - Epoch 5/10, Loss: 6.1510, Accuracy: 95.90%
+2024-10-10 15:14:45,187 - INFO - Epoch 6/10, Loss: 5.6251, Accuracy: 96.58%
+2024-10-10 15:14:52,430 - INFO - Epoch 7/10, Loss: 7.7209, Accuracy: 96.09%
+2024-10-10 15:14:59,674 - INFO - Epoch 8/10, Loss: 8.0135, Accuracy: 94.22%
+2024-10-10 15:15:07,015 - INFO - Epoch 9/10, Loss: 5.0991, Accuracy: 96.77%
+2024-10-10 15:15:14,267 - INFO - Epoch 10/10, Loss: 5.0685, Accuracy: 96.71%
+2024-10-10 15:15:15,583 - INFO - Model size: 4.93 MB, Accuracy: 0.8958, Precision: 0.9136
+2024-10-10 15:15:22,966 - INFO - Epoch 1/10, Loss: 42.0191, Accuracy: 49.94%
+2024-10-10 15:15:30,214 - INFO - Epoch 2/10, Loss: 35.4449, Accuracy: 54.22%
+2024-10-10 15:15:37,565 - INFO - Epoch 3/10, Loss: 24.3331, Accuracy: 73.42%
+2024-10-10 15:15:45,098 - INFO - Epoch 4/10, Loss: 8.2264, Accuracy: 94.97%
+2024-10-10 15:15:52,341 - INFO - Epoch 5/10, Loss: 6.4857, Accuracy: 95.71%
+2024-10-10 15:15:59,572 - INFO - Epoch 6/10, Loss: 6.0087, Accuracy: 95.71%
+2024-10-10 15:16:06,826 - INFO - Epoch 7/10, Loss: 5.8227, Accuracy: 95.84%
+2024-10-10 15:16:14,091 - INFO - Epoch 8/10, Loss: 4.6020, Accuracy: 96.83%
+2024-10-10 15:16:21,409 - INFO - Epoch 9/10, Loss: 5.1066, Accuracy: 96.27%
+2024-10-10 15:16:28,665 - INFO - Epoch 10/10, Loss: 4.4697, Accuracy: 97.20%
+2024-10-10 15:16:29,979 - INFO - Model size: 4.93 MB, Accuracy: 0.9801, Precision: 0.9803
+2024-10-10 15:16:37,180 - INFO - Epoch 1/10, Loss: 36.9134, Accuracy: 49.81%
+2024-10-10 15:16:44,125 - INFO - Epoch 2/10, Loss: 35.5625, Accuracy: 51.12%
+2024-10-10 15:16:51,065 - INFO - Epoch 3/10, Loss: 35.4314, Accuracy: 49.94%
+2024-10-10 15:16:58,000 - INFO - Epoch 4/10, Loss: 35.4488, Accuracy: 49.94%
+2024-10-10 15:17:05,094 - INFO - Epoch 5/10, Loss: 35.6328, Accuracy: 48.07%
+2024-10-10 15:17:12,085 - INFO - Epoch 6/10, Loss: 35.3790, Accuracy: 51.06%
+2024-10-10 15:17:19,034 - INFO - Epoch 7/10, Loss: 35.4346, Accuracy: 49.07%
+2024-10-10 15:17:26,040 - INFO - Epoch 8/10, Loss: 34.8909, Accuracy: 54.41%
+2024-10-10 15:17:33,073 - INFO - Epoch 9/10, Loss: 19.3172, Accuracy: 85.34%
+2024-10-10 15:17:40,028 - INFO - Epoch 10/10, Loss: 9.9084, Accuracy: 94.35%
+2024-10-10 15:17:41,318 - INFO - Model size: 1.68 MB, Accuracy: 0.9206, Precision: 0.9276
+2024-10-10 15:17:48,741 - INFO - Epoch 1/10, Loss: 40.1547, Accuracy: 52.17%
+2024-10-10 15:17:55,986 - INFO - Epoch 2/10, Loss: 24.8307, Accuracy: 76.21%
+2024-10-10 15:18:03,298 - INFO - Epoch 3/10, Loss: 9.6709, Accuracy: 93.04%
+2024-10-10 15:18:10,545 - INFO - Epoch 4/10, Loss: 6.4351, Accuracy: 96.09%
+2024-10-10 15:18:17,783 - INFO - Epoch 5/10, Loss: 5.6715, Accuracy: 96.52%
+2024-10-10 15:18:25,006 - INFO - Epoch 6/10, Loss: 7.2627, Accuracy: 94.29%
+2024-10-10 15:18:32,281 - INFO - Epoch 7/10, Loss: 5.7473, Accuracy: 96.02%
+2024-10-10 15:18:39,521 - INFO - Epoch 8/10, Loss: 5.1415, Accuracy: 96.02%
+2024-10-10 15:18:46,863 - INFO - Epoch 9/10, Loss: 5.9054, Accuracy: 96.46%
+2024-10-10 15:18:54,203 - INFO - Epoch 10/10, Loss: 4.5159, Accuracy: 96.52%
+2024-10-10 15:18:55,585 - INFO - Model size: 4.93 MB, Accuracy: 0.9653, Precision: 0.9670
+2024-10-10 15:19:02,365 - INFO - Epoch 1/10, Loss: 35.4046, Accuracy: 50.00%
+2024-10-10 15:19:08,940 - INFO - Epoch 2/10, Loss: 35.2173, Accuracy: 59.13%
+2024-10-10 15:19:15,599 - INFO - Epoch 3/10, Loss: 35.0501, Accuracy: 53.98%
+2024-10-10 15:19:22,250 - INFO - Epoch 4/10, Loss: 34.9941, Accuracy: 53.11%
+2024-10-10 15:19:28,872 - INFO - Epoch 5/10, Loss: 34.7215, Accuracy: 61.37%
+2024-10-10 15:19:35,625 - INFO - Epoch 6/10, Loss: 34.3105, Accuracy: 58.57%
+2024-10-10 15:19:42,320 - INFO - Epoch 7/10, Loss: 32.4822, Accuracy: 72.48%
+2024-10-10 15:19:49,377 - INFO - Epoch 8/10, Loss: 30.7434, Accuracy: 75.59%
+2024-10-10 15:19:56,107 - INFO - Epoch 9/10, Loss: 27.5940, Accuracy: 80.93%
+2024-10-10 15:20:03,031 - INFO - Epoch 10/10, Loss: 24.9868, Accuracy: 84.72%
+2024-10-10 15:20:04,366 - INFO - Model size: 0.24 MB, Accuracy: 0.6700, Precision: 0.7942
+2024-10-10 15:20:12,075 - INFO - Epoch 1/10, Loss: 40.4729, Accuracy: 50.50%
+2024-10-10 15:20:19,321 - INFO - Epoch 2/10, Loss: 34.7756, Accuracy: 59.38%
+2024-10-10 15:20:26,601 - INFO - Epoch 3/10, Loss: 15.1335, Accuracy: 91.06%
+2024-10-10 15:20:33,850 - INFO - Epoch 4/10, Loss: 6.9856, Accuracy: 96.02%
+2024-10-10 15:20:41,144 - INFO - Epoch 5/10, Loss: 7.8833, Accuracy: 94.47%
+2024-10-10 15:20:48,465 - INFO - Epoch 6/10, Loss: 6.7773, Accuracy: 95.90%
+2024-10-10 15:20:55,844 - INFO - Epoch 7/10, Loss: 5.1623, Accuracy: 96.83%
+2024-10-10 15:21:03,113 - INFO - Epoch 8/10, Loss: 4.7201, Accuracy: 96.71%
+2024-10-10 15:21:10,330 - INFO - Epoch 9/10, Loss: 4.4054, Accuracy: 96.71%
+2024-10-10 15:21:17,650 - INFO - Epoch 10/10, Loss: 4.5658, Accuracy: 96.96%
+2024-10-10 15:21:18,971 - INFO - Model size: 4.93 MB, Accuracy: 0.9777, Precision: 0.9778
+2024-10-10 15:21:26,341 - INFO - Epoch 1/10, Loss: 38.5741, Accuracy: 52.24%
+2024-10-10 15:21:33,667 - INFO - Epoch 2/10, Loss: 21.8944, Accuracy: 81.61%
+2024-10-10 15:21:40,923 - INFO - Epoch 3/10, Loss: 7.6941, Accuracy: 95.40%
+2024-10-10 15:21:48,423 - INFO - Epoch 4/10, Loss: 7.7067, Accuracy: 94.60%
+2024-10-10 15:21:55,777 - INFO - Epoch 5/10, Loss: 5.7913, Accuracy: 95.34%
+2024-10-10 15:22:03,078 - INFO - Epoch 6/10, Loss: 5.6352, Accuracy: 96.46%
+2024-10-10 15:22:10,347 - INFO - Epoch 7/10, Loss: 4.6108, Accuracy: 96.96%
+2024-10-10 15:22:17,624 - INFO - Epoch 8/10, Loss: 3.8791, Accuracy: 98.14%
+2024-10-10 15:22:24,950 - INFO - Epoch 9/10, Loss: 5.6581, Accuracy: 95.90%
+2024-10-10 15:22:32,236 - INFO - Epoch 10/10, Loss: 4.6632, Accuracy: 96.46%
+2024-10-10 15:22:33,565 - INFO - Model size: 4.93 MB, Accuracy: 0.9702, Precision: 0.9703
+2024-10-10 15:22:40,967 - INFO - Epoch 1/10, Loss: 39.4017, Accuracy: 49.32%
+2024-10-10 15:22:48,292 - INFO - Epoch 2/10, Loss: 33.0254, Accuracy: 60.31%
+2024-10-10 15:22:55,600 - INFO - Epoch 3/10, Loss: 11.0946, Accuracy: 93.35%
+2024-10-10 15:23:02,912 - INFO - Epoch 4/10, Loss: 7.1599, Accuracy: 95.65%
+2024-10-10 15:23:10,135 - INFO - Epoch 5/10, Loss: 7.3049, Accuracy: 94.66%
+2024-10-10 15:23:17,386 - INFO - Epoch 6/10, Loss: 4.9936, Accuracy: 96.58%
+2024-10-10 15:23:24,720 - INFO - Epoch 7/10, Loss: 4.8159, Accuracy: 96.52%
+2024-10-10 15:23:31,987 - INFO - Epoch 8/10, Loss: 4.9773, Accuracy: 96.89%
+2024-10-10 15:23:39,272 - INFO - Epoch 9/10, Loss: 4.3575, Accuracy: 96.83%
+2024-10-10 15:23:46,582 - INFO - Epoch 10/10, Loss: 4.4777, Accuracy: 97.02%
+2024-10-10 15:23:47,900 - INFO - Model size: 4.93 MB, Accuracy: 0.9752, Precision: 0.9763
+2024-10-10 15:23:55,358 - INFO - Epoch 1/10, Loss: 35.5903, Accuracy: 58.94%
+2024-10-10 15:24:02,670 - INFO - Epoch 2/10, Loss: 15.9384, Accuracy: 89.88%
+2024-10-10 15:24:09,936 - INFO - Epoch 3/10, Loss: 7.9818, Accuracy: 94.47%
+2024-10-10 15:24:17,175 - INFO - Epoch 4/10, Loss: 6.1791, Accuracy: 95.65%
+2024-10-10 15:24:24,675 - INFO - Epoch 5/10, Loss: 5.6281, Accuracy: 96.40%
+2024-10-10 15:24:31,956 - INFO - Epoch 6/10, Loss: 5.0213, Accuracy: 97.02%
+2024-10-10 15:24:39,217 - INFO - Epoch 7/10, Loss: 5.0943, Accuracy: 96.09%
+2024-10-10 15:24:46,758 - INFO - Epoch 8/10, Loss: 4.3219, Accuracy: 97.08%
+2024-10-10 15:24:54,039 - INFO - Epoch 9/10, Loss: 4.1233, Accuracy: 96.77%
+2024-10-10 15:25:01,405 - INFO - Epoch 10/10, Loss: 3.4607, Accuracy: 97.76%
+2024-10-10 15:25:02,729 - INFO - Model size: 4.93 MB, Accuracy: 0.9752, Precision: 0.9756
+2024-10-10 15:25:10,119 - INFO - Epoch 1/10, Loss: 38.4500, Accuracy: 51.24%
+2024-10-10 15:25:17,351 - INFO - Epoch 2/10, Loss: 24.1092, Accuracy: 77.33%
+2024-10-10 15:25:24,612 - INFO - Epoch 3/10, Loss: 9.4516, Accuracy: 93.73%
+2024-10-10 15:25:31,863 - INFO - Epoch 4/10, Loss: 7.1074, Accuracy: 95.71%
+2024-10-10 15:25:39,110 - INFO - Epoch 5/10, Loss: 5.4187, Accuracy: 95.96%
+2024-10-10 15:25:46,521 - INFO - Epoch 6/10, Loss: 4.8782, Accuracy: 97.27%
+2024-10-10 15:25:53,779 - INFO - Epoch 7/10, Loss: 4.6740, Accuracy: 96.52%
+2024-10-10 15:26:01,272 - INFO - Epoch 8/10, Loss: 5.1179, Accuracy: 96.52%
+2024-10-10 15:26:08,872 - INFO - Epoch 9/10, Loss: 3.9438, Accuracy: 97.39%
+2024-10-10 15:26:16,605 - INFO - Epoch 10/10, Loss: 4.6254, Accuracy: 96.52%
+2024-10-10 15:26:17,974 - INFO - Model size: 4.93 MB, Accuracy: 0.9777, Precision: 0.9779
+2024-10-10 15:26:26,301 - INFO - Epoch 1/10, Loss: 33.8374, Accuracy: 62.48%
+2024-10-10 15:26:34,917 - INFO - Epoch 2/10, Loss: 15.0056, Accuracy: 88.82%
+2024-10-10 15:26:42,874 - INFO - Epoch 3/10, Loss: 8.5403, Accuracy: 94.16%
+2024-10-10 15:26:50,792 - INFO - Epoch 4/10, Loss: 6.4151, Accuracy: 95.90%
+2024-10-10 15:26:58,911 - INFO - Epoch 5/10, Loss: 5.4694, Accuracy: 96.46%
+2024-10-10 15:27:06,813 - INFO - Epoch 6/10, Loss: 5.0779, Accuracy: 96.65%
+2024-10-10 15:27:14,636 - INFO - Epoch 7/10, Loss: 4.7169, Accuracy: 96.52%
+2024-10-10 15:27:22,410 - INFO - Epoch 8/10, Loss: 4.4859, Accuracy: 96.71%
+2024-10-10 15:27:30,191 - INFO - Epoch 9/10, Loss: 4.4229, Accuracy: 96.52%
+2024-10-10 15:27:38,184 - INFO - Epoch 10/10, Loss: 3.9562, Accuracy: 97.45%
+2024-10-10 15:27:39,865 - INFO - Model size: 4.93 MB, Accuracy: 0.9702, Precision: 0.9703
+2024-10-10 15:27:48,213 - INFO - Epoch 1/10, Loss: 36.0333, Accuracy: 51.43%
+2024-10-10 15:27:57,337 - INFO - Epoch 2/10, Loss: 29.5830, Accuracy: 69.19%
+2024-10-10 15:28:04,151 - INFO - Epoch 3/10, Loss: 15.5249, Accuracy: 90.93%
+2024-10-10 15:28:10,885 - INFO - Epoch 4/10, Loss: 9.5910, Accuracy: 94.29%
+2024-10-10 15:28:17,585 - INFO - Epoch 5/10, Loss: 7.8081, Accuracy: 95.59%
+2024-10-10 15:28:24,202 - INFO - Epoch 6/10, Loss: 8.0959, Accuracy: 94.47%
+2024-10-10 15:28:31,011 - INFO - Epoch 7/10, Loss: 6.5614, Accuracy: 96.34%
+2024-10-10 15:28:37,730 - INFO - Epoch 8/10, Loss: 5.8039, Accuracy: 96.58%
+2024-10-10 15:28:44,476 - INFO - Epoch 9/10, Loss: 5.5682, Accuracy: 96.65%
+2024-10-10 15:28:51,173 - INFO - Epoch 10/10, Loss: 4.8701, Accuracy: 96.77%
+2024-10-10 15:28:52,521 - INFO - Model size: 2.35 MB, Accuracy: 0.9727, Precision: 0.9728
+2024-10-10 15:28:58,793 - INFO - Epoch 1/10, Loss: 9.2631, Accuracy: 50.68%
+2024-10-10 15:29:04,933 - INFO - Epoch 2/10, Loss: 9.0496, Accuracy: 50.56%
+2024-10-10 15:29:11,034 - INFO - Epoch 3/10, Loss: 9.0171, Accuracy: 48.57%
+2024-10-10 15:29:17,250 - INFO - Epoch 4/10, Loss: 9.0292, Accuracy: 50.56%
+2024-10-10 15:29:23,350 - INFO - Epoch 5/10, Loss: 8.9884, Accuracy: 52.86%
+2024-10-10 15:29:29,452 - INFO - Epoch 6/10, Loss: 8.9770, Accuracy: 51.86%
+2024-10-10 15:29:35,597 - INFO - Epoch 7/10, Loss: 8.8859, Accuracy: 64.66%
+2024-10-10 15:29:41,700 - INFO - Epoch 8/10, Loss: 8.5891, Accuracy: 61.30%
+2024-10-10 15:29:47,910 - INFO - Epoch 9/10, Loss: 8.1449, Accuracy: 65.59%
+2024-10-10 15:29:54,025 - INFO - Epoch 10/10, Loss: 7.3999, Accuracy: 86.34%
+2024-10-10 15:29:55,281 - INFO - Model size: 0.30 MB, Accuracy: 0.9181, Precision: 0.9184
+2024-10-10 15:30:02,730 - INFO - Epoch 1/10, Loss: 36.2863, Accuracy: 55.28%
+2024-10-10 15:30:10,060 - INFO - Epoch 2/10, Loss: 20.0166, Accuracy: 84.29%
+2024-10-10 15:30:17,392 - INFO - Epoch 3/10, Loss: 9.0186, Accuracy: 94.16%
+2024-10-10 15:30:24,672 - INFO - Epoch 4/10, Loss: 6.2722, Accuracy: 95.84%
+2024-10-10 15:30:31,954 - INFO - Epoch 5/10, Loss: 5.5624, Accuracy: 96.58%
+2024-10-10 15:30:39,248 - INFO - Epoch 6/10, Loss: 5.7298, Accuracy: 95.65%
+2024-10-10 15:30:46,947 - INFO - Epoch 7/10, Loss: 5.0674, Accuracy: 96.27%
+2024-10-10 15:30:54,233 - INFO - Epoch 8/10, Loss: 5.2254, Accuracy: 96.15%
+2024-10-10 15:31:01,649 - INFO - Epoch 9/10, Loss: 4.0814, Accuracy: 97.08%
+2024-10-10 15:31:08,914 - INFO - Epoch 10/10, Loss: 3.8898, Accuracy: 97.52%
+2024-10-10 15:31:10,370 - INFO - Model size: 4.93 MB, Accuracy: 0.9677, Precision: 0.9692
+2024-10-10 15:31:16,857 - INFO - Epoch 1/10, Loss: 36.4609, Accuracy: 49.57%
+2024-10-10 15:31:23,443 - INFO - Epoch 2/10, Loss: 35.4388, Accuracy: 51.06%
+2024-10-10 15:31:29,928 - INFO - Epoch 3/10, Loss: 34.9276, Accuracy: 55.53%
+2024-10-10 15:31:36,641 - INFO - Epoch 4/10, Loss: 31.7862, Accuracy: 68.45%
+2024-10-10 15:31:43,265 - INFO - Epoch 5/10, Loss: 23.1387, Accuracy: 84.53%
+2024-10-10 15:31:50,120 - INFO - Epoch 6/10, Loss: 16.9749, Accuracy: 89.75%
+2024-10-10 15:31:56,753 - INFO - Epoch 7/10, Loss: 12.8257, Accuracy: 92.24%
+2024-10-10 15:32:03,336 - INFO - Epoch 8/10, Loss: 9.4899, Accuracy: 95.28%
+2024-10-10 15:32:10,008 - INFO - Epoch 9/10, Loss: 8.1765, Accuracy: 95.90%
+2024-10-10 15:32:16,505 - INFO - Epoch 10/10, Loss: 7.3737, Accuracy: 95.90%
+2024-10-10 15:32:17,819 - INFO - Model size: 0.58 MB, Accuracy: 0.9479, Precision: 0.9497
+2024-10-10 15:32:25,361 - INFO - Epoch 1/10, Loss: 39.5330, Accuracy: 49.25%
+2024-10-10 15:32:32,678 - INFO - Epoch 2/10, Loss: 32.8133, Accuracy: 62.48%
+2024-10-10 15:32:40,096 - INFO - Epoch 3/10, Loss: 13.5777, Accuracy: 90.00%
+2024-10-10 15:32:47,437 - INFO - Epoch 4/10, Loss: 8.9887, Accuracy: 93.60%
+2024-10-10 15:32:54,699 - INFO - Epoch 5/10, Loss: 7.3040, Accuracy: 94.72%
+2024-10-10 15:33:02,005 - INFO - Epoch 6/10, Loss: 6.8789, Accuracy: 95.22%
+2024-10-10 15:33:09,337 - INFO - Epoch 7/10, Loss: 5.4225, Accuracy: 96.21%
+2024-10-10 15:33:16,661 - INFO - Epoch 8/10, Loss: 5.0947, Accuracy: 96.15%
+2024-10-10 15:33:23,988 - INFO - Epoch 9/10, Loss: 4.8638, Accuracy: 96.96%
+2024-10-10 15:33:31,274 - INFO - Epoch 10/10, Loss: 4.7945, Accuracy: 96.46%
+2024-10-10 15:33:32,602 - INFO - Model size: 4.93 MB, Accuracy: 0.9653, Precision: 0.9655
+2024-10-10 15:33:40,084 - INFO - Epoch 1/10, Loss: 41.2511, Accuracy: 50.19%
+2024-10-10 15:33:47,619 - INFO - Epoch 2/10, Loss: 35.0462, Accuracy: 53.79%
+2024-10-10 15:33:54,976 - INFO - Epoch 3/10, Loss: 20.2776, Accuracy: 89.13%
+2024-10-10 15:34:02,328 - INFO - Epoch 4/10, Loss: 9.1356, Accuracy: 93.98%
+2024-10-10 15:34:09,665 - INFO - Epoch 5/10, Loss: 6.8055, Accuracy: 95.59%
+2024-10-10 15:34:16,984 - INFO - Epoch 6/10, Loss: 6.8221, Accuracy: 95.47%
+2024-10-10 15:34:24,252 - INFO - Epoch 7/10, Loss: 5.1422, Accuracy: 96.46%
+2024-10-10 15:34:31,606 - INFO - Epoch 8/10, Loss: 4.8070, Accuracy: 97.14%
+2024-10-10 15:34:38,947 - INFO - Epoch 9/10, Loss: 4.8520, Accuracy: 96.65%
+2024-10-10 15:34:46,440 - INFO - Epoch 10/10, Loss: 4.5721, Accuracy: 96.83%
+2024-10-10 15:34:47,773 - INFO - Model size: 4.93 MB, Accuracy: 0.9702, Precision: 0.9702
+2024-10-10 15:34:55,200 - INFO - Epoch 1/10, Loss: 39.8539, Accuracy: 50.31%
+2024-10-10 15:35:02,504 - INFO - Epoch 2/10, Loss: 35.3582, Accuracy: 53.66%
+2024-10-10 15:35:09,825 - INFO - Epoch 3/10, Loss: 21.1834, Accuracy: 82.17%
+2024-10-10 15:35:17,157 - INFO - Epoch 4/10, Loss: 8.4873, Accuracy: 95.03%
+2024-10-10 15:35:24,450 - INFO - Epoch 5/10, Loss: 6.2223, Accuracy: 96.15%
+2024-10-10 15:35:31,709 - INFO - Epoch 6/10, Loss: 5.6898, Accuracy: 96.34%
+2024-10-10 15:35:39,015 - INFO - Epoch 7/10, Loss: 5.8757, Accuracy: 95.78%
+2024-10-10 15:35:46,332 - INFO - Epoch 8/10, Loss: 4.9699, Accuracy: 96.52%
+2024-10-10 15:35:53,669 - INFO - Epoch 9/10, Loss: 4.6975, Accuracy: 97.14%
+2024-10-10 15:36:00,989 - INFO - Epoch 10/10, Loss: 3.9339, Accuracy: 97.08%
+2024-10-10 15:36:02,309 - INFO - Model size: 4.93 MB, Accuracy: 0.9677, Precision: 0.9678
+2024-10-10 15:36:09,688 - INFO - Epoch 1/10, Loss: 38.7417, Accuracy: 51.37%
+2024-10-10 15:36:16,986 - INFO - Epoch 2/10, Loss: 25.7200, Accuracy: 74.84%
+2024-10-10 15:36:24,262 - INFO - Epoch 3/10, Loss: 9.7701, Accuracy: 94.29%
+2024-10-10 15:36:31,581 - INFO - Epoch 4/10, Loss: 6.5102, Accuracy: 95.53%
+2024-10-10 15:36:38,940 - INFO - Epoch 5/10, Loss: 5.6709, Accuracy: 95.90%
+2024-10-10 15:36:46,316 - INFO - Epoch 6/10, Loss: 5.3675, Accuracy: 96.77%
+2024-10-10 15:36:53,605 - INFO - Epoch 7/10, Loss: 5.7028, Accuracy: 95.84%
+2024-10-10 15:37:00,935 - INFO - Epoch 8/10, Loss: 4.4382, Accuracy: 97.14%
+2024-10-10 15:37:08,253 - INFO - Epoch 9/10, Loss: 3.8780, Accuracy: 97.33%
+2024-10-10 15:37:15,584 - INFO - Epoch 10/10, Loss: 3.8787, Accuracy: 97.33%
+2024-10-10 15:37:16,912 - INFO - Model size: 4.93 MB, Accuracy: 0.9752, Precision: 0.9760
+2024-10-10 15:37:24,314 - INFO - Epoch 1/10, Loss: 38.3597, Accuracy: 52.30%
+2024-10-10 15:37:31,613 - INFO - Epoch 2/10, Loss: 33.5095, Accuracy: 60.19%
+2024-10-10 15:37:38,954 - INFO - Epoch 3/10, Loss: 15.3967, Accuracy: 87.89%
+2024-10-10 15:37:46,236 - INFO - Epoch 4/10, Loss: 8.8025, Accuracy: 95.22%
+2024-10-10 15:37:53,521 - INFO - Epoch 5/10, Loss: 7.4302, Accuracy: 95.40%
+2024-10-10 15:38:00,833 - INFO - Epoch 6/10, Loss: 6.1394, Accuracy: 95.84%
+2024-10-10 15:38:08,211 - INFO - Epoch 7/10, Loss: 5.1620, Accuracy: 96.46%
+2024-10-10 15:38:15,539 - INFO - Epoch 8/10, Loss: 4.7471, Accuracy: 96.71%
+2024-10-10 15:38:22,841 - INFO - Epoch 9/10, Loss: 4.5634, Accuracy: 96.58%
+2024-10-10 15:38:30,104 - INFO - Epoch 10/10, Loss: 4.4361, Accuracy: 97.33%
+2024-10-10 15:38:31,434 - INFO - Model size: 4.93 MB, Accuracy: 0.8784, Precision: 0.9020
+2024-10-10 15:38:38,883 - INFO - Epoch 1/10, Loss: 34.8920, Accuracy: 58.39%
+2024-10-10 15:38:46,409 - INFO - Epoch 2/10, Loss: 16.9533, Accuracy: 89.63%
+2024-10-10 15:38:53,775 - INFO - Epoch 3/10, Loss: 7.8803, Accuracy: 95.53%
+2024-10-10 15:39:01,038 - INFO - Epoch 4/10, Loss: 6.9473, Accuracy: 95.47%
+2024-10-10 15:39:08,316 - INFO - Epoch 5/10, Loss: 6.0856, Accuracy: 96.27%
+2024-10-10 15:39:15,646 - INFO - Epoch 6/10, Loss: 5.5500, Accuracy: 96.21%
+2024-10-10 15:39:22,998 - INFO - Epoch 7/10, Loss: 5.1002, Accuracy: 96.77%
+2024-10-10 15:39:30,355 - INFO - Epoch 8/10, Loss: 4.8029, Accuracy: 96.71%
+2024-10-10 15:39:37,659 - INFO - Epoch 9/10, Loss: 5.4657, Accuracy: 96.15%
+2024-10-10 15:39:44,998 - INFO - Epoch 10/10, Loss: 4.6858, Accuracy: 96.58%
+2024-10-10 15:39:46,322 - INFO - Model size: 4.93 MB, Accuracy: 0.9702, Precision: 0.9706
+2024-10-10 15:39:54,167 - INFO - Epoch 1/10, Loss: 39.3976, Accuracy: 50.81%
+2024-10-10 15:40:01,672 - INFO - Epoch 2/10, Loss: 31.7084, Accuracy: 68.07%
+2024-10-10 15:40:09,020 - INFO - Epoch 3/10, Loss: 11.9945, Accuracy: 91.86%
+2024-10-10 15:40:16,317 - INFO - Epoch 4/10, Loss: 7.0579, Accuracy: 95.53%
+2024-10-10 15:40:23,630 - INFO - Epoch 5/10, Loss: 5.8720, Accuracy: 96.34%
+2024-10-10 15:40:30,910 - INFO - Epoch 6/10, Loss: 5.1305, Accuracy: 96.46%
+2024-10-10 15:40:38,244 - INFO - Epoch 7/10, Loss: 5.3056, Accuracy: 96.02%
+2024-10-10 15:40:45,587 - INFO - Epoch 8/10, Loss: 4.8089, Accuracy: 96.40%
+2024-10-10 15:40:53,102 - INFO - Epoch 9/10, Loss: 5.5770, Accuracy: 96.21%
+2024-10-10 15:41:00,437 - INFO - Epoch 10/10, Loss: 4.6340, Accuracy: 97.02%
+2024-10-10 15:41:01,851 - INFO - Model size: 4.93 MB, Accuracy: 0.9677, Precision: 0.9683
+2024-10-10 15:41:08,623 - INFO - Epoch 1/10, Loss: 36.5284, Accuracy: 50.06%
+2024-10-10 15:41:15,213 - INFO - Epoch 2/10, Loss: 35.3511, Accuracy: 50.87%
+2024-10-10 15:41:21,822 - INFO - Epoch 3/10, Loss: 30.7288, Accuracy: 70.99%
+2024-10-10 15:41:28,385 - INFO - Epoch 4/10, Loss: 15.4796, Accuracy: 91.37%
+2024-10-10 15:41:34,930 - INFO - Epoch 5/10, Loss: 14.3750, Accuracy: 88.76%
+2024-10-10 15:41:41,534 - INFO - Epoch 6/10, Loss: 9.3857, Accuracy: 94.91%
+2024-10-10 15:41:48,119 - INFO - Epoch 7/10, Loss: 7.5096, Accuracy: 96.21%
+2024-10-10 15:41:54,696 - INFO - Epoch 8/10, Loss: 6.1774, Accuracy: 96.15%
+2024-10-10 15:42:01,286 - INFO - Epoch 9/10, Loss: 6.1396, Accuracy: 95.90%
+2024-10-10 15:42:07,976 - INFO - Epoch 10/10, Loss: 6.1021, Accuracy: 95.16%
+2024-10-10 15:42:09,289 - INFO - Model size: 1.16 MB, Accuracy: 0.9727, Precision: 0.9730
+2024-10-10 15:42:18,166 - INFO - Epoch 1/10, Loss: 11.5998, Accuracy: 50.06%
+2024-10-10 15:42:26,778 - INFO - Epoch 2/10, Loss: 9.2770, Accuracy: 48.94%
+2024-10-10 15:42:35,399 - INFO - Epoch 3/10, Loss: 8.9567, Accuracy: 52.30%
+2024-10-10 15:42:44,081 - INFO - Epoch 4/10, Loss: 8.8380, Accuracy: 59.19%
+2024-10-10 15:42:52,709 - INFO - Epoch 5/10, Loss: 8.4385, Accuracy: 60.99%
+2024-10-10 15:43:01,337 - INFO - Epoch 6/10, Loss: 5.7678, Accuracy: 83.17%
+2024-10-10 15:43:10,006 - INFO - Epoch 7/10, Loss: 3.3938, Accuracy: 90.81%
+2024-10-10 15:43:18,692 - INFO - Epoch 8/10, Loss: 2.3946, Accuracy: 94.60%
+2024-10-10 15:43:27,314 - INFO - Epoch 9/10, Loss: 2.0268, Accuracy: 95.47%
+2024-10-10 15:43:35,958 - INFO - Epoch 10/10, Loss: 1.7270, Accuracy: 96.40%
+2024-10-10 15:43:37,373 - INFO - Model size: 7.19 MB, Accuracy: 0.9653, Precision: 0.9660
+2024-10-10 15:43:46,021 - INFO - Epoch 1/10, Loss: 38.7275, Accuracy: 50.56%
+2024-10-10 15:43:54,626 - INFO - Epoch 2/10, Loss: 35.5555, Accuracy: 48.01%
+2024-10-10 15:44:03,257 - INFO - Epoch 3/10, Loss: 35.3832, Accuracy: 52.17%
+2024-10-10 15:44:11,859 - INFO - Epoch 4/10, Loss: 35.9057, Accuracy: 48.94%
+2024-10-10 15:44:20,493 - INFO - Epoch 5/10, Loss: 35.5221, Accuracy: 52.67%
+2024-10-10 15:44:29,095 - INFO - Epoch 6/10, Loss: 35.4676, Accuracy: 51.30%
+2024-10-10 15:44:37,673 - INFO - Epoch 7/10, Loss: 35.4441, Accuracy: 50.37%
+2024-10-10 15:44:46,253 - INFO - Epoch 8/10, Loss: 35.5945, Accuracy: 48.20%
+2024-10-10 15:44:54,893 - INFO - Epoch 9/10, Loss: 35.5602, Accuracy: 48.39%
+2024-10-10 15:45:03,488 - INFO - Epoch 10/10, Loss: 35.5786, Accuracy: 50.06%
+2024-10-10 15:45:04,922 - INFO - Model size: 4.50 MB, Accuracy: 0.4988, Precision: 0.2494
+2024-10-10 15:45:12,122 - INFO - Epoch 1/10, Loss: 18.9891, Accuracy: 50.68%
+2024-10-10 15:45:19,372 - INFO - Epoch 2/10, Loss: 17.8794, Accuracy: 51.93%
+2024-10-10 15:45:26,553 - INFO - Epoch 3/10, Loss: 15.5631, Accuracy: 74.22%
+2024-10-10 15:45:33,676 - INFO - Epoch 4/10, Loss: 9.7967, Accuracy: 90.00%
+2024-10-10 15:45:40,814 - INFO - Epoch 5/10, Loss: 5.6463, Accuracy: 93.29%
+2024-10-10 15:45:47,963 - INFO - Epoch 6/10, Loss: 4.1570, Accuracy: 95.22%
+2024-10-10 15:45:55,123 - INFO - Epoch 7/10, Loss: 3.9348, Accuracy: 95.47%
+2024-10-10 15:46:02,396 - INFO - Epoch 8/10, Loss: 3.3179, Accuracy: 96.09%
+2024-10-10 15:46:09,618 - INFO - Epoch 9/10, Loss: 2.9748, Accuracy: 96.77%
+2024-10-10 15:46:16,746 - INFO - Epoch 10/10, Loss: 2.8477, Accuracy: 96.46%
+2024-10-10 15:46:18,056 - INFO - Model size: 4.93 MB, Accuracy: 0.9677, Precision: 0.9681
+2024-10-10 15:46:25,376 - INFO - Epoch 1/10, Loss: 19.5592, Accuracy: 48.94%
+2024-10-10 15:46:32,683 - INFO - Epoch 2/10, Loss: 17.2933, Accuracy: 66.40%
+2024-10-10 15:46:39,879 - INFO - Epoch 3/10, Loss: 14.6942, Accuracy: 71.43%
+2024-10-10 15:46:46,999 - INFO - Epoch 4/10, Loss: 7.2455, Accuracy: 92.92%
+2024-10-10 15:46:54,239 - INFO - Epoch 5/10, Loss: 4.8018, Accuracy: 94.10%
+2024-10-10 15:47:01,483 - INFO - Epoch 6/10, Loss: 3.6657, Accuracy: 96.09%
+2024-10-10 15:47:08,689 - INFO - Epoch 7/10, Loss: 3.5516, Accuracy: 96.34%
+2024-10-10 15:47:15,875 - INFO - Epoch 8/10, Loss: 3.5661, Accuracy: 96.09%
+2024-10-10 15:47:23,037 - INFO - Epoch 9/10, Loss: 2.9699, Accuracy: 96.58%
+2024-10-10 15:47:30,239 - INFO - Epoch 10/10, Loss: 2.7552, Accuracy: 96.58%
+2024-10-10 15:47:31,616 - INFO - Model size: 4.93 MB, Accuracy: 0.9305, Precision: 0.9389
+2024-10-10 15:47:39,058 - INFO - Epoch 1/10, Loss: 18.2269, Accuracy: 50.19%
+2024-10-10 15:47:46,211 - INFO - Epoch 2/10, Loss: 17.3404, Accuracy: 58.07%
+2024-10-10 15:47:53,448 - INFO - Epoch 3/10, Loss: 16.4829, Accuracy: 64.91%
+2024-10-10 15:48:00,662 - INFO - Epoch 4/10, Loss: 13.8873, Accuracy: 88.88%
+2024-10-10 15:48:07,801 - INFO - Epoch 5/10, Loss: 9.4651, Accuracy: 92.67%
+2024-10-10 15:48:15,007 - INFO - Epoch 6/10, Loss: 5.9448, Accuracy: 94.47%
+2024-10-10 15:48:22,158 - INFO - Epoch 7/10, Loss: 5.0313, Accuracy: 94.66%
+2024-10-10 15:48:29,330 - INFO - Epoch 8/10, Loss: 4.6509, Accuracy: 94.47%
+2024-10-10 15:48:36,454 - INFO - Epoch 9/10, Loss: 4.0310, Accuracy: 94.72%
+2024-10-10 15:48:43,629 - INFO - Epoch 10/10, Loss: 3.7086, Accuracy: 95.90%
+2024-10-10 15:48:44,938 - INFO - Model size: 4.93 MB, Accuracy: 0.9653, Precision: 0.9654
+2024-10-10 15:48:51,591 - INFO - Epoch 1/10, Loss: 35.7427, Accuracy: 48.94%
+2024-10-10 15:48:58,307 - INFO - Epoch 2/10, Loss: 35.2744, Accuracy: 52.73%
+2024-10-10 15:49:05,185 - INFO - Epoch 3/10, Loss: 34.7535, Accuracy: 54.22%
+2024-10-10 15:49:11,872 - INFO - Epoch 4/10, Loss: 34.1435, Accuracy: 59.25%
+2024-10-10 15:49:18,586 - INFO - Epoch 5/10, Loss: 33.1678, Accuracy: 65.65%
+2024-10-10 15:49:25,235 - INFO - Epoch 6/10, Loss: 31.6212, Accuracy: 81.30%
+2024-10-10 15:49:31,994 - INFO - Epoch 7/10, Loss: 29.6628, Accuracy: 82.61%
+2024-10-10 15:49:38,709 - INFO - Epoch 8/10, Loss: 27.3822, Accuracy: 82.30%
+2024-10-10 15:49:45,420 - INFO - Epoch 9/10, Loss: 24.4225, Accuracy: 84.29%
+2024-10-10 15:49:52,148 - INFO - Epoch 10/10, Loss: 22.1594, Accuracy: 86.09%
+2024-10-10 15:49:53,459 - INFO - Model size: 0.16 MB, Accuracy: 0.8859, Precision: 0.8890
+2024-10-10 15:50:00,923 - INFO - Epoch 1/10, Loss: 20.2891, Accuracy: 50.81%
+2024-10-10 15:50:08,095 - INFO - Epoch 2/10, Loss: 17.6821, Accuracy: 53.11%
+2024-10-10 15:50:15,269 - INFO - Epoch 3/10, Loss: 12.9128, Accuracy: 80.06%
+2024-10-10 15:50:22,464 - INFO - Epoch 4/10, Loss: 5.8135, Accuracy: 92.67%
+2024-10-10 15:50:29,625 - INFO - Epoch 5/10, Loss: 4.2106, Accuracy: 95.28%
+2024-10-10 15:50:36,869 - INFO - Epoch 6/10, Loss: 3.4602, Accuracy: 96.34%
+2024-10-10 15:50:44,024 - INFO - Epoch 7/10, Loss: 3.2959, Accuracy: 95.84%
+2024-10-10 15:50:51,201 - INFO - Epoch 8/10, Loss: 3.1063, Accuracy: 96.83%
+2024-10-10 15:50:58,459 - INFO - Epoch 9/10, Loss: 3.0240, Accuracy: 96.40%
+2024-10-10 15:51:05,859 - INFO - Epoch 10/10, Loss: 2.7574, Accuracy: 96.71%
+2024-10-10 15:51:07,167 - INFO - Model size: 4.93 MB, Accuracy: 0.9603, Precision: 0.9611
+2024-10-10 15:51:14,581 - INFO - Epoch 1/10, Loss: 36.2171, Accuracy: 54.84%
+2024-10-10 15:51:21,911 - INFO - Epoch 2/10, Loss: 21.7585, Accuracy: 79.25%
+2024-10-10 15:51:29,190 - INFO - Epoch 3/10, Loss: 10.8603, Accuracy: 91.61%
+2024-10-10 15:51:36,617 - INFO - Epoch 4/10, Loss: 6.9302, Accuracy: 95.40%
+2024-10-10 15:51:43,938 - INFO - Epoch 5/10, Loss: 5.6546, Accuracy: 96.34%
+2024-10-10 15:51:51,435 - INFO - Epoch 6/10, Loss: 5.6309, Accuracy: 96.02%
+2024-10-10 15:51:58,760 - INFO - Epoch 7/10, Loss: 6.1387, Accuracy: 95.71%
+2024-10-10 15:52:06,163 - INFO - Epoch 8/10, Loss: 5.2415, Accuracy: 96.52%
+2024-10-10 15:52:13,479 - INFO - Epoch 9/10, Loss: 4.6303, Accuracy: 95.96%
+2024-10-10 15:52:20,799 - INFO - Epoch 10/10, Loss: 4.2915, Accuracy: 97.20%
+2024-10-10 15:52:22,110 - INFO - Model size: 4.93 MB, Accuracy: 0.9702, Precision: 0.9703
+2024-10-10 15:52:28,647 - INFO - Epoch 1/10, Loss: 35.8769, Accuracy: 49.69%
+2024-10-10 15:52:35,261 - INFO - Epoch 2/10, Loss: 35.2755, Accuracy: 52.24%
+2024-10-10 15:52:41,878 - INFO - Epoch 3/10, Loss: 33.4150, Accuracy: 64.91%
+2024-10-10 15:52:48,377 - INFO - Epoch 4/10, Loss: 28.9590, Accuracy: 77.52%
+2024-10-10 15:52:55,118 - INFO - Epoch 5/10, Loss: 24.4191, Accuracy: 84.04%
+2024-10-10 15:53:01,820 - INFO - Epoch 6/10, Loss: 21.3962, Accuracy: 87.64%
+2024-10-10 15:53:08,496 - INFO - Epoch 7/10, Loss: 19.5405, Accuracy: 89.81%
+2024-10-10 15:53:15,209 - INFO - Epoch 8/10, Loss: 17.6072, Accuracy: 89.63%
+2024-10-10 15:53:21,666 - INFO - Epoch 9/10, Loss: 16.2014, Accuracy: 91.18%
+2024-10-10 15:53:28,283 - INFO - Epoch 10/10, Loss: 15.5185, Accuracy: 90.62%
+2024-10-10 15:53:29,591 - INFO - Model size: 0.30 MB, Accuracy: 0.9231, Precision: 0.9239
+2024-10-10 15:53:37,134 - INFO - Epoch 1/10, Loss: 35.8535, Accuracy: 52.36%
+2024-10-10 15:53:44,435 - INFO - Epoch 2/10, Loss: 32.2099, Accuracy: 61.93%
+2024-10-10 15:53:51,750 - INFO - Epoch 3/10, Loss: 16.6606, Accuracy: 91.43%
+2024-10-10 15:53:59,049 - INFO - Epoch 4/10, Loss: 9.3811, Accuracy: 94.35%
+2024-10-10 15:54:06,357 - INFO - Epoch 5/10, Loss: 7.5057, Accuracy: 95.34%
+2024-10-10 15:54:13,639 - INFO - Epoch 6/10, Loss: 6.9156, Accuracy: 95.59%
+2024-10-10 15:54:21,031 - INFO - Epoch 7/10, Loss: 6.3674, Accuracy: 96.09%
+2024-10-10 15:54:28,313 - INFO - Epoch 8/10, Loss: 5.8918, Accuracy: 96.34%
+2024-10-10 15:54:35,660 - INFO - Epoch 9/10, Loss: 5.2366, Accuracy: 96.65%
+2024-10-10 15:54:42,958 - INFO - Epoch 10/10, Loss: 4.4665, Accuracy: 97.27%
+2024-10-10 15:54:44,330 - INFO - Model size: 4.93 MB, Accuracy: 0.9504, Precision: 0.9541
+2024-10-10 15:54:51,633 - INFO - Epoch 1/10, Loss: 20.1390, Accuracy: 51.86%
+2024-10-10 15:54:58,844 - INFO - Epoch 2/10, Loss: 17.5197, Accuracy: 55.65%
+2024-10-10 15:55:06,169 - INFO - Epoch 3/10, Loss: 12.5613, Accuracy: 78.57%
+2024-10-10 15:55:13,490 - INFO - Epoch 4/10, Loss: 6.7633, Accuracy: 90.37%
+2024-10-10 15:55:20,634 - INFO - Epoch 5/10, Loss: 4.2096, Accuracy: 95.65%
+2024-10-10 15:55:27,958 - INFO - Epoch 6/10, Loss: 4.6028, Accuracy: 93.23%
+2024-10-10 15:55:35,138 - INFO - Epoch 7/10, Loss: 3.2992, Accuracy: 96.46%
+2024-10-10 15:55:42,273 - INFO - Epoch 8/10, Loss: 2.7811, Accuracy: 96.46%
+2024-10-10 15:55:49,472 - INFO - Epoch 9/10, Loss: 2.6382, Accuracy: 96.58%
+2024-10-10 15:55:56,590 - INFO - Epoch 10/10, Loss: 2.7003, Accuracy: 96.65%
+2024-10-10 15:55:57,892 - INFO - Model size: 4.93 MB, Accuracy: 0.9801, Precision: 0.9805
+2024-10-10 15:56:05,325 - INFO - Epoch 1/10, Loss: 38.0614, Accuracy: 49.44%
+2024-10-10 15:56:12,615 - INFO - Epoch 2/10, Loss: 26.0057, Accuracy: 73.48%
+2024-10-10 15:56:19,910 - INFO - Epoch 3/10, Loss: 9.8922, Accuracy: 92.92%
+2024-10-10 15:56:27,234 - INFO - Epoch 4/10, Loss: 6.9446, Accuracy: 95.09%
+2024-10-10 15:56:34,516 - INFO - Epoch 5/10, Loss: 5.4438, Accuracy: 97.02%
+2024-10-10 15:56:41,839 - INFO - Epoch 6/10, Loss: 5.2854, Accuracy: 96.27%
+2024-10-10 15:56:49,115 - INFO - Epoch 7/10, Loss: 4.3962, Accuracy: 96.89%
+2024-10-10 15:56:56,433 - INFO - Epoch 8/10, Loss: 4.0001, Accuracy: 97.14%
+2024-10-10 15:57:03,776 - INFO - Epoch 9/10, Loss: 3.8463, Accuracy: 97.64%
+2024-10-10 15:57:11,081 - INFO - Epoch 10/10, Loss: 4.5700, Accuracy: 96.83%
+2024-10-10 15:57:12,405 - INFO - Model size: 4.93 MB, Accuracy: 0.9653, Precision: 0.9664
+2024-10-10 15:57:19,711 - INFO - Epoch 1/10, Loss: 22.0897, Accuracy: 51.99%
+2024-10-10 15:57:26,931 - INFO - Epoch 2/10, Loss: 17.7340, Accuracy: 55.53%
+2024-10-10 15:57:34,090 - INFO - Epoch 3/10, Loss: 15.4606, Accuracy: 78.20%
+2024-10-10 15:57:41,192 - INFO - Epoch 4/10, Loss: 6.3481, Accuracy: 94.29%
+2024-10-10 15:57:48,327 - INFO - Epoch 5/10, Loss: 4.8402, Accuracy: 93.91%
+2024-10-10 15:57:55,477 - INFO - Epoch 6/10, Loss: 4.0815, Accuracy: 94.60%
+2024-10-10 15:58:02,653 - INFO - Epoch 7/10, Loss: 3.2075, Accuracy: 96.40%
+2024-10-10 15:58:09,756 - INFO - Epoch 8/10, Loss: 2.8468, Accuracy: 96.46%
+2024-10-10 15:58:16,944 - INFO - Epoch 9/10, Loss: 2.9472, Accuracy: 96.71%
+2024-10-10 15:58:24,036 - INFO - Epoch 10/10, Loss: 3.2736, Accuracy: 95.78%
+2024-10-10 15:58:25,337 - INFO - Model size: 4.93 MB, Accuracy: 0.9132, Precision: 0.9258
+2024-10-10 15:58:32,655 - INFO - Epoch 1/10, Loss: 20.3357, Accuracy: 51.74%
+2024-10-10 15:58:39,863 - INFO - Epoch 2/10, Loss: 17.8433, Accuracy: 51.68%
+2024-10-10 15:58:47,019 - INFO - Epoch 3/10, Loss: 15.6804, Accuracy: 65.28%
+2024-10-10 15:58:54,170 - INFO - Epoch 4/10, Loss: 6.3554, Accuracy: 92.55%
+2024-10-10 15:59:01,349 - INFO - Epoch 5/10, Loss: 3.9816, Accuracy: 94.91%
+2024-10-10 15:59:08,457 - INFO - Epoch 6/10, Loss: 3.1936, Accuracy: 96.58%
+2024-10-10 15:59:15,666 - INFO - Epoch 7/10, Loss: 2.8845, Accuracy: 96.40%
+2024-10-10 15:59:22,819 - INFO - Epoch 8/10, Loss: 2.4320, Accuracy: 96.89%
+2024-10-10 15:59:29,926 - INFO - Epoch 9/10, Loss: 2.3778, Accuracy: 97.08%
+2024-10-10 15:59:37,102 - INFO - Epoch 10/10, Loss: 2.3074, Accuracy: 97.02%
+2024-10-10 15:59:38,417 - INFO - Model size: 4.93 MB, Accuracy: 0.9653, Precision: 0.9656
+2024-10-10 15:59:45,704 - INFO - Epoch 1/10, Loss: 20.2313, Accuracy: 52.24%
+2024-10-10 15:59:52,897 - INFO - Epoch 2/10, Loss: 17.4654, Accuracy: 55.96%
+2024-10-10 16:00:00,240 - INFO - Epoch 3/10, Loss: 13.6143, Accuracy: 82.48%
+2024-10-10 16:00:07,565 - INFO - Epoch 4/10, Loss: 6.8615, Accuracy: 90.31%
+2024-10-10 16:00:14,873 - INFO - Epoch 5/10, Loss: 4.0034, Accuracy: 95.34%
+2024-10-10 16:00:22,056 - INFO - Epoch 6/10, Loss: 3.3378, Accuracy: 95.96%
+2024-10-10 16:00:29,319 - INFO - Epoch 7/10, Loss: 2.9115, Accuracy: 96.65%
+2024-10-10 16:00:36,476 - INFO - Epoch 8/10, Loss: 3.1587, Accuracy: 95.90%
+2024-10-10 16:00:43,667 - INFO - Epoch 9/10, Loss: 2.5835, Accuracy: 96.65%
+2024-10-10 16:00:50,877 - INFO - Epoch 10/10, Loss: 2.5200, Accuracy: 97.33%
+2024-10-10 16:00:52,176 - INFO - Model size: 4.93 MB, Accuracy: 0.9727, Precision: 0.9730
+2024-10-10 16:00:58,505 - INFO - Epoch 1/10, Loss: 18.3134, Accuracy: 50.37%
+2024-10-10 16:01:05,055 - INFO - Epoch 2/10, Loss: 18.0009, Accuracy: 49.57%
+2024-10-10 16:01:11,269 - INFO - Epoch 3/10, Loss: 17.1869, Accuracy: 65.40%
+2024-10-10 16:01:17,681 - INFO - Epoch 4/10, Loss: 15.3531, Accuracy: 70.50%
+2024-10-10 16:01:24,041 - INFO - Epoch 5/10, Loss: 12.4047, Accuracy: 84.29%
+2024-10-10 16:01:30,414 - INFO - Epoch 6/10, Loss: 10.6186, Accuracy: 87.20%
+2024-10-10 16:01:36,708 - INFO - Epoch 7/10, Loss: 9.1188, Accuracy: 88.70%
+2024-10-10 16:01:43,078 - INFO - Epoch 8/10, Loss: 8.0591, Accuracy: 91.12%
+2024-10-10 16:01:49,520 - INFO - Epoch 9/10, Loss: 7.1135, Accuracy: 93.04%
+2024-10-10 16:01:55,915 - INFO - Epoch 10/10, Loss: 7.1562, Accuracy: 93.35%
+2024-10-10 16:01:57,161 - INFO - Model size: 0.58 MB, Accuracy: 0.9082, Precision: 0.9207
+2024-10-10 16:02:04,973 - INFO - Epoch 1/10, Loss: 19.2399, Accuracy: 52.11%
+2024-10-10 16:02:12,124 - INFO - Epoch 2/10, Loss: 16.9693, Accuracy: 61.30%
+2024-10-10 16:02:19,241 - INFO - Epoch 3/10, Loss: 13.2691, Accuracy: 73.54%
+2024-10-10 16:02:26,353 - INFO - Epoch 4/10, Loss: 6.2952, Accuracy: 93.42%
+2024-10-10 16:02:33,548 - INFO - Epoch 5/10, Loss: 5.1001, Accuracy: 92.86%
+2024-10-10 16:02:40,659 - INFO - Epoch 6/10, Loss: 3.8600, Accuracy: 95.40%
+2024-10-10 16:02:47,761 - INFO - Epoch 7/10, Loss: 3.2923, Accuracy: 96.09%
+2024-10-10 16:02:54,915 - INFO - Epoch 8/10, Loss: 3.0543, Accuracy: 96.27%
+2024-10-10 16:03:02,083 - INFO - Epoch 9/10, Loss: 2.7831, Accuracy: 96.46%
+2024-10-10 16:03:09,276 - INFO - Epoch 10/10, Loss: 2.5957, Accuracy: 96.27%
+2024-10-10 16:03:10,587 - INFO - Model size: 4.93 MB, Accuracy: 0.9727, Precision: 0.9742
+2024-10-10 16:03:18,067 - INFO - Epoch 1/10, Loss: 10.6118, Accuracy: 50.75%
+2024-10-10 16:03:25,346 - INFO - Epoch 2/10, Loss: 9.2009, Accuracy: 48.14%
+2024-10-10 16:03:32,634 - INFO - Epoch 3/10, Loss: 8.8464, Accuracy: 55.03%
+2024-10-10 16:03:39,901 - INFO - Epoch 4/10, Loss: 8.4467, Accuracy: 69.94%
+2024-10-10 16:03:47,181 - INFO - Epoch 5/10, Loss: 7.2274, Accuracy: 85.96%
+2024-10-10 16:03:54,474 - INFO - Epoch 6/10, Loss: 4.4014, Accuracy: 90.87%
+2024-10-10 16:04:01,950 - INFO - Epoch 7/10, Loss: 2.8353, Accuracy: 93.35%
+2024-10-10 16:04:09,276 - INFO - Epoch 8/10, Loss: 2.2134, Accuracy: 95.09%
+2024-10-10 16:04:16,562 - INFO - Epoch 9/10, Loss: 1.9518, Accuracy: 95.90%
+2024-10-10 16:04:23,949 - INFO - Epoch 10/10, Loss: 1.7187, Accuracy: 96.46%
+2024-10-10 16:04:25,265 - INFO - Model size: 4.93 MB, Accuracy: 0.9727, Precision: 0.9730
+2024-10-10 16:04:32,716 - INFO - Epoch 1/10, Loss: 38.5621, Accuracy: 50.81%
+2024-10-10 16:04:40,075 - INFO - Epoch 2/10, Loss: 28.0101, Accuracy: 71.93%
+2024-10-10 16:04:47,353 - INFO - Epoch 3/10, Loss: 11.0021, Accuracy: 92.67%
+2024-10-10 16:04:54,679 - INFO - Epoch 4/10, Loss: 8.4200, Accuracy: 94.97%
+2024-10-10 16:05:01,979 - INFO - Epoch 5/10, Loss: 6.2716, Accuracy: 95.90%
+2024-10-10 16:05:09,273 - INFO - Epoch 6/10, Loss: 5.7308, Accuracy: 95.71%
+2024-10-10 16:05:16,557 - INFO - Epoch 7/10, Loss: 4.8122, Accuracy: 96.77%
+2024-10-10 16:05:23,864 - INFO - Epoch 8/10, Loss: 4.5681, Accuracy: 97.14%
+2024-10-10 16:05:31,218 - INFO - Epoch 9/10, Loss: 5.3626, Accuracy: 95.96%
+2024-10-10 16:05:38,487 - INFO - Epoch 10/10, Loss: 4.2149, Accuracy: 96.96%
+2024-10-10 16:05:39,813 - INFO - Model size: 4.93 MB, Accuracy: 0.9677, Precision: 0.9691
+2024-10-10 16:05:46,537 - INFO - Epoch 1/10, Loss: 35.3400, Accuracy: 50.25%
+2024-10-10 16:05:53,079 - INFO - Epoch 2/10, Loss: 35.0689, Accuracy: 59.07%
+2024-10-10 16:05:59,786 - INFO - Epoch 3/10, Loss: 34.7705, Accuracy: 62.80%
+2024-10-10 16:06:06,797 - INFO - Epoch 4/10, Loss: 33.9247, Accuracy: 60.75%
+2024-10-10 16:06:13,265 - INFO - Epoch 5/10, Loss: 32.9791, Accuracy: 71.24%
+2024-10-10 16:06:19,919 - INFO - Epoch 6/10, Loss: 31.2814, Accuracy: 79.88%
+2024-10-10 16:06:26,580 - INFO - Epoch 7/10, Loss: 29.1155, Accuracy: 86.46%
+2024-10-10 16:06:33,176 - INFO - Epoch 8/10, Loss: 27.1150, Accuracy: 85.47%
+2024-10-10 16:06:39,784 - INFO - Epoch 9/10, Loss: 24.6370, Accuracy: 89.32%
+2024-10-10 16:06:46,319 - INFO - Epoch 10/10, Loss: 22.2477, Accuracy: 90.31%
+2024-10-10 16:06:47,604 - INFO - Model size: 1.16 MB, Accuracy: 0.8859, Precision: 0.8984
+2024-10-10 16:06:55,024 - INFO - Epoch 1/10, Loss: 39.3597, Accuracy: 49.94%
+2024-10-10 16:07:02,321 - INFO - Epoch 2/10, Loss: 31.6412, Accuracy: 64.91%
+2024-10-10 16:07:09,679 - INFO - Epoch 3/10, Loss: 11.7389, Accuracy: 92.42%
+2024-10-10 16:07:16,977 - INFO - Epoch 4/10, Loss: 6.7608, Accuracy: 95.84%
+2024-10-10 16:07:24,371 - INFO - Epoch 5/10, Loss: 6.0042, Accuracy: 96.15%
+2024-10-10 16:07:31,618 - INFO - Epoch 6/10, Loss: 5.0177, Accuracy: 96.52%
+2024-10-10 16:07:38,912 - INFO - Epoch 7/10, Loss: 5.5626, Accuracy: 95.78%
+2024-10-10 16:07:46,143 - INFO - Epoch 8/10, Loss: 5.4577, Accuracy: 96.40%
+2024-10-10 16:07:53,361 - INFO - Epoch 9/10, Loss: 4.0931, Accuracy: 97.33%
+2024-10-10 16:08:00,900 - INFO - Epoch 10/10, Loss: 3.6944, Accuracy: 97.83%
+2024-10-10 16:08:02,303 - INFO - Model size: 4.93 MB, Accuracy: 0.9305, Precision: 0.9377
+2024-10-10 16:08:02,328 - INFO - Pareto-optimal trials:
+2024-10-10 16:08:02,328 - INFO - Trial number: 31
+2024-10-10 16:08:02,328 - INFO -   Accuracy: 0.9801
+2024-10-10 16:08:02,328 - INFO -   Params:
+2024-10-10 16:08:02,328 - INFO -     num_heads_hidden_dim: (4, 128)
+2024-10-10 16:08:02,328 - INFO -     num_layers: 2
+2024-10-10 16:08:02,328 - INFO -     dropout: 0.016785860025700088
+2024-10-10 16:08:02,328 - INFO -     learning_rate: 0.0003598092242061474
+2024-10-10 16:08:02,328 - INFO -     batch_size: 32
+2024-10-10 16:08:02,329 - INFO - Trial number: 57
+2024-10-10 16:08:02,329 - INFO -   Accuracy: 0.9801
+2024-10-10 16:08:02,329 - INFO -   Params:
+2024-10-10 16:08:02,329 - INFO -     num_heads_hidden_dim: (4, 128)
+2024-10-10 16:08:02,329 - INFO -     num_layers: 2
+2024-10-10 16:08:02,329 - INFO -     dropout: 0.030407375016113382
+2024-10-10 16:08:02,329 - INFO -     learning_rate: 0.0009958792896398291
+2024-10-10 16:08:02,329 - INFO -     batch_size: 32
+2024-10-10 16:08:02,329 - INFO - Trial number: 89
+2024-10-10 16:08:02,329 - INFO -   Accuracy: 0.9801
+2024-10-10 16:08:02,329 - INFO -   Params:
+2024-10-10 16:08:02,329 - INFO -     num_heads_hidden_dim: (4, 128)
+2024-10-10 16:08:02,330 - INFO -     num_layers: 2
+2024-10-10 16:08:02,330 - INFO -     dropout: 0.017131229778571955
+2024-10-10 16:08:02,330 - INFO -     learning_rate: 0.0005402745744376172
+2024-10-10 16:08:02,330 - INFO -     batch_size: 64
+2024-10-10 16:08:09,867 - INFO - Epoch 1/10, Loss: 36.4791, Accuracy: 52.73%
+2024-10-10 16:08:17,156 - INFO - Epoch 2/10, Loss: 24.2100, Accuracy: 76.58%
+2024-10-10 16:08:24,547 - INFO - Epoch 3/10, Loss: 10.3246, Accuracy: 92.67%
+2024-10-10 16:08:31,838 - INFO - Epoch 4/10, Loss: 7.3118, Accuracy: 95.78%
+2024-10-10 16:08:39,149 - INFO - Epoch 5/10, Loss: 6.9511, Accuracy: 95.84%
+2024-10-10 16:08:46,413 - INFO - Epoch 6/10, Loss: 5.7273, Accuracy: 95.71%
+2024-10-10 16:08:53,729 - INFO - Epoch 7/10, Loss: 5.0688, Accuracy: 96.77%
+2024-10-10 16:09:01,060 - INFO - Epoch 8/10, Loss: 5.2127, Accuracy: 95.90%
+2024-10-10 16:09:08,316 - INFO - Epoch 9/10, Loss: 4.5675, Accuracy: 96.65%
+2024-10-10 16:09:15,589 - INFO - Epoch 10/10, Loss: 4.3396, Accuracy: 97.33%
+2024-10-10 16:09:16,901 - INFO - Accuracy: 97.52%
+2024-10-10 16:09:16,901 - INFO - Classification Report:
+2024-10-10 16:09:16,909 - INFO -               precision    recall  f1-score   support
+
+    Non-Fall       0.99      0.96      0.97       202
+        Fall       0.96      1.00      0.98       201
+
+    accuracy                           0.98       403
+   macro avg       0.98      0.98      0.98       403
+weighted avg       0.98      0.98      0.98       403
+

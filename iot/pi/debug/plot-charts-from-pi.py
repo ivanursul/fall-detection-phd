@@ -45,7 +45,6 @@ def save_plots(filtered_data):
 
     # Plot 4: 'Altitude' and 'MovingAvgAltitude'
     axs[1, 1].plot(filtered_data['Altitude'], label='Altitude')
-    axs[1, 1].plot(filtered_data['MovingAvgAltitude'], label='Moving Avg Altitude', color='red', linewidth=2)
     axs[1, 1].plot(filtered_data['altitude_filtered'], label='Altitude filtered', color='orange', linewidth=2)
     axs[1, 1].set_title('Altitude Data and Moving Average')
     axs[1, 1].set_xlabel('Time')

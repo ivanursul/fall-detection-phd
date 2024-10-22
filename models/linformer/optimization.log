@@ -1,0 +1,781 @@
+2024-10-08 14:23:57,943 - INFO - Trial 0: num_heads=5, num_layers=1, hidden_dim=134, dropout=0.25574765828131873, learning_rate=0.00016595056302887403, batch_size=47
+2024-10-08 14:30:55,197 - INFO - Trial 0: num_heads=4, num_layers=1, hidden_dim=4, dropout=0.25016041217373247, learning_rate=3.23886522034978e-05, batch_size=24
+2024-10-08 14:30:55,554 - INFO - Initial CPU usage: 0.0% and memory: 425.21 MB
+2024-10-08 14:31:16,271 - INFO - Epoch [1/20] - Loss: 47.8544
+2024-10-08 14:31:36,016 - INFO - Epoch [2/20] - Loss: 47.2797
+2024-10-08 14:31:55,812 - INFO - Epoch [3/20] - Loss: 46.7650
+2024-10-08 14:32:18,115 - INFO - Epoch [4/20] - Loss: 45.9787
+2024-10-08 14:32:38,647 - INFO - Epoch [5/20] - Loss: 44.8248
+2024-10-08 14:32:58,587 - INFO - Epoch [6/20] - Loss: 42.6858
+2024-10-08 14:33:18,564 - INFO - Epoch [7/20] - Loss: 39.0132
+2024-10-08 14:33:38,158 - INFO - Epoch [8/20] - Loss: 34.9764
+2024-10-08 14:33:58,201 - INFO - Epoch [9/20] - Loss: 31.2419
+2024-10-08 14:34:19,150 - INFO - Epoch [10/20] - Loss: 29.1044
+2024-10-08 14:34:40,316 - INFO - Epoch [11/20] - Loss: 27.6252
+2024-10-08 14:35:01,002 - INFO - Epoch [12/20] - Loss: 24.9648
+2024-10-08 14:35:22,359 - INFO - Epoch [13/20] - Loss: 23.5984
+2024-10-08 14:35:43,980 - INFO - Epoch [14/20] - Loss: 22.8560
+2024-10-08 14:36:05,954 - INFO - Epoch [15/20] - Loss: 21.8573
+2024-10-08 14:36:26,870 - INFO - Epoch [16/20] - Loss: 20.8761
+2024-10-08 14:36:47,509 - INFO - Epoch [17/20] - Loss: 20.6524
+2024-10-08 14:37:08,100 - INFO - Epoch [18/20] - Loss: 19.5337
+2024-10-08 14:37:29,348 - INFO - Epoch [19/20] - Loss: 18.6446
+2024-10-08 14:37:51,122 - INFO - Epoch [20/20] - Loss: 17.9946
+2024-10-08 14:37:53,680 - INFO - Training completed in 418.13 seconds.
+2024-10-08 14:37:53,680 - INFO - CPU consumed: 789.7%, Memory consumed: 228.29 MB, Accuracy: 0.9032, Precision: 0.9050
+2024-10-08 14:37:53,682 - INFO - Trial 1: num_heads=4, num_layers=1, hidden_dim=8, dropout=0.012628957828415388, learning_rate=0.0002491242485395866, batch_size=18
+2024-10-08 14:37:53,691 - INFO - Initial CPU usage: 0.0% and memory: 653.52 MB
+2024-10-08 14:38:09,972 - INFO - Epoch [1/20] - Loss: 59.8001
+2024-10-08 14:38:26,044 - INFO - Epoch [2/20] - Loss: 34.3607
+2024-10-08 14:38:42,010 - INFO - Epoch [3/20] - Loss: 17.5507
+2024-10-08 14:40:08,011 - INFO - Trial 0: num_heads=4, num_layers=2, hidden_dim=8, dropout=0.21475270057085682, learning_rate=0.00017984555166347557, batch_size=21
+2024-10-08 14:40:08,399 - INFO - Initial CPU usage: 0.0% and memory: 426.62 MB
+2024-10-08 14:40:33,794 - INFO - Epoch [1/10] - Loss: 51.7934
+2024-10-08 14:40:58,557 - INFO - Epoch [2/10] - Loss: 33.7077
+2024-10-08 14:41:23,956 - INFO - Epoch [3/10] - Loss: 19.2279
+2024-10-08 14:41:48,978 - INFO - Epoch [4/10] - Loss: 13.8832
+2024-10-08 14:42:14,009 - INFO - Epoch [5/10] - Loss: 10.3906
+2024-10-08 14:42:39,324 - INFO - Epoch [6/10] - Loss: 8.6623
+2024-10-08 14:43:04,755 - INFO - Epoch [7/10] - Loss: 10.1952
+2024-10-08 14:43:29,896 - INFO - Epoch [8/10] - Loss: 7.3149
+2024-10-08 14:43:55,061 - INFO - Epoch [9/10] - Loss: 5.9012
+2024-10-08 14:44:19,985 - INFO - Epoch [10/10] - Loss: 5.3716
+2024-10-08 14:44:22,559 - INFO - Training completed in 254.16 seconds.
+2024-10-08 14:44:22,559 - INFO - CPU consumed: 798.3%, Memory consumed: 619.25 MB, Accuracy: 0.9653, Precision: 0.9517
+2024-10-08 14:44:22,562 - INFO - Trial 1: num_heads=4, num_layers=2, hidden_dim=4, dropout=0.4330834256610209, learning_rate=2.82479957588377e-05, batch_size=30
+2024-10-08 14:44:22,572 - INFO - Initial CPU usage: 0.0% and memory: 1045.95 MB
+2024-10-08 14:44:50,452 - INFO - Epoch [1/10] - Loss: 39.5775
+2024-10-08 14:45:18,517 - INFO - Epoch [2/10] - Loss: 37.2662
+2024-10-08 14:45:46,415 - INFO - Epoch [3/10] - Loss: 36.5356
+2024-10-08 14:46:14,312 - INFO - Epoch [4/10] - Loss: 36.0786
+2024-10-08 14:46:42,381 - INFO - Epoch [5/10] - Loss: 35.4189
+2024-10-08 14:47:10,677 - INFO - Epoch [6/10] - Loss: 34.1950
+2024-10-08 14:47:38,560 - INFO - Epoch [7/10] - Loss: 31.6646
+2024-10-08 14:48:09,783 - INFO - Epoch [8/10] - Loss: 27.3393
+2024-10-08 14:48:43,200 - INFO - Epoch [9/10] - Loss: 21.7867
+2024-10-08 14:49:16,042 - INFO - Epoch [10/10] - Loss: 17.1514
+2024-10-08 14:49:19,313 - INFO - Training completed in 296.74 seconds.
+2024-10-08 14:49:19,313 - INFO - CPU consumed: 798.7%, Memory consumed: -277.45 MB, Accuracy: 0.9231, Precision: 0.9167
+2024-10-08 14:49:19,316 - INFO - Trial 2: num_heads=4, num_layers=1, hidden_dim=16, dropout=0.05967583118001052, learning_rate=1.4491702306086649e-05, batch_size=51
+2024-10-08 14:49:19,321 - INFO - Initial CPU usage: 0.0% and memory: 768.50 MB
+2024-10-08 14:49:35,285 - INFO - Epoch [1/10] - Loss: 22.6653
+2024-10-08 14:49:50,887 - INFO - Epoch [2/10] - Loss: 22.5114
+2024-10-08 14:50:06,420 - INFO - Epoch [3/10] - Loss: 22.3726
+2024-10-08 14:50:22,169 - INFO - Epoch [4/10] - Loss: 22.2625
+2024-10-08 14:50:38,271 - INFO - Epoch [5/10] - Loss: 22.1819
+2024-10-08 14:50:53,990 - INFO - Epoch [6/10] - Loss: 22.0922
+2024-10-08 14:51:10,022 - INFO - Epoch [7/10] - Loss: 22.0034
+2024-10-08 14:51:26,046 - INFO - Epoch [8/10] - Loss: 21.9096
+2024-10-08 14:51:42,207 - INFO - Epoch [9/10] - Loss: 21.7909
+2024-10-08 14:51:58,913 - INFO - Epoch [10/10] - Loss: 21.6679
+2024-10-08 14:52:00,913 - INFO - Training completed in 161.59 seconds.
+2024-10-08 14:52:00,913 - INFO - CPU consumed: 786.6%, Memory consumed: 548.95 MB, Accuracy: 0.7692, Precision: 0.7093
+2024-10-08 14:52:00,915 - INFO - Trial 3: num_heads=4, num_layers=3, hidden_dim=128, dropout=0.0472048622844356, learning_rate=0.0004136831698728161, batch_size=24
+2024-10-08 14:52:00,943 - INFO - Initial CPU usage: 0.0% and memory: 1318.08 MB
+2024-10-08 14:53:18,874 - INFO - Epoch [1/10] - Loss: 27.3393
+2024-10-08 14:54:39,515 - INFO - Epoch [2/10] - Loss: 11.3452
+2024-10-08 14:55:18,517 - INFO - Trial 0: num_heads=4, num_layers=4, hidden_dim=8, dropout=0.0059141078459996055, learning_rate=0.0003766035220689768, batch_size=53
+2024-10-08 14:55:18,863 - INFO - Initial CPU usage: 0.0% and memory: 430.95 MB
+2024-10-08 14:56:16,639 - INFO - Epoch [1/10] - Loss: 18.9997
+2024-10-08 14:57:12,552 - INFO - Epoch [2/10] - Loss: 12.7234
+2024-10-08 14:58:07,304 - INFO - Epoch [3/10] - Loss: 8.1971
+2024-10-08 14:59:02,462 - INFO - Epoch [4/10] - Loss: 5.6589
+2024-10-08 14:59:56,986 - INFO - Epoch [5/10] - Loss: 4.3502
+2024-10-08 15:00:52,238 - INFO - Epoch [6/10] - Loss: 3.2801
+2024-10-08 15:01:46,672 - INFO - Epoch [7/10] - Loss: 2.3965
+2024-10-08 15:02:42,153 - INFO - Epoch [8/10] - Loss: 2.6004
+2024-10-08 15:03:36,638 - INFO - Epoch [9/10] - Loss: 1.5418
+2024-10-08 15:04:32,164 - INFO - Epoch [10/10] - Loss: 1.3664
+2024-10-08 15:04:36,140 - INFO - Training completed in 557.28 seconds.
+2024-10-08 15:04:36,140 - INFO - Model size: 6.31 MB, Accuracy: 0.9727, Precision: 0.9612
+2024-10-08 15:04:36,143 - INFO - Trial 1: num_heads=4, num_layers=2, hidden_dim=64, dropout=0.15433360216895686, learning_rate=0.00016264962717957637, batch_size=63
+2024-10-08 15:04:36,157 - INFO - Initial CPU usage: 0.0% and memory: 856.12 MB
+2024-10-08 15:05:15,599 - INFO - Epoch [1/10] - Loss: 17.4080
+2024-10-08 15:05:53,741 - INFO - Epoch [2/10] - Loss: 13.1683
+2024-10-08 15:06:32,826 - INFO - Epoch [3/10] - Loss: 8.7341
+2024-10-08 15:07:11,462 - INFO - Epoch [4/10] - Loss: 6.2551
+2024-10-08 15:07:50,195 - INFO - Epoch [5/10] - Loss: 3.9575
+2024-10-08 15:08:28,113 - INFO - Epoch [6/10] - Loss: 2.6063
+2024-10-08 15:09:05,926 - INFO - Epoch [7/10] - Loss: 1.9528
+2024-10-08 15:09:44,220 - INFO - Epoch [8/10] - Loss: 1.5810
+2024-10-08 15:10:22,764 - INFO - Epoch [9/10] - Loss: 1.5916
+2024-10-08 15:11:00,657 - INFO - Epoch [10/10] - Loss: 0.9323
+2024-10-08 15:11:03,888 - INFO - Training completed in 387.73 seconds.
+2024-10-08 15:11:03,889 - INFO - Model size: 3.71 MB, Accuracy: 0.9727, Precision: 0.9703
+2024-10-08 15:11:03,893 - INFO - Trial 2: num_heads=4, num_layers=1, hidden_dim=4, dropout=0.26826311738716924, learning_rate=2.0184653303814938e-05, batch_size=24
+2024-10-08 15:11:03,899 - INFO - Initial CPU usage: 0.0% and memory: 1461.95 MB
+2024-10-08 15:11:22,625 - INFO - Epoch [1/10] - Loss: 47.0448
+2024-10-08 15:11:42,341 - INFO - Epoch [2/10] - Loss: 46.7664
+2024-10-08 15:12:01,965 - INFO - Epoch [3/10] - Loss: 46.4658
+2024-10-08 15:12:20,935 - INFO - Epoch [4/10] - Loss: 46.0853
+2024-10-08 15:12:40,261 - INFO - Epoch [5/10] - Loss: 45.7011
+2024-10-08 15:12:59,052 - INFO - Epoch [6/10] - Loss: 45.3383
+2024-10-08 15:13:18,150 - INFO - Epoch [7/10] - Loss: 44.8081
+2024-10-08 15:13:37,343 - INFO - Epoch [8/10] - Loss: 44.2616
+2024-10-08 15:13:56,356 - INFO - Epoch [9/10] - Loss: 43.5965
+2024-10-08 15:14:15,491 - INFO - Epoch [10/10] - Loss: 42.9458
+2024-10-08 15:14:17,961 - INFO - Training completed in 194.06 seconds.
+2024-10-08 15:14:17,961 - INFO - Model size: 1.58 MB, Accuracy: 0.7667, Precision: 0.7296
+2024-10-08 15:14:17,963 - INFO - Trial 3: num_heads=4, num_layers=4, hidden_dim=32, dropout=0.1175031755188603, learning_rate=0.00010072625531885828, batch_size=50
+2024-10-08 15:14:17,989 - INFO - Initial CPU usage: 0.0% and memory: 614.97 MB
+2024-10-08 15:15:15,412 - INFO - Epoch [1/10] - Loss: 22.5814
+2024-10-08 15:16:14,206 - INFO - Epoch [2/10] - Loss: 20.0280
+2024-10-08 15:17:12,903 - INFO - Epoch [3/10] - Loss: 12.6367
+2024-10-08 15:18:10,823 - INFO - Epoch [4/10] - Loss: 9.1341
+2024-10-08 15:19:07,890 - INFO - Epoch [5/10] - Loss: 6.5180
+2024-10-08 15:20:05,708 - INFO - Epoch [6/10] - Loss: 4.6414
+2024-10-08 15:21:04,667 - INFO - Epoch [7/10] - Loss: 3.2803
+2024-10-08 15:22:02,014 - INFO - Epoch [8/10] - Loss: 2.4895
+2024-10-08 15:22:59,941 - INFO - Epoch [9/10] - Loss: 1.9957
+2024-10-08 15:23:57,365 - INFO - Epoch [10/10] - Loss: 1.8089
+2024-10-08 15:24:01,567 - INFO - Training completed in 583.58 seconds.
+2024-10-08 15:24:01,568 - INFO - Model size: 6.56 MB, Accuracy: 0.9380, Precision: 0.8964
+2024-10-08 15:24:01,571 - INFO - Trial 4: num_heads=4, num_layers=4, hidden_dim=4, dropout=0.4353488082885876, learning_rate=0.0001911513188486399, batch_size=22
+2024-10-08 15:24:01,592 - INFO - Initial CPU usage: 0.0% and memory: 1485.43 MB
+2024-10-08 15:24:55,507 - INFO - Epoch [1/10] - Loss: 52.6668
+2024-10-08 15:25:49,636 - INFO - Epoch [2/10] - Loss: 34.1053
+2024-10-08 15:26:44,647 - INFO - Epoch [3/10] - Loss: 20.5069
+2024-10-08 15:27:40,999 - INFO - Epoch [4/10] - Loss: 14.0084
+2024-10-08 15:28:36,027 - INFO - Epoch [5/10] - Loss: 13.1757
+2024-10-08 15:29:30,517 - INFO - Epoch [6/10] - Loss: 9.4002
+2024-10-08 15:30:25,284 - INFO - Epoch [7/10] - Loss: 8.4157
+2024-10-08 15:31:19,945 - INFO - Epoch [8/10] - Loss: 8.7433
+2024-10-08 15:32:14,749 - INFO - Epoch [9/10] - Loss: 5.8738
+2024-10-08 15:33:09,339 - INFO - Epoch [10/10] - Loss: 6.3211
+2024-10-08 15:33:14,200 - INFO - Training completed in 552.61 seconds.
+2024-10-08 15:33:14,200 - INFO - Model size: 6.29 MB, Accuracy: 0.9578, Precision: 0.9340
+2024-10-08 15:33:14,203 - INFO - Trial 5: num_heads=4, num_layers=2, hidden_dim=32, dropout=0.45873492676155825, learning_rate=0.00021683295493074117, batch_size=17
+2024-10-08 15:33:14,212 - INFO - Initial CPU usage: 0.0% and memory: 725.55 MB
+2024-10-08 15:33:42,247 - INFO - Epoch [1/10] - Loss: 54.2166
+2024-10-08 15:34:09,740 - INFO - Epoch [2/10] - Loss: 29.6454
+2024-10-08 15:34:37,360 - INFO - Epoch [3/10] - Loss: 17.2361
+2024-10-08 15:35:04,879 - INFO - Epoch [4/10] - Loss: 9.9077
+2024-10-08 15:35:32,525 - INFO - Epoch [5/10] - Loss: 7.1915
+2024-10-08 15:35:59,897 - INFO - Epoch [6/10] - Loss: 4.9977
+2024-10-08 15:36:27,582 - INFO - Epoch [7/10] - Loss: 3.2226
+2024-10-08 15:36:55,303 - INFO - Epoch [8/10] - Loss: 2.9632
+2024-10-08 15:37:23,478 - INFO - Epoch [9/10] - Loss: 1.6287
+2024-10-08 15:37:50,678 - INFO - Epoch [10/10] - Loss: 1.6883
+2024-10-08 15:37:53,458 - INFO - Training completed in 279.25 seconds.
+2024-10-08 15:37:53,458 - INFO - Model size: 3.33 MB, Accuracy: 0.9355, Precision: 0.8924
+2024-10-08 15:37:53,461 - INFO - Trial 6: num_heads=4, num_layers=2, hidden_dim=64, dropout=0.3582507913489206, learning_rate=8.154002675304155e-05, batch_size=27
+2024-10-08 15:37:53,472 - INFO - Initial CPU usage: 0.0% and memory: 983.81 MB
+2024-10-08 15:38:26,379 - INFO - Epoch [1/10] - Loss: 39.6759
+2024-10-08 15:38:58,880 - INFO - Epoch [2/10] - Loss: 27.0716
+2024-10-08 15:39:31,145 - INFO - Epoch [3/10] - Loss: 19.2695
+2024-10-08 15:40:03,332 - INFO - Epoch [4/10] - Loss: 15.8676
+2024-10-08 15:40:35,607 - INFO - Epoch [5/10] - Loss: 11.8124
+2024-10-08 15:41:08,142 - INFO - Epoch [6/10] - Loss: 8.1311
+2024-10-08 15:41:40,714 - INFO - Epoch [7/10] - Loss: 6.4670
+2024-10-08 15:42:12,940 - INFO - Epoch [8/10] - Loss: 5.3136
+2024-10-08 15:42:45,867 - INFO - Epoch [9/10] - Loss: 4.0776
+2024-10-08 15:43:18,203 - INFO - Epoch [10/10] - Loss: 3.4386
+2024-10-08 15:43:21,541 - INFO - Training completed in 328.07 seconds.
+2024-10-08 15:43:21,542 - INFO - Model size: 3.71 MB, Accuracy: 0.9603, Precision: 0.9426
+2024-10-08 15:43:21,546 - INFO - Trial 7: num_heads=4, num_layers=4, hidden_dim=4, dropout=0.4052630806072987, learning_rate=0.0008242980900078334, batch_size=54
+2024-10-08 15:43:21,583 - INFO - Initial CPU usage: 0.0% and memory: 1436.02 MB
+2024-10-08 15:44:18,586 - INFO - Epoch [1/10] - Loss: 19.0816
+2024-10-08 15:45:15,203 - INFO - Epoch [2/10] - Loss: 9.8467
+2024-10-08 15:46:11,865 - INFO - Epoch [3/10] - Loss: 5.3698
+2024-10-08 15:47:08,830 - INFO - Epoch [4/10] - Loss: 3.5339
+2024-10-08 15:48:05,653 - INFO - Epoch [5/10] - Loss: 2.2315
+2024-10-08 15:49:02,436 - INFO - Epoch [6/10] - Loss: 1.4524
+2024-10-08 15:49:58,871 - INFO - Epoch [7/10] - Loss: 2.0708
+2024-10-08 15:50:55,188 - INFO - Epoch [8/10] - Loss: 1.3521
+2024-10-08 15:51:51,707 - INFO - Epoch [9/10] - Loss: 1.1594
+2024-10-08 15:52:48,834 - INFO - Epoch [10/10] - Loss: 0.8534
+2024-10-08 15:52:53,200 - INFO - Training completed in 571.62 seconds.
+2024-10-08 15:52:53,200 - INFO - Model size: 6.29 MB, Accuracy: 0.9677, Precision: 0.9393
+2024-10-08 15:52:53,205 - INFO - Trial 8: num_heads=4, num_layers=2, hidden_dim=128, dropout=0.0693827475675931, learning_rate=7.609592302457497e-05, batch_size=49
+2024-10-08 15:52:53,233 - INFO - Initial CPU usage: 0.0% and memory: 1461.16 MB
+2024-10-08 15:53:48,391 - INFO - Epoch [1/10] - Loss: 22.7844
+2024-10-08 15:54:42,166 - INFO - Epoch [2/10] - Loss: 18.6215
+2024-10-08 15:55:36,463 - INFO - Epoch [3/10] - Loss: 12.5537
+2024-10-08 15:56:30,495 - INFO - Epoch [4/10] - Loss: 9.4348
+2024-10-08 15:57:25,414 - INFO - Epoch [5/10] - Loss: 6.5444
+2024-10-08 15:58:22,105 - INFO - Epoch [6/10] - Loss: 4.4817
+2024-10-08 15:59:20,153 - INFO - Epoch [7/10] - Loss: 3.2459
+2024-10-08 16:00:17,211 - INFO - Epoch [8/10] - Loss: 2.2688
+2024-10-08 16:01:14,594 - INFO - Epoch [9/10] - Loss: 1.8764
+2024-10-08 16:02:10,931 - INFO - Epoch [10/10] - Loss: 1.1110
+2024-10-08 16:02:16,156 - INFO - Training completed in 562.92 seconds.
+2024-10-08 16:02:16,157 - INFO - Model size: 5.04 MB, Accuracy: 0.9603, Precision: 0.9557
+2024-10-08 16:02:16,159 - INFO - Trial 9: num_heads=4, num_layers=4, hidden_dim=64, dropout=0.16334840802759054, learning_rate=0.0003810972770776574, batch_size=16
+2024-10-08 16:02:16,178 - INFO - Initial CPU usage: 0.0% and memory: 1138.81 MB
+2024-10-08 16:03:17,719 - INFO - Epoch [1/10] - Loss: 45.4463
+2024-10-08 16:04:19,001 - INFO - Epoch [2/10] - Loss: 17.9976
+2024-10-08 16:05:19,564 - INFO - Epoch [3/10] - Loss: 10.6502
+2024-10-08 16:06:20,004 - INFO - Epoch [4/10] - Loss: 6.5015
+2024-10-08 16:07:21,050 - INFO - Epoch [5/10] - Loss: 3.8375
+2024-10-08 16:08:22,463 - INFO - Epoch [6/10] - Loss: 1.9583
+2024-10-08 16:09:23,926 - INFO - Epoch [7/10] - Loss: 1.0639
+2024-10-08 16:10:25,349 - INFO - Epoch [8/10] - Loss: 0.3912
+2024-10-08 16:11:27,396 - INFO - Epoch [9/10] - Loss: 2.7294
+2024-10-08 16:12:28,992 - INFO - Epoch [10/10] - Loss: 3.6665
+2024-10-08 16:12:34,168 - INFO - Training completed in 617.99 seconds.
+2024-10-08 16:12:34,168 - INFO - Model size: 7.23 MB, Accuracy: 0.9727, Precision: 0.9524
+2024-10-08 16:12:34,173 - INFO - Trial 10: num_heads=4, num_layers=3, hidden_dim=8, dropout=0.08282232686583085, learning_rate=0.0004072622015584608, batch_size=18
+2024-10-08 16:12:34,193 - INFO - Initial CPU usage: 0.0% and memory: 1494.20 MB
+2024-10-08 16:13:09,492 - INFO - Epoch [1/10] - Loss: 34.7689
+2024-10-08 16:13:44,181 - INFO - Epoch [2/10] - Loss: 14.1042
+2024-10-08 16:14:19,055 - INFO - Epoch [3/10] - Loss: 9.2290
+2024-10-08 16:14:53,571 - INFO - Epoch [4/10] - Loss: 9.2640
+2024-10-08 16:15:28,393 - INFO - Epoch [5/10] - Loss: 5.7805
+2024-10-08 16:16:02,985 - INFO - Epoch [6/10] - Loss: 3.4854
+2024-10-08 16:16:37,630 - INFO - Epoch [7/10] - Loss: 4.7651
+2024-10-08 16:17:12,228 - INFO - Epoch [8/10] - Loss: 2.3542
+2024-10-08 16:17:47,573 - INFO - Epoch [9/10] - Loss: 2.5734
+2024-10-08 16:18:22,501 - INFO - Epoch [10/10] - Loss: 1.8932
+2024-10-08 16:18:25,928 - INFO - Training completed in 351.74 seconds.
+2024-10-08 16:18:25,928 - INFO - Model size: 4.74 MB, Accuracy: 0.9280, Precision: 0.8839
+2024-10-08 16:18:25,931 - INFO - Trial 11: num_heads=4, num_layers=1, hidden_dim=64, dropout=0.1916469868439598, learning_rate=4.298058301291376e-05, batch_size=46
+2024-10-08 16:18:25,937 - INFO - Initial CPU usage: 0.0% and memory: 1494.16 MB
+2024-10-08 16:18:45,367 - INFO - Epoch [1/10] - Loss: 24.1453
+2024-10-08 16:19:04,244 - INFO - Epoch [2/10] - Loss: 23.7100
+2024-10-08 16:19:22,721 - INFO - Epoch [3/10] - Loss: 22.2991
+2024-10-08 16:19:41,623 - INFO - Epoch [4/10] - Loss: 19.5001
+2024-10-08 16:20:00,576 - INFO - Epoch [5/10] - Loss: 16.4984
+2024-10-08 16:20:19,539 - INFO - Epoch [6/10] - Loss: 14.3834
+2024-10-08 16:20:38,456 - INFO - Epoch [7/10] - Loss: 13.0449
+2024-10-08 16:20:57,076 - INFO - Epoch [8/10] - Loss: 11.8926
+2024-10-08 16:21:16,115 - INFO - Epoch [9/10] - Loss: 10.6556
+2024-10-08 16:21:35,168 - INFO - Epoch [10/10] - Loss: 9.4540
+2024-10-08 16:21:37,491 - INFO - Training completed in 191.55 seconds.
+2024-10-08 16:21:37,491 - INFO - Model size: 1.96 MB, Accuracy: 0.9057, Precision: 0.9095
+2024-10-08 16:21:37,494 - INFO - Trial 12: num_heads=4, num_layers=2, hidden_dim=4, dropout=0.19302468696988134, learning_rate=0.0008763198565521587, batch_size=34
+2024-10-08 16:21:37,503 - INFO - Initial CPU usage: 0.0% and memory: 1493.68 MB
+2024-10-08 16:22:05,303 - INFO - Epoch [1/10] - Loss: 23.8644
+2024-10-08 16:22:33,149 - INFO - Epoch [2/10] - Loss: 10.5453
+2024-10-08 16:23:00,881 - INFO - Epoch [3/10] - Loss: 7.0137
+2024-10-08 16:23:28,699 - INFO - Epoch [4/10] - Loss: 4.9885
+2024-10-08 16:23:56,133 - INFO - Epoch [5/10] - Loss: 3.6961
+2024-10-08 16:24:23,794 - INFO - Epoch [6/10] - Loss: 3.4021
+2024-10-08 16:24:51,210 - INFO - Epoch [7/10] - Loss: 2.5227
+2024-10-08 16:25:18,618 - INFO - Epoch [8/10] - Loss: 2.3382
+2024-10-08 16:25:46,072 - INFO - Epoch [9/10] - Loss: 0.9858
+2024-10-08 16:26:13,966 - INFO - Epoch [10/10] - Loss: 1.1881
+2024-10-08 16:26:16,938 - INFO - Training completed in 279.44 seconds.
+2024-10-08 16:26:16,939 - INFO - Model size: 3.15 MB, Accuracy: 0.9752, Precision: 0.9948
+2024-10-08 16:26:16,941 - INFO - Trial 13: num_heads=4, num_layers=1, hidden_dim=16, dropout=0.11263959263051232, learning_rate=0.00023215609442620445, batch_size=19
+2024-10-08 16:26:16,946 - INFO - Initial CPU usage: 0.0% and memory: 1498.59 MB
+2024-10-08 16:26:32,632 - INFO - Epoch [1/10] - Loss: 52.1233
+2024-10-08 16:26:48,070 - INFO - Epoch [2/10] - Loss: 34.0100
+2024-10-08 16:27:03,696 - INFO - Epoch [3/10] - Loss: 22.7301
+2024-10-08 16:27:19,810 - INFO - Epoch [4/10] - Loss: 15.5597
+2024-10-08 16:27:35,916 - INFO - Epoch [5/10] - Loss: 11.0688
+2024-10-08 16:27:51,480 - INFO - Epoch [6/10] - Loss: 9.0384
+2024-10-08 16:28:07,442 - INFO - Epoch [7/10] - Loss: 7.4187
+2024-10-08 16:28:22,856 - INFO - Epoch [8/10] - Loss: 6.6816
+2024-10-08 16:28:38,465 - INFO - Epoch [9/10] - Loss: 4.7385
+2024-10-08 16:28:54,055 - INFO - Epoch [10/10] - Loss: 3.6167
+2024-10-08 16:28:56,126 - INFO - Training completed in 159.18 seconds.
+2024-10-08 16:28:56,127 - INFO - Model size: 1.63 MB, Accuracy: 0.9529, Precision: 0.9596
+2024-10-08 16:28:56,129 - INFO - Trial 14: num_heads=4, num_layers=4, hidden_dim=128, dropout=0.18771584803922914, learning_rate=1.3952634622467134e-05, batch_size=64
+2024-10-08 16:28:56,153 - INFO - Initial CPU usage: 0.0% and memory: 1500.42 MB
+2024-10-08 16:30:46,601 - INFO - Epoch [1/10] - Loss: 18.1061
+2024-10-08 16:32:37,092 - INFO - Epoch [2/10] - Loss: 17.5967
+2024-10-08 16:34:28,117 - INFO - Epoch [3/10] - Loss: 16.8185
+2024-10-08 16:36:17,411 - INFO - Epoch [4/10] - Loss: 15.5168
+2024-10-08 16:38:08,734 - INFO - Epoch [5/10] - Loss: 13.8604
+2024-10-08 16:39:58,535 - INFO - Epoch [6/10] - Loss: 12.2491
+2024-10-08 16:41:48,722 - INFO - Epoch [7/10] - Loss: 10.9762
+2024-10-08 16:43:40,002 - INFO - Epoch [8/10] - Loss: 10.0990
+2024-10-08 16:45:30,357 - INFO - Epoch [9/10] - Loss: 9.5873
+2024-10-08 16:47:21,457 - INFO - Epoch [10/10] - Loss: 8.8622
+2024-10-08 16:47:28,888 - INFO - Training completed in 1112.73 seconds.
+2024-10-08 16:47:28,888 - INFO - Model size: 9.68 MB, Accuracy: 0.8759, Precision: 0.8683
+2024-10-08 16:47:28,891 - INFO - Trial 15: num_heads=4, num_layers=2, hidden_dim=8, dropout=0.20237543791996893, learning_rate=0.0006931756014035809, batch_size=62
+2024-10-08 16:47:28,901 - INFO - Initial CPU usage: 0.0% and memory: 1508.81 MB
+2024-10-08 16:47:55,644 - INFO - Epoch [1/10] - Loss: 15.6912
+2024-10-08 16:48:22,655 - INFO - Epoch [2/10] - Loss: 10.7007
+2024-10-08 16:48:49,460 - INFO - Epoch [3/10] - Loss: 7.2013
+2024-10-08 16:49:16,391 - INFO - Epoch [4/10] - Loss: 4.6893
+2024-10-08 16:49:43,361 - INFO - Epoch [5/10] - Loss: 3.2355
+2024-10-08 16:50:10,269 - INFO - Epoch [6/10] - Loss: 3.0978
+2024-10-08 16:50:36,968 - INFO - Epoch [7/10] - Loss: 2.7544
+2024-10-08 16:51:03,708 - INFO - Epoch [8/10] - Loss: 1.7197
+2024-10-08 16:51:30,636 - INFO - Epoch [9/10] - Loss: 1.8483
+2024-10-08 16:51:57,399 - INFO - Epoch [10/10] - Loss: 1.1705
+2024-10-08 16:51:59,882 - INFO - Training completed in 270.98 seconds.
+2024-10-08 16:51:59,883 - INFO - Model size: 3.17 MB, Accuracy: 0.9578, Precision: 0.9299
+2024-10-08 16:51:59,885 - INFO - Trial 16: num_heads=4, num_layers=1, hidden_dim=128, dropout=0.372608424727754, learning_rate=0.00016808001343255824, batch_size=62
+2024-10-08 16:51:59,900 - INFO - Initial CPU usage: 0.0% and memory: 1509.06 MB
+2024-10-08 16:52:28,860 - INFO - Epoch [1/10] - Loss: 15.9253
+2024-10-08 16:52:57,131 - INFO - Epoch [2/10] - Loss: 10.8447
+2024-10-08 16:53:26,058 - INFO - Epoch [3/10] - Loss: 8.5925
+2024-10-08 16:53:54,527 - INFO - Epoch [4/10] - Loss: 5.9374
+2024-10-08 16:54:22,842 - INFO - Epoch [5/10] - Loss: 4.0239
+2024-10-08 16:54:51,128 - INFO - Epoch [6/10] - Loss: 2.2465
+2024-10-08 16:55:19,457 - INFO - Epoch [7/10] - Loss: 1.3850
+2024-10-08 16:55:47,533 - INFO - Epoch [8/10] - Loss: 0.7552
+2024-10-08 16:56:16,316 - INFO - Epoch [9/10] - Loss: 0.4391
+2024-10-08 16:56:44,845 - INFO - Epoch [10/10] - Loss: 0.2263
+2024-10-08 16:56:47,755 - INFO - Training completed in 287.85 seconds.
+2024-10-08 16:56:47,755 - INFO - Model size: 2.72 MB, Accuracy: 0.9479, Precision: 0.9500
+2024-10-08 16:56:47,757 - INFO - Trial 17: num_heads=4, num_layers=1, hidden_dim=64, dropout=0.009876164790191544, learning_rate=3.6590551535208516e-05, batch_size=48
+2024-10-08 16:56:47,763 - INFO - Initial CPU usage: 0.0% and memory: 1512.23 MB
+2024-10-08 16:57:07,048 - INFO - Epoch [1/10] - Loss: 23.5210
+2024-10-08 16:57:26,248 - INFO - Epoch [2/10] - Loss: 23.3785
+2024-10-08 16:57:45,082 - INFO - Epoch [3/10] - Loss: 22.9079
+2024-10-08 16:58:04,458 - INFO - Epoch [4/10] - Loss: 21.2587
+2024-10-08 16:58:23,422 - INFO - Epoch [5/10] - Loss: 18.1705
+2024-10-08 16:58:42,611 - INFO - Epoch [6/10] - Loss: 15.0682
+2024-10-08 16:59:01,458 - INFO - Epoch [7/10] - Loss: 13.0037
+2024-10-08 16:59:20,219 - INFO - Epoch [8/10] - Loss: 11.8450
+2024-10-08 16:59:39,052 - INFO - Epoch [9/10] - Loss: 11.0948
+2024-10-08 16:59:57,816 - INFO - Epoch [10/10] - Loss: 10.1241
+2024-10-08 17:00:00,112 - INFO - Training completed in 192.35 seconds.
+2024-10-08 17:00:00,112 - INFO - Model size: 1.96 MB, Accuracy: 0.8859, Precision: 0.8780
+2024-10-08 17:00:00,115 - INFO - Trial 18: num_heads=4, num_layers=4, hidden_dim=8, dropout=0.21412324835231733, learning_rate=0.00014547157730953337, batch_size=59
+2024-10-08 17:00:00,133 - INFO - Initial CPU usage: 0.0% and memory: 1512.73 MB
+2024-10-08 17:00:48,739 - INFO - Epoch [1/10] - Loss: 18.9480
+2024-10-08 17:01:37,262 - INFO - Epoch [2/10] - Loss: 16.5065
+2024-10-08 17:02:27,521 - INFO - Epoch [3/10] - Loss: 12.3508
+2024-10-08 17:03:19,266 - INFO - Epoch [4/10] - Loss: 9.4735
+2024-10-08 17:04:09,650 - INFO - Epoch [5/10] - Loss: 8.1068
+2024-10-08 17:04:59,500 - INFO - Epoch [6/10] - Loss: 6.5714
+2024-10-08 17:05:50,714 - INFO - Epoch [7/10] - Loss: 4.7066
+2024-10-08 17:06:42,379 - INFO - Epoch [8/10] - Loss: 3.6506
+2024-10-08 17:07:36,264 - INFO - Epoch [9/10] - Loss: 2.9599
+2024-10-08 17:08:41,788 - INFO - Epoch [10/10] - Loss: 2.6039
+2024-10-08 17:08:47,803 - INFO - Training completed in 527.67 seconds.
+2024-10-08 17:08:47,803 - INFO - Model size: 6.31 MB, Accuracy: 0.9578, Precision: 0.9742
+2024-10-08 17:08:47,809 - INFO - Trial 19: num_heads=4, num_layers=2, hidden_dim=64, dropout=0.04605805795819434, learning_rate=0.0005260276180861257, batch_size=60
+2024-10-08 17:08:47,831 - INFO - Initial CPU usage: 0.0% and memory: 861.38 MB
+2024-10-08 17:09:38,258 - INFO - Epoch [1/10] - Loss: 14.6858
+2024-10-08 17:10:21,627 - INFO - Epoch [2/10] - Loss: 8.2452
+2024-10-08 17:11:19,376 - INFO - Epoch [3/10] - Loss: 4.6255
+2024-10-08 17:11:56,275 - INFO - Epoch [4/10] - Loss: 2.3374
+2024-10-08 17:12:34,137 - INFO - Epoch [5/10] - Loss: 1.9094
+2024-10-08 17:13:13,067 - INFO - Epoch [6/10] - Loss: 1.4346
+2024-10-08 17:13:49,781 - INFO - Epoch [7/10] - Loss: 1.4924
+2024-10-08 17:14:26,156 - INFO - Epoch [8/10] - Loss: 0.7675
+2024-10-08 17:15:02,907 - INFO - Epoch [9/10] - Loss: 0.2608
+2024-10-08 17:15:40,651 - INFO - Epoch [10/10] - Loss: 0.0953
+2024-10-08 17:15:43,916 - INFO - Training completed in 416.09 seconds.
+2024-10-08 17:15:43,916 - INFO - Model size: 3.71 MB, Accuracy: 0.9628, Precision: 0.9471
+2024-10-08 17:15:43,921 - INFO - Trial 20: num_heads=4, num_layers=2, hidden_dim=32, dropout=0.43073441969001147, learning_rate=0.0007056121974350635, batch_size=47
+2024-10-08 17:15:43,937 - INFO - Initial CPU usage: 0.0% and memory: 1422.81 MB
+2024-10-08 17:16:14,605 - INFO - Epoch [1/10] - Loss: 19.0286
+2024-10-08 17:16:45,267 - INFO - Epoch [2/10] - Loss: 9.5163
+2024-10-08 17:17:15,282 - INFO - Epoch [3/10] - Loss: 5.2328
+2024-10-08 17:17:45,081 - INFO - Epoch [4/10] - Loss: 2.9510
+2024-10-08 17:18:15,816 - INFO - Epoch [5/10] - Loss: 2.2561
+2024-10-08 17:18:46,346 - INFO - Epoch [6/10] - Loss: 1.0297
+2024-10-08 17:19:16,504 - INFO - Epoch [7/10] - Loss: 0.7258
+2024-10-08 17:19:46,271 - INFO - Epoch [8/10] - Loss: 0.3189
+2024-10-08 17:20:16,148 - INFO - Epoch [9/10] - Loss: 0.4990
+2024-10-08 17:20:45,447 - INFO - Epoch [10/10] - Loss: 0.5671
+2024-10-08 17:20:48,163 - INFO - Training completed in 304.22 seconds.
+2024-10-08 17:20:48,163 - INFO - Model size: 3.33 MB, Accuracy: 0.9603, Precision: 0.9557
+2024-10-08 17:20:48,166 - INFO - Trial 21: num_heads=4, num_layers=4, hidden_dim=8, dropout=0.42704499668292434, learning_rate=1.1587109351141392e-05, batch_size=31
+2024-10-08 17:20:48,199 - INFO - Initial CPU usage: 0.0% and memory: 1503.81 MB
+2024-10-08 17:21:35,901 - INFO - Epoch [1/10] - Loss: 36.2551
+2024-10-08 17:22:23,769 - INFO - Epoch [2/10] - Loss: 35.8710
+2024-10-08 17:23:10,868 - INFO - Epoch [3/10] - Loss: 35.5850
+2024-10-08 17:23:59,420 - INFO - Epoch [4/10] - Loss: 35.2987
+2024-10-08 17:24:49,480 - INFO - Epoch [5/10] - Loss: 34.9142
+2024-10-08 17:25:38,749 - INFO - Epoch [6/10] - Loss: 34.4319
+2024-10-08 17:26:28,701 - INFO - Epoch [7/10] - Loss: 33.7311
+2024-10-08 17:27:17,556 - INFO - Epoch [8/10] - Loss: 32.7513
+2024-10-08 17:28:05,820 - INFO - Epoch [9/10] - Loss: 31.3344
+2024-10-08 17:28:54,386 - INFO - Epoch [10/10] - Loss: 29.3314
+2024-10-08 17:28:58,338 - INFO - Training completed in 490.14 seconds.
+2024-10-08 17:28:58,338 - INFO - Model size: 6.31 MB, Accuracy: 0.8759, Precision: 0.8416
+2024-10-08 17:28:58,341 - INFO - Trial 22: num_heads=4, num_layers=2, hidden_dim=4, dropout=0.3146042395129586, learning_rate=2.296725027147815e-05, batch_size=29
+2024-10-08 17:28:58,350 - INFO - Initial CPU usage: 0.0% and memory: 749.44 MB
+2024-10-08 17:29:31,980 - INFO - Epoch [1/10] - Loss: 38.7349
+2024-10-08 17:30:04,738 - INFO - Epoch [2/10] - Loss: 38.3321
+2024-10-08 17:30:37,297 - INFO - Epoch [3/10] - Loss: 37.6378
+2024-10-08 17:31:10,463 - INFO - Epoch [4/10] - Loss: 36.2342
+2024-10-08 17:31:43,495 - INFO - Epoch [5/10] - Loss: 34.0156
+2024-10-08 17:32:17,404 - INFO - Epoch [6/10] - Loss: 30.8705
+2024-10-08 17:32:50,227 - INFO - Epoch [7/10] - Loss: 26.9358
+2024-10-08 17:33:22,923 - INFO - Epoch [8/10] - Loss: 22.7769
+2024-10-08 17:33:56,011 - INFO - Epoch [9/10] - Loss: 19.3698
+2024-10-08 17:34:28,612 - INFO - Epoch [10/10] - Loss: 17.2414
+2024-10-08 17:34:31,989 - INFO - Training completed in 333.64 seconds.
+2024-10-08 17:34:31,989 - INFO - Model size: 3.15 MB, Accuracy: 0.8983, Precision: 0.8738
+2024-10-08 17:34:31,992 - INFO - Trial 23: num_heads=4, num_layers=4, hidden_dim=128, dropout=0.1684319682538697, learning_rate=1.1484790974628862e-05, batch_size=17
+2024-10-08 17:34:32,016 - INFO - Initial CPU usage: 0.0% and memory: 788.91 MB
+2024-10-08 17:36:10,488 - INFO - Epoch [1/10] - Loss: 64.6043
+2024-10-08 17:37:47,651 - INFO - Epoch [2/10] - Loss: 56.1833
+2024-10-08 17:39:25,551 - INFO - Epoch [3/10] - Loss: 42.2435
+2024-10-08 17:41:03,407 - INFO - Epoch [4/10] - Loss: 34.9434
+2024-10-08 17:42:41,074 - INFO - Epoch [5/10] - Loss: 31.5994
+2024-10-08 17:44:19,056 - INFO - Epoch [6/10] - Loss: 28.4460
+2024-10-08 17:45:56,632 - INFO - Epoch [7/10] - Loss: 25.8474
+2024-10-08 17:47:34,176 - INFO - Epoch [8/10] - Loss: 23.1419
+2024-10-08 17:49:11,278 - INFO - Epoch [9/10] - Loss: 20.3174
+2024-10-08 17:50:49,469 - INFO - Epoch [10/10] - Loss: 17.5263
+2024-10-08 17:50:57,093 - INFO - Training completed in 985.08 seconds.
+2024-10-08 17:50:57,093 - INFO - Model size: 9.68 MB, Accuracy: 0.9355, Precision: 0.9442
+2024-10-08 17:50:57,096 - INFO - Trial 24: num_heads=4, num_layers=3, hidden_dim=64, dropout=0.1209967492049897, learning_rate=2.1792201540480872e-05, batch_size=33
+2024-10-08 17:50:57,111 - INFO - Initial CPU usage: 0.0% and memory: 1527.32 MB
+2024-10-08 17:51:47,240 - INFO - Epoch [1/10] - Loss: 33.4972
+2024-10-08 17:52:37,495 - INFO - Epoch [2/10] - Loss: 31.3961
+2024-10-08 17:53:27,322 - INFO - Epoch [3/10] - Loss: 27.3770
+2024-10-08 17:54:17,701 - INFO - Epoch [4/10] - Loss: 22.9662
+2024-10-08 17:55:07,568 - INFO - Epoch [5/10] - Loss: 19.9788
+2024-10-08 17:55:57,957 - INFO - Epoch [6/10] - Loss: 18.2467
+2024-10-08 17:56:48,390 - INFO - Epoch [7/10] - Loss: 17.2434
+2024-10-08 17:57:38,361 - INFO - Epoch [8/10] - Loss: 16.2628
+2024-10-08 17:58:28,123 - INFO - Epoch [9/10] - Loss: 15.2232
+2024-10-08 17:59:18,349 - INFO - Epoch [10/10] - Loss: 14.1634
+2024-10-08 17:59:22,456 - INFO - Training completed in 505.35 seconds.
+2024-10-08 17:59:22,456 - INFO - Model size: 5.47 MB, Accuracy: 0.8933, Precision: 0.8835
+2024-10-08 17:59:22,458 - INFO - Trial 25: num_heads=4, num_layers=2, hidden_dim=4, dropout=0.32815422150950957, learning_rate=0.00045890588431682594, batch_size=43
+2024-10-08 17:59:22,470 - INFO - Initial CPU usage: 0.0% and memory: 1529.59 MB
+2024-10-08 17:59:50,710 - INFO - Epoch [1/10] - Loss: 25.1615
+2024-10-08 18:00:19,124 - INFO - Epoch [2/10] - Loss: 17.7361
+2024-10-08 18:00:47,473 - INFO - Epoch [3/10] - Loss: 12.8487
+2024-10-08 18:01:16,250 - INFO - Epoch [4/10] - Loss: 8.4772
+2024-10-08 18:01:44,362 - INFO - Epoch [5/10] - Loss: 7.0355
+2024-10-08 18:02:13,062 - INFO - Epoch [6/10] - Loss: 5.4850
+2024-10-08 18:02:41,082 - INFO - Epoch [7/10] - Loss: 5.5430
+2024-10-08 18:03:09,748 - INFO - Epoch [8/10] - Loss: 3.7265
+2024-10-08 18:03:37,751 - INFO - Epoch [9/10] - Loss: 4.1426
+2024-10-08 18:04:05,869 - INFO - Epoch [10/10] - Loss: 2.8539
+2024-10-08 18:04:08,802 - INFO - Training completed in 286.33 seconds.
+2024-10-08 18:04:08,802 - INFO - Model size: 3.15 MB, Accuracy: 0.9603, Precision: 0.9602
+2024-10-08 18:04:08,804 - INFO - Trial 26: num_heads=4, num_layers=2, hidden_dim=4, dropout=0.3634486059945685, learning_rate=0.00016435328743416694, batch_size=38
+2024-10-08 18:04:08,814 - INFO - Initial CPU usage: 0.0% and memory: 1532.69 MB
+2024-10-08 18:04:37,561 - INFO - Epoch [1/10] - Loss: 30.2193
+2024-10-08 18:05:06,682 - INFO - Epoch [2/10] - Loss: 29.1186
+2024-10-08 18:05:35,070 - INFO - Epoch [3/10] - Loss: 25.5564
+2024-10-08 18:06:04,148 - INFO - Epoch [4/10] - Loss: 15.2761
+2024-10-08 18:06:32,911 - INFO - Epoch [5/10] - Loss: 8.1817
+2024-10-08 18:07:01,095 - INFO - Epoch [6/10] - Loss: 5.3312
+2024-10-08 18:07:30,009 - INFO - Epoch [7/10] - Loss: 4.2793
+2024-10-08 18:07:58,267 - INFO - Epoch [8/10] - Loss: 3.6385
+2024-10-08 18:08:26,662 - INFO - Epoch [9/10] - Loss: 3.3729
+2024-10-08 18:08:54,932 - INFO - Epoch [10/10] - Loss: 3.1968
+2024-10-08 18:08:57,847 - INFO - Training completed in 289.03 seconds.
+2024-10-08 18:08:57,848 - INFO - Model size: 3.15 MB, Accuracy: 0.9404, Precision: 0.9836
+2024-10-08 18:08:57,850 - INFO - Trial 27: num_heads=4, num_layers=1, hidden_dim=32, dropout=0.2846937029027074, learning_rate=0.00031932282112024323, batch_size=38
+2024-10-08 18:08:57,855 - INFO - Initial CPU usage: 0.0% and memory: 1534.95 MB
+2024-10-08 18:09:14,024 - INFO - Epoch [1/10] - Loss: 27.6707
+2024-10-08 18:09:30,732 - INFO - Epoch [2/10] - Loss: 19.7327
+2024-10-08 18:09:46,854 - INFO - Epoch [3/10] - Loss: 14.5581
+2024-10-08 18:10:03,192 - INFO - Epoch [4/10] - Loss: 9.1373
+2024-10-08 18:10:19,694 - INFO - Epoch [5/10] - Loss: 5.6165
+2024-10-08 18:10:36,168 - INFO - Epoch [6/10] - Loss: 4.3708
+2024-10-08 18:10:52,440 - INFO - Epoch [7/10] - Loss: 2.9785
+2024-10-08 18:11:09,061 - INFO - Epoch [8/10] - Loss: 2.2597
+2024-10-08 18:11:25,341 - INFO - Epoch [9/10] - Loss: 1.5426
+2024-10-08 18:11:41,689 - INFO - Epoch [10/10] - Loss: 1.0416
+2024-10-08 18:11:43,731 - INFO - Training completed in 165.88 seconds.
+2024-10-08 18:11:43,732 - INFO - Model size: 1.71 MB, Accuracy: 0.9677, Precision: 0.9747
+2024-10-08 18:11:43,736 - INFO - Trial 28: num_heads=4, num_layers=1, hidden_dim=64, dropout=0.05488890248024797, learning_rate=0.0005726730264108098, batch_size=23
+2024-10-08 18:11:43,747 - INFO - Initial CPU usage: 0.0% and memory: 1536.69 MB
+2024-10-08 18:12:03,534 - INFO - Epoch [1/10] - Loss: 32.2144
+2024-10-08 18:12:23,669 - INFO - Epoch [2/10] - Loss: 13.0561
+2024-10-08 18:12:43,145 - INFO - Epoch [3/10] - Loss: 4.7345
+2024-10-08 18:13:02,420 - INFO - Epoch [4/10] - Loss: 2.7406
+2024-10-08 18:13:21,693 - INFO - Epoch [5/10] - Loss: 4.1100
+2024-10-08 18:13:40,650 - INFO - Epoch [6/10] - Loss: 1.5594
+2024-10-08 18:13:59,713 - INFO - Epoch [7/10] - Loss: 0.7430
+2024-10-08 18:14:19,093 - INFO - Epoch [8/10] - Loss: 0.8404
+2024-10-08 18:14:39,125 - INFO - Epoch [9/10] - Loss: 1.0682
+2024-10-08 18:14:59,308 - INFO - Epoch [10/10] - Loss: 0.6980
+2024-10-08 18:15:01,716 - INFO - Training completed in 197.97 seconds.
+2024-10-08 18:15:01,716 - INFO - Model size: 1.96 MB, Accuracy: 0.9702, Precision: 0.9610
+2024-10-08 18:15:01,720 - INFO - Trial 29: num_heads=4, num_layers=1, hidden_dim=64, dropout=0.391562810313272, learning_rate=0.0004348060536440031, batch_size=32
+2024-10-08 18:15:01,733 - INFO - Initial CPU usage: 0.0% and memory: 1538.37 MB
+2024-10-08 18:15:21,391 - INFO - Epoch [1/10] - Loss: 25.1204
+2024-10-08 18:15:40,257 - INFO - Epoch [2/10] - Loss: 13.5459
+2024-10-08 18:15:59,278 - INFO - Epoch [3/10] - Loss: 7.4870
+2024-10-08 18:16:19,123 - INFO - Epoch [4/10] - Loss: 4.6989
+2024-10-08 18:16:38,219 - INFO - Epoch [5/10] - Loss: 3.4474
+2024-10-08 18:16:57,180 - INFO - Epoch [6/10] - Loss: 2.0697
+2024-10-08 18:17:16,888 - INFO - Epoch [7/10] - Loss: 0.8955
+2024-10-08 18:17:36,206 - INFO - Epoch [8/10] - Loss: 0.3857
+2024-10-08 18:17:55,290 - INFO - Epoch [9/10] - Loss: 0.1623
+2024-10-08 18:18:14,444 - INFO - Epoch [10/10] - Loss: 0.0494
+2024-10-08 18:18:16,750 - INFO - Training completed in 195.02 seconds.
+2024-10-08 18:18:16,751 - INFO - Model size: 1.96 MB, Accuracy: 0.9603, Precision: 0.9469
+2024-10-08 18:18:16,753 - INFO - Trial 30: num_heads=4, num_layers=4, hidden_dim=4, dropout=0.07490110693988938, learning_rate=0.00011122646649148264, batch_size=41
+2024-10-08 18:18:16,770 - INFO - Initial CPU usage: 0.0% and memory: 1539.23 MB
+2024-10-08 18:19:12,590 - INFO - Epoch [1/10] - Loss: 27.2204
+2024-10-08 18:20:09,416 - INFO - Epoch [2/10] - Loss: 24.3780
+2024-10-08 18:21:05,626 - INFO - Epoch [3/10] - Loss: 16.1798
+2024-10-08 18:22:01,772 - INFO - Epoch [4/10] - Loss: 9.8953
+2024-10-08 18:22:57,417 - INFO - Epoch [5/10] - Loss: 7.6136
+2024-10-08 18:23:53,855 - INFO - Epoch [6/10] - Loss: 6.0898
+2024-10-08 18:24:50,557 - INFO - Epoch [7/10] - Loss: 5.1462
+2024-10-08 18:25:46,803 - INFO - Epoch [8/10] - Loss: 4.7980
+2024-10-08 18:26:46,523 - INFO - Epoch [9/10] - Loss: 4.1819
+2024-10-08 18:27:42,355 - INFO - Epoch [10/10] - Loss: 3.5670
+2024-10-08 18:27:46,793 - INFO - Training completed in 570.02 seconds.
+2024-10-08 18:27:46,793 - INFO - Model size: 6.29 MB, Accuracy: 0.9504, Precision: 0.9840
+2024-10-08 18:27:46,798 - INFO - Trial 31: num_heads=4, num_layers=3, hidden_dim=4, dropout=0.47004905091103083, learning_rate=0.00031619050887077423, batch_size=35
+2024-10-08 18:27:46,826 - INFO - Initial CPU usage: 0.0% and memory: 1543.13 MB
+2024-10-08 18:28:27,819 - INFO - Epoch [1/10] - Loss: 31.2366
+2024-10-08 18:29:13,685 - INFO - Epoch [2/10] - Loss: 17.7922
+2024-10-08 18:30:17,769 - INFO - Epoch [3/10] - Loss: 11.5635
+2024-10-08 18:31:20,618 - INFO - Epoch [4/10] - Loss: 6.7376
+2024-10-08 18:32:23,458 - INFO - Epoch [5/10] - Loss: 5.1816
+2024-10-08 18:33:26,312 - INFO - Epoch [6/10] - Loss: 3.5150
+2024-10-08 18:34:29,900 - INFO - Epoch [7/10] - Loss: 3.0939
+2024-10-08 18:35:33,825 - INFO - Epoch [8/10] - Loss: 4.5765
+2024-10-08 18:36:36,885 - INFO - Epoch [9/10] - Loss: 2.6205
+2024-10-08 18:37:40,921 - INFO - Epoch [10/10] - Loss: 2.0276
+2024-10-08 18:37:46,753 - INFO - Training completed in 599.93 seconds.
+2024-10-08 18:37:46,754 - INFO - Model size: 4.72 MB, Accuracy: 0.9677, Precision: 0.9845
+2024-10-08 18:37:46,759 - INFO - Trial 32: num_heads=4, num_layers=1, hidden_dim=16, dropout=0.48815986508034337, learning_rate=0.0005435045393092019, batch_size=20
+2024-10-08 18:37:46,770 - INFO - Initial CPU usage: 0.0% and memory: 1542.59 MB
+2024-10-08 18:38:12,320 - INFO - Epoch [1/10] - Loss: 46.3442
+2024-10-08 18:38:38,877 - INFO - Epoch [2/10] - Loss: 20.6253
+2024-10-08 18:39:03,966 - INFO - Epoch [3/10] - Loss: 14.8072
+2024-10-08 18:39:30,472 - INFO - Epoch [4/10] - Loss: 9.3054
+2024-10-08 18:39:55,881 - INFO - Epoch [5/10] - Loss: 6.4087
+2024-10-08 18:40:22,248 - INFO - Epoch [6/10] - Loss: 5.1785
+2024-10-08 18:40:47,705 - INFO - Epoch [7/10] - Loss: 4.4057
+2024-10-08 18:41:14,487 - INFO - Epoch [8/10] - Loss: 3.1586
+2024-10-08 18:41:40,816 - INFO - Epoch [9/10] - Loss: 1.8211
+2024-10-08 18:42:06,335 - INFO - Epoch [10/10] - Loss: 1.0950
+2024-10-08 18:42:10,524 - INFO - Training completed in 263.75 seconds.
+2024-10-08 18:42:10,525 - INFO - Model size: 1.63 MB, Accuracy: 0.9677, Precision: 0.9700
+2024-10-08 18:42:10,529 - INFO - Trial 33: num_heads=4, num_layers=3, hidden_dim=32, dropout=0.035068105044284315, learning_rate=0.00048546719974272996, batch_size=47
+2024-10-08 18:42:10,556 - INFO - Initial CPU usage: 0.0% and memory: 1544.81 MB
+2024-10-08 18:43:17,416 - INFO - Epoch [1/10] - Loss: 20.1300
+2024-10-08 18:44:23,538 - INFO - Epoch [2/10] - Loss: 11.8998
+2024-10-08 18:45:30,547 - INFO - Epoch [3/10] - Loss: 6.6009
+2024-10-08 18:46:37,312 - INFO - Epoch [4/10] - Loss: 3.5686
+2024-10-08 18:47:44,651 - INFO - Epoch [5/10] - Loss: 2.6797
+2024-10-08 18:48:51,984 - INFO - Epoch [6/10] - Loss: 2.0140
+2024-10-08 18:50:00,647 - INFO - Epoch [7/10] - Loss: 1.3364
+2024-10-08 18:51:08,094 - INFO - Epoch [8/10] - Loss: 0.9544
+2024-10-08 18:52:01,115 - INFO - Epoch [9/10] - Loss: 0.7237
+2024-10-08 18:52:43,190 - INFO - Epoch [10/10] - Loss: 0.7735
+2024-10-08 18:52:46,736 - INFO - Training completed in 636.18 seconds.
+2024-10-08 18:52:46,737 - INFO - Model size: 4.94 MB, Accuracy: 0.9752, Precision: 0.9751
+2024-10-08 18:52:46,742 - INFO - Trial 34: num_heads=4, num_layers=4, hidden_dim=128, dropout=0.31709740145974896, learning_rate=0.0004718703067448223, batch_size=28
+2024-10-08 18:52:46,768 - INFO - Initial CPU usage: 0.0% and memory: 1546.89 MB
+2024-10-08 18:54:28,987 - INFO - Epoch [1/10] - Loss: 24.1604
+2024-10-08 18:56:13,007 - INFO - Epoch [2/10] - Loss: 8.2436
+2024-10-08 18:57:56,771 - INFO - Epoch [3/10] - Loss: 4.4271
+2024-10-08 18:59:39,390 - INFO - Epoch [4/10] - Loss: 3.1126
+2024-10-08 19:01:21,147 - INFO - Epoch [5/10] - Loss: 1.3078
+2024-10-08 19:03:03,588 - INFO - Epoch [6/10] - Loss: 1.2569
+2024-10-08 19:04:46,773 - INFO - Epoch [7/10] - Loss: 1.4585
+2024-10-08 19:06:31,663 - INFO - Epoch [8/10] - Loss: 0.7864
+2024-10-08 19:08:14,472 - INFO - Epoch [9/10] - Loss: 1.5460
+2024-10-08 19:09:57,139 - INFO - Epoch [10/10] - Loss: 1.1164
+2024-10-08 19:10:04,800 - INFO - Training completed in 1038.03 seconds.
+2024-10-08 19:10:04,800 - INFO - Model size: 9.68 MB, Accuracy: 0.9653, Precision: 0.9431
+2024-10-08 19:10:04,803 - INFO - Trial 35: num_heads=4, num_layers=1, hidden_dim=8, dropout=0.06700045658436443, learning_rate=5.1668481554437155e-05, batch_size=63
+2024-10-08 19:10:04,808 - INFO - Initial CPU usage: 0.0% and memory: 1545.48 MB
+2024-10-08 19:10:20,973 - INFO - Epoch [1/10] - Loss: 17.9364
+2024-10-08 19:10:38,671 - INFO - Epoch [2/10] - Loss: 17.7365
+2024-10-08 19:10:56,431 - INFO - Epoch [3/10] - Loss: 17.5226
+2024-10-08 19:11:14,364 - INFO - Epoch [4/10] - Loss: 17.2275
+2024-10-08 19:11:32,684 - INFO - Epoch [5/10] - Loss: 16.8620
+2024-10-08 19:11:50,165 - INFO - Epoch [6/10] - Loss: 16.3691
+2024-10-08 19:12:07,767 - INFO - Epoch [7/10] - Loss: 15.6728
+2024-10-08 19:12:25,299 - INFO - Epoch [8/10] - Loss: 14.7998
+2024-10-08 19:12:43,044 - INFO - Epoch [9/10] - Loss: 13.7193
+2024-10-08 19:13:00,899 - INFO - Epoch [10/10] - Loss: 12.6488
+2024-10-08 19:13:03,175 - INFO - Training completed in 178.37 seconds.
+2024-10-08 19:13:03,175 - INFO - Model size: 1.60 MB, Accuracy: 0.8635, Precision: 0.8411
+2024-10-08 19:13:03,178 - INFO - Trial 36: num_heads=4, num_layers=2, hidden_dim=16, dropout=0.3599211040629527, learning_rate=0.00023776049236918638, batch_size=18
+2024-10-08 19:13:03,187 - INFO - Initial CPU usage: 0.0% and memory: 961.03 MB
+2024-10-08 19:13:28,900 - INFO - Epoch [1/10] - Loss: 49.2337
+2024-10-08 19:13:54,379 - INFO - Epoch [2/10] - Loss: 28.0645
+2024-10-08 19:14:19,918 - INFO - Epoch [3/10] - Loss: 17.5824
+2024-10-08 19:14:45,695 - INFO - Epoch [4/10] - Loss: 11.3148
+2024-10-08 19:15:11,613 - INFO - Epoch [5/10] - Loss: 7.7794
+2024-10-08 19:15:37,294 - INFO - Epoch [6/10] - Loss: 5.9126
+2024-10-08 19:16:03,496 - INFO - Epoch [7/10] - Loss: 4.6038
+2024-10-08 19:16:28,980 - INFO - Epoch [8/10] - Loss: 3.6146
+2024-10-08 19:16:55,191 - INFO - Epoch [9/10] - Loss: 2.7656
+2024-10-08 19:17:20,920 - INFO - Epoch [10/10] - Loss: 2.2902
+2024-10-08 19:17:23,580 - INFO - Training completed in 260.39 seconds.
+2024-10-08 19:17:23,580 - INFO - Model size: 3.21 MB, Accuracy: 0.9553, Precision: 0.9336
+2024-10-08 19:17:23,583 - INFO - Trial 37: num_heads=4, num_layers=1, hidden_dim=32, dropout=0.39468641979795865, learning_rate=0.0002681568339170134, batch_size=23
+2024-10-08 19:17:23,588 - INFO - Initial CPU usage: 0.0% and memory: 1071.24 MB
+2024-10-08 19:17:40,385 - INFO - Epoch [1/10] - Loss: 44.0494
+2024-10-08 19:17:56,866 - INFO - Epoch [2/10] - Loss: 22.0613
+2024-10-08 19:18:13,302 - INFO - Epoch [3/10] - Loss: 14.5384
+2024-10-08 19:18:29,733 - INFO - Epoch [4/10] - Loss: 10.8272
+2024-10-08 19:18:46,905 - INFO - Epoch [5/10] - Loss: 8.3212
+2024-10-08 19:19:03,204 - INFO - Epoch [6/10] - Loss: 6.7119
+2024-10-08 19:19:20,095 - INFO - Epoch [7/10] - Loss: 5.0686
+2024-10-08 19:19:37,126 - INFO - Epoch [8/10] - Loss: 3.7413
+2024-10-08 19:19:54,031 - INFO - Epoch [9/10] - Loss: 2.6469
+2024-10-08 19:20:10,630 - INFO - Epoch [10/10] - Loss: 1.6253
+2024-10-08 19:20:12,874 - INFO - Training completed in 169.29 seconds.
+2024-10-08 19:20:12,874 - INFO - Model size: 1.71 MB, Accuracy: 0.9504, Precision: 0.9415
+2024-10-08 19:20:12,876 - INFO - Trial 38: num_heads=4, num_layers=3, hidden_dim=32, dropout=0.4561478985829595, learning_rate=3.7792367706029714e-05, batch_size=53
+2024-10-08 19:20:12,890 - INFO - Initial CPU usage: 0.0% and memory: 1071.80 MB
+2024-10-08 19:20:56,023 - INFO - Epoch [1/10] - Loss: 21.4615
+2024-10-08 19:21:39,170 - INFO - Epoch [2/10] - Loss: 21.1530
+2024-10-08 19:22:22,737 - INFO - Epoch [3/10] - Loss: 20.5632
+2024-10-08 19:23:05,806 - INFO - Epoch [4/10] - Loss: 19.4998
+2024-10-08 19:23:48,910 - INFO - Epoch [5/10] - Loss: 17.7292
+2024-10-08 19:24:32,772 - INFO - Epoch [6/10] - Loss: 15.5920
+2024-10-08 19:25:17,725 - INFO - Epoch [7/10] - Loss: 13.5734
+2024-10-08 19:26:04,023 - INFO - Epoch [8/10] - Loss: 11.5248
+2024-10-08 19:26:51,126 - INFO - Epoch [9/10] - Loss: 10.3198
+2024-10-08 19:27:34,785 - INFO - Epoch [10/10] - Loss: 9.0848
+2024-10-08 19:27:38,351 - INFO - Training completed in 445.46 seconds.
+2024-10-08 19:27:38,352 - INFO - Model size: 4.94 MB, Accuracy: 0.8958, Precision: 0.8732
+2024-10-08 19:27:38,356 - INFO - Trial 39: num_heads=4, num_layers=4, hidden_dim=32, dropout=0.391261710313085, learning_rate=1.1537556617076932e-05, batch_size=39
+2024-10-08 19:27:38,378 - INFO - Initial CPU usage: 0.0% and memory: 1551.24 MB
+2024-10-08 19:28:34,183 - INFO - Epoch [1/10] - Loss: 29.0463
+2024-10-08 19:29:29,842 - INFO - Epoch [2/10] - Loss: 28.8694
+2024-10-08 19:30:26,067 - INFO - Epoch [3/10] - Loss: 28.6768
+2024-10-08 19:31:22,366 - INFO - Epoch [4/10] - Loss: 28.4349
+2024-10-08 19:32:18,515 - INFO - Epoch [5/10] - Loss: 28.1174
+2024-10-08 19:33:14,122 - INFO - Epoch [6/10] - Loss: 27.6583
+2024-10-08 19:34:10,694 - INFO - Epoch [7/10] - Loss: 27.0458
+2024-10-08 19:35:06,846 - INFO - Epoch [8/10] - Loss: 26.2088
+2024-10-08 19:36:02,969 - INFO - Epoch [9/10] - Loss: 25.0753
+2024-10-08 19:36:59,045 - INFO - Epoch [10/10] - Loss: 23.7622
+2024-10-08 19:37:03,521 - INFO - Training completed in 565.14 seconds.
+2024-10-08 19:37:03,521 - INFO - Model size: 6.56 MB, Accuracy: 0.8834, Precision: 0.8738
+2024-10-08 19:37:03,524 - INFO - Trial 40: num_heads=4, num_layers=2, hidden_dim=64, dropout=0.2609253294131229, learning_rate=1.9335687311882667e-05, batch_size=59
+2024-10-08 19:37:03,542 - INFO - Initial CPU usage: 0.0% and memory: 1556.39 MB
+2024-10-08 19:37:39,896 - INFO - Epoch [1/10] - Loss: 19.4266
+2024-10-08 19:38:15,789 - INFO - Epoch [2/10] - Loss: 19.1238
+2024-10-08 19:38:52,004 - INFO - Epoch [3/10] - Loss: 18.7251
+2024-10-08 19:39:28,753 - INFO - Epoch [4/10] - Loss: 18.0083
+2024-10-08 19:40:06,402 - INFO - Epoch [5/10] - Loss: 17.0256
+2024-10-08 19:40:45,131 - INFO - Epoch [6/10] - Loss: 15.8847
+2024-10-08 19:41:23,989 - INFO - Epoch [7/10] - Loss: 14.6238
+2024-10-08 19:42:03,997 - INFO - Epoch [8/10] - Loss: 13.4573
+2024-10-08 19:42:43,333 - INFO - Epoch [9/10] - Loss: 12.4406
+2024-10-08 19:43:22,296 - INFO - Epoch [10/10] - Loss: 11.5303
+2024-10-08 19:43:25,623 - INFO - Training completed in 382.08 seconds.
+2024-10-08 19:43:25,623 - INFO - Model size: 3.71 MB, Accuracy: 0.8387, Precision: 0.8469
+2024-10-08 19:43:25,626 - INFO - Trial 41: num_heads=4, num_layers=4, hidden_dim=32, dropout=0.4421471559612064, learning_rate=0.00010192780082328971, batch_size=35
+2024-10-08 19:43:25,644 - INFO - Initial CPU usage: 0.0% and memory: 1558.51 MB
+2024-10-08 19:44:20,947 - INFO - Epoch [1/10] - Loss: 30.6760
+2024-10-08 19:45:16,335 - INFO - Epoch [2/10] - Loss: 23.3140
+2024-10-08 19:46:11,729 - INFO - Epoch [3/10] - Loss: 14.5440
+2024-10-08 19:47:07,270 - INFO - Epoch [4/10] - Loss: 9.7456
+2024-10-08 19:48:02,728 - INFO - Epoch [5/10] - Loss: 6.7274
+2024-10-08 19:48:57,451 - INFO - Epoch [6/10] - Loss: 5.3469
+2024-10-08 19:49:52,663 - INFO - Epoch [7/10] - Loss: 4.5408
+2024-10-08 19:50:48,233 - INFO - Epoch [8/10] - Loss: 4.6678
+2024-10-08 19:51:43,724 - INFO - Epoch [9/10] - Loss: 3.2514
+2024-10-08 19:52:40,350 - INFO - Epoch [10/10] - Loss: 3.1290
+2024-10-08 19:52:45,126 - INFO - Training completed in 559.48 seconds.
+2024-10-08 19:52:45,126 - INFO - Model size: 6.56 MB, Accuracy: 0.9454, Precision: 0.9050
+2024-10-08 19:52:45,129 - INFO - Trial 42: num_heads=4, num_layers=1, hidden_dim=128, dropout=0.13411511066830922, learning_rate=0.0006600967311680934, batch_size=40
+2024-10-08 19:52:45,141 - INFO - Initial CPU usage: 0.0% and memory: 1560.33 MB
+2024-10-08 19:53:13,358 - INFO - Epoch [1/10] - Loss: 19.1460
+2024-10-08 19:53:41,472 - INFO - Epoch [2/10] - Loss: 6.5525
+2024-10-08 19:54:08,779 - INFO - Epoch [3/10] - Loss: 3.4296
+2024-10-08 19:54:35,848 - INFO - Epoch [4/10] - Loss: 1.2387
+2024-10-08 19:55:03,252 - INFO - Epoch [5/10] - Loss: 1.3851
+2024-10-08 19:55:30,512 - INFO - Epoch [6/10] - Loss: 0.7086
+2024-10-08 19:55:58,685 - INFO - Epoch [7/10] - Loss: 0.4133
+2024-10-08 19:56:27,143 - INFO - Epoch [8/10] - Loss: 0.1844
+2024-10-08 19:56:56,899 - INFO - Epoch [9/10] - Loss: 0.2396
+2024-10-08 19:57:26,604 - INFO - Epoch [10/10] - Loss: 1.0305
+2024-10-08 19:57:29,620 - INFO - Training completed in 284.48 seconds.
+2024-10-08 19:57:29,620 - INFO - Model size: 2.72 MB, Accuracy: 0.9603, Precision: 0.9469
+2024-10-08 19:57:29,623 - INFO - Trial 43: num_heads=4, num_layers=2, hidden_dim=16, dropout=0.17918242774888732, learning_rate=1.5749084505610606e-05, batch_size=35
+2024-10-08 19:57:29,643 - INFO - Initial CPU usage: 0.0% and memory: 1560.90 MB
+2024-10-08 19:57:55,098 - INFO - Epoch [1/10] - Loss: 32.2048
+2024-10-08 19:58:21,164 - INFO - Epoch [2/10] - Loss: 31.8841
+2024-10-08 19:58:47,050 - INFO - Epoch [3/10] - Loss: 31.6195
+2024-10-08 19:59:13,567 - INFO - Epoch [4/10] - Loss: 31.2914
+2024-10-08 19:59:38,848 - INFO - Epoch [5/10] - Loss: 30.7778
+2024-10-08 20:00:03,928 - INFO - Epoch [6/10] - Loss: 30.0320
+2024-10-08 20:00:28,973 - INFO - Epoch [7/10] - Loss: 28.9504
+2024-10-08 20:00:55,137 - INFO - Epoch [8/10] - Loss: 27.4996
+2024-10-08 20:01:23,070 - INFO - Epoch [9/10] - Loss: 25.6690
+2024-10-08 20:01:48,975 - INFO - Epoch [10/10] - Loss: 23.6235
+2024-10-08 20:01:51,608 - INFO - Training completed in 261.97 seconds.
+2024-10-08 20:01:51,609 - INFO - Model size: 3.21 MB, Accuracy: 0.8313, Precision: 0.8342
+2024-10-08 20:01:51,613 - INFO - Trial 44: num_heads=4, num_layers=4, hidden_dim=8, dropout=0.12636159765444777, learning_rate=2.128790615683586e-05, batch_size=46
+2024-10-08 20:01:51,647 - INFO - Initial CPU usage: 0.0% and memory: 1562.46 MB
+2024-10-08 20:02:43,164 - INFO - Epoch [1/10] - Loss: 25.1958
+2024-10-08 20:03:36,220 - INFO - Epoch [2/10] - Loss: 24.2529
+2024-10-08 20:04:25,857 - INFO - Epoch [3/10] - Loss: 23.9285
+2024-10-08 20:05:15,058 - INFO - Epoch [4/10] - Loss: 23.5848
+2024-10-08 20:06:03,990 - INFO - Epoch [5/10] - Loss: 23.1213
+2024-10-08 20:06:53,568 - INFO - Epoch [6/10] - Loss: 22.4630
+2024-10-08 20:07:43,831 - INFO - Epoch [7/10] - Loss: 21.3073
+2024-10-08 20:08:51,372 - INFO - Epoch [8/10] - Loss: 19.2487
+2024-10-08 20:10:12,734 - INFO - Epoch [9/10] - Loss: 16.3543
+2024-10-08 20:11:44,122 - INFO - Epoch [10/10] - Loss: 13.6384
+2024-10-08 20:11:51,505 - INFO - Training completed in 599.86 seconds.
+2024-10-08 20:11:51,506 - INFO - Model size: 6.31 MB, Accuracy: 0.8759, Precision: 0.8794
+2024-10-08 20:11:51,511 - INFO - Trial 45: num_heads=4, num_layers=1, hidden_dim=128, dropout=0.49047262435408495, learning_rate=0.0001127283036776136, batch_size=27
+2024-10-08 20:11:51,527 - INFO - Initial CPU usage: 0.0% and memory: 814.18 MB
+2024-10-08 20:12:44,897 - INFO - Epoch [1/10] - Loss: 35.8449
+2024-10-08 20:13:38,469 - INFO - Epoch [2/10] - Loss: 21.9232
+2024-10-08 20:14:30,538 - INFO - Epoch [3/10] - Loss: 14.8109
+2024-10-08 20:15:23,734 - INFO - Epoch [4/10] - Loss: 10.3932
+2024-10-08 20:16:18,505 - INFO - Epoch [5/10] - Loss: 7.0454
+2024-10-08 20:17:14,739 - INFO - Epoch [6/10] - Loss: 4.0636
+2024-10-08 20:18:07,440 - INFO - Epoch [7/10] - Loss: 2.4453
+2024-10-08 20:18:59,973 - INFO - Epoch [8/10] - Loss: 1.2702
+2024-10-08 20:19:56,341 - INFO - Epoch [9/10] - Loss: 0.7401
+2024-10-08 20:20:52,049 - INFO - Epoch [10/10] - Loss: 0.3487
+2024-10-08 20:20:58,659 - INFO - Training completed in 547.13 seconds.
+2024-10-08 20:20:58,660 - INFO - Model size: 2.72 MB, Accuracy: 0.9529, Precision: 0.9375
+2024-10-08 20:20:58,665 - INFO - Trial 46: num_heads=4, num_layers=2, hidden_dim=64, dropout=0.4884787244390343, learning_rate=0.0001452023346511662, batch_size=33
+2024-10-08 20:20:58,694 - INFO - Initial CPU usage: 0.0% and memory: 786.57 MB
+2024-10-08 20:21:53,761 - INFO - Epoch [1/10] - Loss: 30.7782
+2024-10-08 20:22:47,667 - INFO - Epoch [2/10] - Loss: 18.3363
+2024-10-08 20:23:41,540 - INFO - Epoch [3/10] - Loss: 13.2874
+2024-10-08 20:24:35,238 - INFO - Epoch [4/10] - Loss: 9.4794
+2024-10-08 20:25:30,694 - INFO - Epoch [5/10] - Loss: 6.7275
+2024-10-08 20:26:24,828 - INFO - Epoch [6/10] - Loss: 5.4413
+2024-10-08 20:27:19,511 - INFO - Epoch [7/10] - Loss: 3.6802
+2024-10-08 20:28:13,888 - INFO - Epoch [8/10] - Loss: 2.2473
+2024-10-08 20:29:07,521 - INFO - Epoch [9/10] - Loss: 1.5560
+2024-10-08 20:30:02,204 - INFO - Epoch [10/10] - Loss: 1.4084
+2024-10-08 20:30:08,432 - INFO - Training completed in 549.74 seconds.
+2024-10-08 20:30:08,432 - INFO - Model size: 3.71 MB, Accuracy: 0.9330, Precision: 0.8991
+2024-10-08 20:30:08,439 - INFO - Trial 47: num_heads=4, num_layers=2, hidden_dim=4, dropout=0.021842116277886015, learning_rate=4.417982696922581e-05, batch_size=53
+2024-10-08 20:30:08,459 - INFO - Initial CPU usage: 0.0% and memory: 846.33 MB
+2024-10-08 20:31:03,092 - INFO - Epoch [1/10] - Loss: 23.3738
+2024-10-08 20:31:56,733 - INFO - Epoch [2/10] - Loss: 21.6933
+2024-10-08 20:32:50,636 - INFO - Epoch [3/10] - Loss: 21.1182
+2024-10-08 20:33:44,704 - INFO - Epoch [4/10] - Loss: 20.8308
+2024-10-08 20:34:41,529 - INFO - Epoch [5/10] - Loss: 20.5700
+2024-10-08 20:35:34,799 - INFO - Epoch [6/10] - Loss: 20.2125
+2024-10-08 20:36:29,101 - INFO - Epoch [7/10] - Loss: 19.7631
+2024-10-08 20:37:22,648 - INFO - Epoch [8/10] - Loss: 19.0737
+2024-10-08 20:38:15,964 - INFO - Epoch [9/10] - Loss: 18.0406
+2024-10-08 20:38:51,643 - INFO - Epoch [10/10] - Loss: 16.7631
+2024-10-08 20:38:56,025 - INFO - Training completed in 527.56 seconds.
+2024-10-08 20:38:56,026 - INFO - Model size: 3.15 MB, Accuracy: 0.8164, Precision: 0.7953
+2024-10-08 20:38:56,028 - INFO - Trial 48: num_heads=4, num_layers=2, hidden_dim=64, dropout=0.17550877463089076, learning_rate=2.9131840285700473e-05, batch_size=16
+2024-10-08 20:38:56,047 - INFO - Initial CPU usage: 0.0% and memory: 888.98 MB
+2024-10-08 20:39:29,247 - INFO - Epoch [1/10] - Loss: 68.5057
+2024-10-08 20:40:02,332 - INFO - Epoch [2/10] - Loss: 56.6015
+2024-10-08 20:40:35,335 - INFO - Epoch [3/10] - Loss: 40.9158
+2024-10-08 20:41:08,850 - INFO - Epoch [4/10] - Loss: 34.8075
+2024-10-08 20:41:42,393 - INFO - Epoch [5/10] - Loss: 30.5384
+2024-10-08 20:42:16,060 - INFO - Epoch [6/10] - Loss: 26.2691
+2024-10-08 20:42:48,772 - INFO - Epoch [7/10] - Loss: 21.1199
+2024-10-08 20:43:22,280 - INFO - Epoch [8/10] - Loss: 16.0925
+2024-10-08 20:43:54,973 - INFO - Epoch [9/10] - Loss: 12.5747
+2024-10-08 20:44:28,852 - INFO - Epoch [10/10] - Loss: 10.3939
+2024-10-08 20:44:32,144 - INFO - Training completed in 336.10 seconds.
+2024-10-08 20:44:32,144 - INFO - Model size: 3.71 MB, Accuracy: 0.9504, Precision: 0.9594
+2024-10-08 20:44:32,148 - INFO - Trial 49: num_heads=4, num_layers=4, hidden_dim=16, dropout=0.36267148871345595, learning_rate=2.5098779174531563e-05, batch_size=57
+2024-10-08 20:44:32,169 - INFO - Initial CPU usage: 0.0% and memory: 1133.10 MB
+2024-10-08 20:45:25,420 - INFO - Epoch [1/10] - Loss: 21.6766
+2024-10-08 20:46:18,414 - INFO - Epoch [2/10] - Loss: 20.1424
+2024-10-08 20:47:11,600 - INFO - Epoch [3/10] - Loss: 19.7492
+2024-10-08 20:48:04,556 - INFO - Epoch [4/10] - Loss: 19.3517
+2024-10-08 20:48:57,106 - INFO - Epoch [5/10] - Loss: 18.7926
+2024-10-08 20:49:50,068 - INFO - Epoch [6/10] - Loss: 17.9115
+2024-10-08 20:50:43,107 - INFO - Epoch [7/10] - Loss: 16.9015
+2024-10-08 20:51:36,419 - INFO - Epoch [8/10] - Loss: 15.4398
+2024-10-08 20:52:29,528 - INFO - Epoch [9/10] - Loss: 13.8602
+2024-10-08 20:53:22,988 - INFO - Epoch [10/10] - Loss: 12.3843
+2024-10-08 20:53:26,767 - INFO - Training completed in 534.60 seconds.
+2024-10-08 20:53:26,767 - INFO - Model size: 6.37 MB, Accuracy: 0.8511, Precision: 0.8473
+2024-10-09 09:41:48,165 - INFO - Trial 0: num_heads=4, num_layers=4, hidden_dim=32, dropout=0.25461672825899323, learning_rate=0.00014948233002515528, batch_size=47
+2024-10-09 09:42:14,364 - INFO - Epoch [1/10] - Loss: 22.1702
+2024-10-09 09:42:21,724 - INFO - Epoch [2/10] - Loss: 14.6642
+2024-10-09 09:42:29,132 - INFO - Epoch [3/10] - Loss: 9.9151
+2024-10-09 09:42:36,913 - INFO - Epoch [4/10] - Loss: 7.3056

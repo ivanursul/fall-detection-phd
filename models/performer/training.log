@@ -1,0 +1,308 @@
+2024-10-14 18:46:39,483 - INFO - Using device: cuda
+2024-10-14 18:46:39,496 - INFO - Data Split - Train: 69.95%, Validation: 10.03%, Test: 20.02%
+2024-10-14 18:46:52,946 - INFO - Trial 0, Epoch 1/10, Train Loss: 30.7057, Val Loss: 4.6940, Val Accuracy: 67.33%
+2024-10-14 18:47:01,923 - INFO - Trial 0, Epoch 2/10, Train Loss: 29.8473, Val Loss: 4.5463, Val Accuracy: 58.42%
+2024-10-14 18:47:10,882 - INFO - Trial 0, Epoch 3/10, Train Loss: 28.7123, Val Loss: 4.3582, Val Accuracy: 67.82%
+2024-10-14 18:47:19,842 - INFO - Trial 0, Epoch 4/10, Train Loss: 27.4056, Val Loss: 4.3899, Val Accuracy: 55.45%
+2024-10-14 18:47:28,831 - INFO - Trial 0, Epoch 5/10, Train Loss: 26.4352, Val Loss: 3.9629, Val Accuracy: 74.75%
+2024-10-14 18:47:37,885 - INFO - Trial 0, Epoch 6/10, Train Loss: 26.2381, Val Loss: 4.5044, Val Accuracy: 54.95%
+2024-10-14 18:47:46,852 - INFO - Trial 0, Epoch 7/10, Train Loss: 24.9264, Val Loss: 3.7657, Val Accuracy: 70.79%
+2024-10-14 18:47:55,945 - INFO - Trial 0, Epoch 8/10, Train Loss: 25.1725, Val Loss: 3.7222, Val Accuracy: 73.76%
+2024-10-14 18:48:05,041 - INFO - Trial 0, Epoch 9/10, Train Loss: 24.2083, Val Loss: 3.8214, Val Accuracy: 71.29%
+2024-10-14 18:48:14,136 - INFO - Trial 0, Epoch 10/10, Train Loss: 23.4720, Val Loss: 4.0948, Val Accuracy: 63.86%
+2024-10-14 18:48:20,826 - INFO - Trial 1, Epoch 1/10, Train Loss: 60.6836, Val Loss: 8.8872, Val Accuracy: 66.83%
+2024-10-14 18:48:28,044 - INFO - Trial 1, Epoch 2/10, Train Loss: 59.9233, Val Loss: 8.8275, Val Accuracy: 50.99%
+2024-10-14 18:48:34,779 - INFO - Trial 1, Epoch 3/10, Train Loss: 59.1024, Val Loss: 8.7470, Val Accuracy: 50.00%
+2024-10-14 18:48:41,471 - INFO - Trial 1, Epoch 4/10, Train Loss: 58.4786, Val Loss: 8.7298, Val Accuracy: 51.49%
+2024-10-14 18:48:48,216 - INFO - Trial 1, Epoch 5/10, Train Loss: 57.9085, Val Loss: 8.4512, Val Accuracy: 72.77%
+2024-10-14 18:48:54,911 - INFO - Trial 1, Epoch 6/10, Train Loss: 56.9802, Val Loss: 8.5240, Val Accuracy: 53.96%
+2024-10-14 18:49:01,808 - INFO - Trial 1, Epoch 7/10, Train Loss: 56.2649, Val Loss: 8.1813, Val Accuracy: 73.27%
+2024-10-14 18:49:08,503 - INFO - Trial 1, Epoch 8/10, Train Loss: 55.3877, Val Loss: 8.0402, Val Accuracy: 74.26%
+2024-10-14 18:49:15,322 - INFO - Trial 1, Epoch 9/10, Train Loss: 54.5145, Val Loss: 7.9618, Val Accuracy: 72.77%
+2024-10-14 18:49:22,064 - INFO - Trial 1, Epoch 10/10, Train Loss: 53.7496, Val Loss: 7.8922, Val Accuracy: 69.80%
+2024-10-14 18:49:27,838 - INFO - Trial 2, Epoch 1/10, Train Loss: 15.2826, Val Loss: 2.7633, Val Accuracy: 51.49%
+2024-10-14 18:49:33,758 - INFO - Trial 2, Epoch 2/10, Train Loss: 15.1891, Val Loss: 2.7470, Val Accuracy: 58.42%
+2024-10-14 18:49:39,666 - INFO - Trial 2, Epoch 3/10, Train Loss: 15.0915, Val Loss: 2.7530, Val Accuracy: 49.50%
+2024-10-14 18:49:45,691 - INFO - Trial 2, Epoch 4/10, Train Loss: 15.0613, Val Loss: 2.7217, Val Accuracy: 65.84%
+2024-10-14 18:49:51,591 - INFO - Trial 2, Epoch 5/10, Train Loss: 14.9557, Val Loss: 2.7264, Val Accuracy: 52.48%
+2024-10-14 18:49:57,557 - INFO - Trial 2, Epoch 6/10, Train Loss: 14.9015, Val Loss: 2.7048, Val Accuracy: 63.37%
+2024-10-14 18:50:03,583 - INFO - Trial 2, Epoch 7/10, Train Loss: 14.8069, Val Loss: 2.6908, Val Accuracy: 64.36%
+2024-10-14 18:50:09,592 - INFO - Trial 2, Epoch 8/10, Train Loss: 14.7628, Val Loss: 2.6680, Val Accuracy: 68.81%
+2024-10-14 18:50:15,627 - INFO - Trial 2, Epoch 9/10, Train Loss: 14.6631, Val Loss: 2.6691, Val Accuracy: 63.37%
+2024-10-14 18:50:21,535 - INFO - Trial 2, Epoch 10/10, Train Loss: 14.5559, Val Loss: 2.6362, Val Accuracy: 72.77%
+2024-10-14 18:50:27,570 - INFO - Trial 3, Epoch 1/10, Train Loss: 30.7570, Val Loss: 4.8312, Val Accuracy: 46.53%
+2024-10-14 18:50:33,477 - INFO - Trial 3, Epoch 2/10, Train Loss: 30.3752, Val Loss: 4.8546, Val Accuracy: 46.53%
+2024-10-14 18:50:39,342 - INFO - Trial 3, Epoch 3/10, Train Loss: 30.0107, Val Loss: 4.7665, Val Accuracy: 48.51%
+2024-10-14 18:50:45,298 - INFO - Trial 3, Epoch 4/10, Train Loss: 29.8139, Val Loss: 4.6559, Val Accuracy: 68.32%
+2024-10-14 18:50:51,122 - INFO - Trial 3, Epoch 5/10, Train Loss: 29.6616, Val Loss: 4.6300, Val Accuracy: 59.90%
+2024-10-14 18:50:57,051 - INFO - Trial 3, Epoch 6/10, Train Loss: 29.3732, Val Loss: 4.5295, Val Accuracy: 69.31%
+2024-10-14 18:51:03,143 - INFO - Trial 3, Epoch 7/10, Train Loss: 28.9841, Val Loss: 4.4120, Val Accuracy: 66.34%
+2024-10-14 18:51:09,081 - INFO - Trial 3, Epoch 8/10, Train Loss: 28.8557, Val Loss: 4.4763, Val Accuracy: 63.86%
+2024-10-14 18:51:15,266 - INFO - Trial 3, Epoch 9/10, Train Loss: 28.6057, Val Loss: 4.3321, Val Accuracy: 69.31%
+2024-10-14 18:51:21,139 - INFO - Trial 3, Epoch 10/10, Train Loss: 28.2660, Val Loss: 4.2703, Val Accuracy: 70.79%
+2024-10-14 18:51:27,362 - INFO - Trial 4, Epoch 1/10, Train Loss: 61.0348, Val Loss: 8.8453, Val Accuracy: 70.79%
+2024-10-14 18:51:33,999 - INFO - Trial 4, Epoch 2/10, Train Loss: 59.9480, Val Loss: 8.6697, Val Accuracy: 73.27%
+2024-10-14 18:51:40,739 - INFO - Trial 4, Epoch 3/10, Train Loss: 58.8926, Val Loss: 8.5063, Val Accuracy: 73.76%
+2024-10-14 18:51:47,571 - INFO - Trial 4, Epoch 4/10, Train Loss: 58.0575, Val Loss: 8.6373, Val Accuracy: 51.98%
+2024-10-14 18:51:54,189 - INFO - Trial 4, Epoch 5/10, Train Loss: 56.8581, Val Loss: 8.7413, Val Accuracy: 49.01%
+2024-10-14 18:52:00,859 - INFO - Trial 4, Epoch 6/10, Train Loss: 55.7569, Val Loss: 8.0316, Val Accuracy: 72.28%
+2024-10-14 18:52:07,654 - INFO - Trial 4, Epoch 7/10, Train Loss: 54.5300, Val Loss: 7.7706, Val Accuracy: 76.73%
+2024-10-14 18:52:14,194 - INFO - Trial 4, Epoch 8/10, Train Loss: 53.8685, Val Loss: 7.5230, Val Accuracy: 76.24%
+2024-10-14 18:52:20,904 - INFO - Trial 4, Epoch 9/10, Train Loss: 52.5870, Val Loss: 7.4386, Val Accuracy: 75.74%
+2024-10-14 18:52:27,615 - INFO - Trial 4, Epoch 10/10, Train Loss: 51.7543, Val Loss: 7.1743, Val Accuracy: 77.72%
+2024-10-14 18:52:36,163 - INFO - Trial 5, Epoch 1/10, Train Loss: 31.1713, Val Loss: 4.6102, Val Accuracy: 55.45%
+2024-10-14 18:52:36,164 - INFO - Trial 5 pruned at epoch 1
+2024-10-14 18:52:43,116 - INFO - Trial 6, Epoch 1/10, Train Loss: 15.9683, Val Loss: 2.8435, Val Accuracy: 46.53%
+2024-10-14 18:52:43,117 - INFO - Trial 6 pruned at epoch 1
+2024-10-14 18:52:50,406 - INFO - Trial 7, Epoch 1/10, Train Loss: 30.3807, Val Loss: 4.7826, Val Accuracy: 53.96%
+2024-10-14 18:52:50,406 - INFO - Trial 7 pruned at epoch 1
+2024-10-14 18:52:56,834 - INFO - Trial 8, Epoch 1/10, Train Loss: 15.4386, Val Loss: 2.8130, Val Accuracy: 46.04%
+2024-10-14 18:52:56,835 - INFO - Trial 8 pruned at epoch 1
+2024-10-14 18:53:06,587 - INFO - Trial 9, Epoch 1/10, Train Loss: 60.5536, Val Loss: 8.7807, Val Accuracy: 63.86%
+2024-10-14 18:53:06,588 - INFO - Trial 9 pruned at epoch 1
+2024-10-14 18:53:15,710 - INFO - Trial 10, Epoch 1/10, Train Loss: 61.7989, Val Loss: 6.8525, Val Accuracy: 76.73%
+2024-10-14 18:53:24,763 - INFO - Trial 10, Epoch 2/10, Train Loss: 48.6312, Val Loss: 5.8639, Val Accuracy: 82.67%
+2024-10-14 18:53:33,762 - INFO - Trial 10, Epoch 3/10, Train Loss: 39.6530, Val Loss: 7.3070, Val Accuracy: 71.78%
+2024-10-14 18:53:42,836 - INFO - Trial 10, Epoch 4/10, Train Loss: 35.5507, Val Loss: 5.5362, Val Accuracy: 79.21%
+2024-10-14 18:53:51,927 - INFO - Trial 10, Epoch 5/10, Train Loss: 34.2108, Val Loss: 4.7950, Val Accuracy: 84.16%
+2024-10-14 18:54:00,903 - INFO - Trial 10, Epoch 6/10, Train Loss: 31.2774, Val Loss: 4.8869, Val Accuracy: 84.65%
+2024-10-14 18:54:10,004 - INFO - Trial 10, Epoch 7/10, Train Loss: 29.3415, Val Loss: 4.1407, Val Accuracy: 89.60%
+2024-10-14 18:54:18,994 - INFO - Trial 10, Epoch 8/10, Train Loss: 26.7837, Val Loss: 5.7285, Val Accuracy: 78.71%
+2024-10-14 18:54:28,039 - INFO - Trial 10, Epoch 9/10, Train Loss: 28.0046, Val Loss: 4.7600, Val Accuracy: 88.61%
+2024-10-14 18:54:37,102 - INFO - Trial 10, Epoch 10/10, Train Loss: 23.7403, Val Loss: 3.4158, Val Accuracy: 92.57%
+2024-10-14 18:54:46,150 - INFO - Trial 11, Epoch 1/10, Train Loss: 61.2121, Val Loss: 6.4452, Val Accuracy: 80.20%
+2024-10-14 18:54:55,174 - INFO - Trial 11, Epoch 2/10, Train Loss: 43.0355, Val Loss: 6.5865, Val Accuracy: 73.76%
+2024-10-14 18:55:04,220 - INFO - Trial 11, Epoch 3/10, Train Loss: 34.2642, Val Loss: 4.0642, Val Accuracy: 89.11%
+2024-10-14 18:55:13,316 - INFO - Trial 11, Epoch 4/10, Train Loss: 26.9583, Val Loss: 3.9357, Val Accuracy: 86.63%
+2024-10-14 18:55:22,346 - INFO - Trial 11, Epoch 5/10, Train Loss: 22.9861, Val Loss: 2.4973, Val Accuracy: 90.10%
+2024-10-14 18:55:31,317 - INFO - Trial 11, Epoch 6/10, Train Loss: 23.8201, Val Loss: 2.8741, Val Accuracy: 92.08%
+2024-10-14 18:55:40,399 - INFO - Trial 11, Epoch 7/10, Train Loss: 22.0160, Val Loss: 3.1725, Val Accuracy: 90.10%
+2024-10-14 18:55:49,369 - INFO - Trial 11, Epoch 8/10, Train Loss: 26.8497, Val Loss: 3.9177, Val Accuracy: 85.15%
+2024-10-14 18:55:58,434 - INFO - Trial 11, Epoch 9/10, Train Loss: 22.9166, Val Loss: 4.8085, Val Accuracy: 87.62%
+2024-10-14 18:56:07,513 - INFO - Trial 11, Epoch 10/10, Train Loss: 23.2475, Val Loss: 3.4433, Val Accuracy: 90.10%
+2024-10-14 18:56:16,605 - INFO - Trial 12, Epoch 1/10, Train Loss: 60.7229, Val Loss: 6.8082, Val Accuracy: 80.69%
+2024-10-14 18:56:25,648 - INFO - Trial 12, Epoch 2/10, Train Loss: 43.5616, Val Loss: 5.8410, Val Accuracy: 81.19%
+2024-10-14 18:56:34,707 - INFO - Trial 12, Epoch 3/10, Train Loss: 34.1346, Val Loss: 6.9631, Val Accuracy: 77.72%
+2024-10-14 18:56:43,739 - INFO - Trial 12, Epoch 4/10, Train Loss: 28.4009, Val Loss: 17.0582, Val Accuracy: 61.88%
+2024-10-14 18:56:52,799 - INFO - Trial 12, Epoch 5/10, Train Loss: 26.3549, Val Loss: 3.1306, Val Accuracy: 92.57%
+2024-10-14 18:57:01,916 - INFO - Trial 12, Epoch 6/10, Train Loss: 25.6040, Val Loss: 12.5937, Val Accuracy: 71.78%
+2024-10-14 18:57:10,997 - INFO - Trial 12, Epoch 7/10, Train Loss: 26.4629, Val Loss: 14.4102, Val Accuracy: 70.30%
+2024-10-14 18:57:20,098 - INFO - Trial 12, Epoch 8/10, Train Loss: 24.4125, Val Loss: 16.3364, Val Accuracy: 70.30%
+2024-10-14 18:57:29,181 - INFO - Trial 12, Epoch 9/10, Train Loss: 26.2313, Val Loss: 8.0905, Val Accuracy: 77.23%
+2024-10-14 18:57:38,724 - INFO - Trial 12, Epoch 10/10, Train Loss: 23.3754, Val Loss: 6.3042, Val Accuracy: 81.68%
+2024-10-14 18:57:48,032 - INFO - Trial 13, Epoch 1/10, Train Loss: 55.1954, Val Loss: 7.1364, Val Accuracy: 72.77%
+2024-10-14 18:57:57,028 - INFO - Trial 13, Epoch 2/10, Train Loss: 39.6534, Val Loss: 4.3021, Val Accuracy: 86.14%
+2024-10-14 18:58:06,087 - INFO - Trial 13, Epoch 3/10, Train Loss: 29.6979, Val Loss: 3.8593, Val Accuracy: 89.11%
+2024-10-14 18:58:15,131 - INFO - Trial 13, Epoch 4/10, Train Loss: 27.0386, Val Loss: 8.0520, Val Accuracy: 77.72%
+2024-10-14 18:58:24,232 - INFO - Trial 13, Epoch 5/10, Train Loss: 26.2683, Val Loss: 5.3482, Val Accuracy: 82.67%
+2024-10-14 18:58:33,299 - INFO - Trial 13, Epoch 6/10, Train Loss: 23.9992, Val Loss: 2.6454, Val Accuracy: 92.57%
+2024-10-14 18:58:42,409 - INFO - Trial 13, Epoch 7/10, Train Loss: 21.3328, Val Loss: 3.1962, Val Accuracy: 90.10%
+2024-10-14 18:58:51,461 - INFO - Trial 13, Epoch 8/10, Train Loss: 21.6483, Val Loss: 2.4605, Val Accuracy: 93.07%
+2024-10-14 18:59:00,477 - INFO - Trial 13, Epoch 9/10, Train Loss: 21.5421, Val Loss: 2.8263, Val Accuracy: 92.57%
+2024-10-14 18:59:09,582 - INFO - Trial 13, Epoch 10/10, Train Loss: 21.7381, Val Loss: 2.2876, Val Accuracy: 93.56%
+2024-10-14 18:59:23,601 - INFO - Trial 14, Epoch 1/10, Train Loss: 65.2812, Val Loss: 7.9324, Val Accuracy: 64.85%
+2024-10-14 18:59:23,601 - INFO - Trial 14 pruned at epoch 1
+2024-10-14 18:59:32,782 - INFO - Trial 15, Epoch 1/10, Train Loss: 63.7039, Val Loss: 9.4149, Val Accuracy: 46.53%
+2024-10-14 18:59:32,783 - INFO - Trial 15 pruned at epoch 1
+2024-10-14 18:59:51,726 - INFO - Trial 16, Epoch 1/10, Train Loss: 64.0276, Val Loss: 9.4883, Val Accuracy: 53.47%
+2024-10-14 18:59:51,727 - INFO - Trial 16 pruned at epoch 1
+2024-10-14 19:00:00,638 - INFO - Trial 17, Epoch 1/10, Train Loss: 66.3111, Val Loss: 8.6456, Val Accuracy: 71.78%
+2024-10-14 19:00:09,469 - INFO - Trial 17, Epoch 2/10, Train Loss: 54.0227, Val Loss: 6.7850, Val Accuracy: 71.29%
+2024-10-14 19:00:09,469 - INFO - Trial 17 pruned at epoch 2
+2024-10-14 19:00:18,573 - INFO - Trial 18, Epoch 1/10, Train Loss: 54.7944, Val Loss: 6.5079, Val Accuracy: 76.73%
+2024-10-14 19:00:27,493 - INFO - Trial 18, Epoch 2/10, Train Loss: 46.0359, Val Loss: 6.3440, Val Accuracy: 79.70%
+2024-10-14 19:00:36,443 - INFO - Trial 18, Epoch 3/10, Train Loss: 36.1107, Val Loss: 6.5207, Val Accuracy: 74.26%
+2024-10-14 19:00:45,386 - INFO - Trial 18, Epoch 4/10, Train Loss: 31.2058, Val Loss: 4.4963, Val Accuracy: 88.12%
+2024-10-14 19:00:54,311 - INFO - Trial 18, Epoch 5/10, Train Loss: 30.1975, Val Loss: 4.4113, Val Accuracy: 88.12%
+2024-10-14 19:01:03,181 - INFO - Trial 18, Epoch 6/10, Train Loss: 26.6568, Val Loss: 4.0564, Val Accuracy: 89.60%
+2024-10-14 19:01:12,097 - INFO - Trial 18, Epoch 7/10, Train Loss: 25.6798, Val Loss: 5.3146, Val Accuracy: 83.66%
+2024-10-14 19:01:21,023 - INFO - Trial 18, Epoch 8/10, Train Loss: 24.7290, Val Loss: 4.1782, Val Accuracy: 89.60%
+2024-10-14 19:01:29,915 - INFO - Trial 18, Epoch 9/10, Train Loss: 23.0950, Val Loss: 3.8828, Val Accuracy: 91.09%
+2024-10-14 19:01:38,846 - INFO - Trial 18, Epoch 10/10, Train Loss: 22.3699, Val Loss: 3.8532, Val Accuracy: 87.13%
+2024-10-14 19:01:51,533 - INFO - Trial 19, Epoch 1/10, Train Loss: 15.1764, Val Loss: 2.6608, Val Accuracy: 54.95%
+2024-10-14 19:01:51,534 - INFO - Trial 19 pruned at epoch 1
+2024-10-14 19:02:00,641 - INFO - Trial 20, Epoch 1/10, Train Loss: 58.3567, Val Loss: 8.6881, Val Accuracy: 60.40%
+2024-10-14 19:02:00,641 - INFO - Trial 20 pruned at epoch 1
+2024-10-14 19:02:09,743 - INFO - Trial 21, Epoch 1/10, Train Loss: 59.9320, Val Loss: 7.2929, Val Accuracy: 71.78%
+2024-10-14 19:02:18,830 - INFO - Trial 21, Epoch 2/10, Train Loss: 47.3318, Val Loss: 7.5610, Val Accuracy: 65.84%
+2024-10-14 19:02:18,831 - INFO - Trial 21 pruned at epoch 2
+2024-10-14 19:02:27,935 - INFO - Trial 22, Epoch 1/10, Train Loss: 58.5167, Val Loss: 9.2794, Val Accuracy: 54.95%
+2024-10-14 19:02:27,935 - INFO - Trial 22 pruned at epoch 1
+2024-10-14 19:02:37,077 - INFO - Trial 23, Epoch 1/10, Train Loss: 60.1846, Val Loss: 7.9197, Val Accuracy: 68.81%
+2024-10-14 19:02:37,077 - INFO - Trial 23 pruned at epoch 1
+2024-10-14 19:02:46,026 - INFO - Trial 24, Epoch 1/10, Train Loss: 64.8956, Val Loss: 8.0493, Val Accuracy: 74.75%
+2024-10-14 19:02:54,831 - INFO - Trial 24, Epoch 2/10, Train Loss: 49.2890, Val Loss: 6.2062, Val Accuracy: 78.22%
+2024-10-14 19:03:03,645 - INFO - Trial 24, Epoch 3/10, Train Loss: 41.0448, Val Loss: 5.8981, Val Accuracy: 83.17%
+2024-10-14 19:03:12,463 - INFO - Trial 24, Epoch 4/10, Train Loss: 39.8394, Val Loss: 11.8386, Val Accuracy: 50.50%
+2024-10-14 19:03:21,302 - INFO - Trial 24, Epoch 5/10, Train Loss: 38.5190, Val Loss: 7.9275, Val Accuracy: 71.29%
+2024-10-14 19:03:30,137 - INFO - Trial 24, Epoch 6/10, Train Loss: 34.9154, Val Loss: 6.6060, Val Accuracy: 74.75%
+2024-10-14 19:03:39,304 - INFO - Trial 24, Epoch 7/10, Train Loss: 34.6259, Val Loss: 7.9120, Val Accuracy: 72.77%
+2024-10-14 19:03:48,480 - INFO - Trial 24, Epoch 8/10, Train Loss: 32.0664, Val Loss: 6.0045, Val Accuracy: 77.23%
+2024-10-14 19:03:57,681 - INFO - Trial 24, Epoch 9/10, Train Loss: 31.2354, Val Loss: 8.1363, Val Accuracy: 71.78%
+2024-10-14 19:04:06,496 - INFO - Trial 24, Epoch 10/10, Train Loss: 30.7911, Val Loss: 8.2212, Val Accuracy: 73.27%
+2024-10-14 19:04:15,533 - INFO - Trial 25, Epoch 1/10, Train Loss: 58.6561, Val Loss: 6.7483, Val Accuracy: 74.26%
+2024-10-14 19:04:24,635 - INFO - Trial 25, Epoch 2/10, Train Loss: 40.3753, Val Loss: 4.9141, Val Accuracy: 85.15%
+2024-10-14 19:04:33,669 - INFO - Trial 25, Epoch 3/10, Train Loss: 31.2145, Val Loss: 4.1963, Val Accuracy: 88.12%
+2024-10-14 19:04:42,741 - INFO - Trial 25, Epoch 4/10, Train Loss: 24.7045, Val Loss: 3.7300, Val Accuracy: 87.13%
+2024-10-14 19:04:51,843 - INFO - Trial 25, Epoch 5/10, Train Loss: 22.8312, Val Loss: 2.8203, Val Accuracy: 91.09%
+2024-10-14 19:05:00,817 - INFO - Trial 25, Epoch 6/10, Train Loss: 21.5154, Val Loss: 3.3637, Val Accuracy: 93.07%
+2024-10-14 19:05:10,082 - INFO - Trial 25, Epoch 7/10, Train Loss: 21.2684, Val Loss: 2.6111, Val Accuracy: 94.06%
+2024-10-14 19:05:19,351 - INFO - Trial 25, Epoch 8/10, Train Loss: 19.6387, Val Loss: 2.4174, Val Accuracy: 93.56%
+2024-10-14 19:05:28,362 - INFO - Trial 25, Epoch 9/10, Train Loss: 17.4571, Val Loss: 2.7635, Val Accuracy: 90.10%
+2024-10-14 19:05:37,533 - INFO - Trial 25, Epoch 10/10, Train Loss: 18.3170, Val Loss: 2.5331, Val Accuracy: 93.07%
+2024-10-14 19:05:52,496 - INFO - Trial 26, Epoch 1/10, Train Loss: 62.1115, Val Loss: 6.8263, Val Accuracy: 77.72%
+2024-10-14 19:06:06,478 - INFO - Trial 26, Epoch 2/10, Train Loss: 47.5204, Val Loss: 7.0210, Val Accuracy: 74.75%
+2024-10-14 18:46:39,483 - INFO - Using device: cuda
+2024-10-14 18:46:39,496 - INFO - Data Split - Train: 69.95%, Validation: 10.03%, Test: 20.02%
+2024-10-14 18:46:52,946 - INFO - Trial 0, Epoch 1/10, Train Loss: 30.7057, Val Loss: 4.6940, Val Accuracy: 67.33%
+2024-10-14 18:47:01,923 - INFO - Trial 0, Epoch 2/10, Train Loss: 29.8473, Val Loss: 4.5463, Val Accuracy: 58.42%
+2024-10-14 18:47:10,882 - INFO - Trial 0, Epoch 3/10, Train Loss: 28.7123, Val Loss: 4.3582, Val Accuracy: 67.82%
+2024-10-14 18:47:19,842 - INFO - Trial 0, Epoch 4/10, Train Loss: 27.4056, Val Loss: 4.3899, Val Accuracy: 55.45%
+2024-10-14 18:47:28,831 - INFO - Trial 0, Epoch 5/10, Train Loss: 26.4352, Val Loss: 3.9629, Val Accuracy: 74.75%
+2024-10-14 18:47:37,885 - INFO - Trial 0, Epoch 6/10, Train Loss: 26.2381, Val Loss: 4.5044, Val Accuracy: 54.95%
+2024-10-14 18:47:46,852 - INFO - Trial 0, Epoch 7/10, Train Loss: 24.9264, Val Loss: 3.7657, Val Accuracy: 70.79%
+2024-10-14 18:47:55,945 - INFO - Trial 0, Epoch 8/10, Train Loss: 25.1725, Val Loss: 3.7222, Val Accuracy: 73.76%
+2024-10-14 18:48:05,041 - INFO - Trial 0, Epoch 9/10, Train Loss: 24.2083, Val Loss: 3.8214, Val Accuracy: 71.29%
+2024-10-14 18:48:14,136 - INFO - Trial 0, Epoch 10/10, Train Loss: 23.4720, Val Loss: 4.0948, Val Accuracy: 63.86%
+2024-10-14 18:48:20,826 - INFO - Trial 1, Epoch 1/10, Train Loss: 60.6836, Val Loss: 8.8872, Val Accuracy: 66.83%
+2024-10-14 18:48:28,044 - INFO - Trial 1, Epoch 2/10, Train Loss: 59.9233, Val Loss: 8.8275, Val Accuracy: 50.99%
+2024-10-14 18:48:34,779 - INFO - Trial 1, Epoch 3/10, Train Loss: 59.1024, Val Loss: 8.7470, Val Accuracy: 50.00%
+2024-10-14 18:48:41,471 - INFO - Trial 1, Epoch 4/10, Train Loss: 58.4786, Val Loss: 8.7298, Val Accuracy: 51.49%
+2024-10-14 18:48:48,216 - INFO - Trial 1, Epoch 5/10, Train Loss: 57.9085, Val Loss: 8.4512, Val Accuracy: 72.77%
+2024-10-14 18:48:54,911 - INFO - Trial 1, Epoch 6/10, Train Loss: 56.9802, Val Loss: 8.5240, Val Accuracy: 53.96%
+2024-10-14 18:49:01,808 - INFO - Trial 1, Epoch 7/10, Train Loss: 56.2649, Val Loss: 8.1813, Val Accuracy: 73.27%
+2024-10-14 18:49:08,503 - INFO - Trial 1, Epoch 8/10, Train Loss: 55.3877, Val Loss: 8.0402, Val Accuracy: 74.26%
+2024-10-14 18:49:15,322 - INFO - Trial 1, Epoch 9/10, Train Loss: 54.5145, Val Loss: 7.9618, Val Accuracy: 72.77%
+2024-10-14 18:49:22,064 - INFO - Trial 1, Epoch 10/10, Train Loss: 53.7496, Val Loss: 7.8922, Val Accuracy: 69.80%
+2024-10-14 18:49:27,838 - INFO - Trial 2, Epoch 1/10, Train Loss: 15.2826, Val Loss: 2.7633, Val Accuracy: 51.49%
+2024-10-14 18:49:33,758 - INFO - Trial 2, Epoch 2/10, Train Loss: 15.1891, Val Loss: 2.7470, Val Accuracy: 58.42%
+2024-10-14 18:49:39,666 - INFO - Trial 2, Epoch 3/10, Train Loss: 15.0915, Val Loss: 2.7530, Val Accuracy: 49.50%
+2024-10-14 18:49:45,691 - INFO - Trial 2, Epoch 4/10, Train Loss: 15.0613, Val Loss: 2.7217, Val Accuracy: 65.84%
+2024-10-14 18:49:51,591 - INFO - Trial 2, Epoch 5/10, Train Loss: 14.9557, Val Loss: 2.7264, Val Accuracy: 52.48%
+2024-10-14 18:49:57,557 - INFO - Trial 2, Epoch 6/10, Train Loss: 14.9015, Val Loss: 2.7048, Val Accuracy: 63.37%
+2024-10-14 18:50:03,583 - INFO - Trial 2, Epoch 7/10, Train Loss: 14.8069, Val Loss: 2.6908, Val Accuracy: 64.36%
+2024-10-14 18:50:09,592 - INFO - Trial 2, Epoch 8/10, Train Loss: 14.7628, Val Loss: 2.6680, Val Accuracy: 68.81%
+2024-10-14 18:50:15,627 - INFO - Trial 2, Epoch 9/10, Train Loss: 14.6631, Val Loss: 2.6691, Val Accuracy: 63.37%
+2024-10-14 18:50:21,535 - INFO - Trial 2, Epoch 10/10, Train Loss: 14.5559, Val Loss: 2.6362, Val Accuracy: 72.77%
+2024-10-14 18:50:27,570 - INFO - Trial 3, Epoch 1/10, Train Loss: 30.7570, Val Loss: 4.8312, Val Accuracy: 46.53%
+2024-10-14 18:50:33,477 - INFO - Trial 3, Epoch 2/10, Train Loss: 30.3752, Val Loss: 4.8546, Val Accuracy: 46.53%
+2024-10-14 18:50:39,342 - INFO - Trial 3, Epoch 3/10, Train Loss: 30.0107, Val Loss: 4.7665, Val Accuracy: 48.51%
+2024-10-14 18:50:45,298 - INFO - Trial 3, Epoch 4/10, Train Loss: 29.8139, Val Loss: 4.6559, Val Accuracy: 68.32%
+2024-10-14 18:50:51,122 - INFO - Trial 3, Epoch 5/10, Train Loss: 29.6616, Val Loss: 4.6300, Val Accuracy: 59.90%
+2024-10-14 18:50:57,051 - INFO - Trial 3, Epoch 6/10, Train Loss: 29.3732, Val Loss: 4.5295, Val Accuracy: 69.31%
+2024-10-14 18:51:03,143 - INFO - Trial 3, Epoch 7/10, Train Loss: 28.9841, Val Loss: 4.4120, Val Accuracy: 66.34%
+2024-10-14 18:51:09,081 - INFO - Trial 3, Epoch 8/10, Train Loss: 28.8557, Val Loss: 4.4763, Val Accuracy: 63.86%
+2024-10-14 18:51:15,266 - INFO - Trial 3, Epoch 9/10, Train Loss: 28.6057, Val Loss: 4.3321, Val Accuracy: 69.31%
+2024-10-14 18:51:21,139 - INFO - Trial 3, Epoch 10/10, Train Loss: 28.2660, Val Loss: 4.2703, Val Accuracy: 70.79%
+2024-10-14 18:51:27,362 - INFO - Trial 4, Epoch 1/10, Train Loss: 61.0348, Val Loss: 8.8453, Val Accuracy: 70.79%
+2024-10-14 18:51:33,999 - INFO - Trial 4, Epoch 2/10, Train Loss: 59.9480, Val Loss: 8.6697, Val Accuracy: 73.27%
+2024-10-14 18:51:40,739 - INFO - Trial 4, Epoch 3/10, Train Loss: 58.8926, Val Loss: 8.5063, Val Accuracy: 73.76%
+2024-10-14 18:51:47,571 - INFO - Trial 4, Epoch 4/10, Train Loss: 58.0575, Val Loss: 8.6373, Val Accuracy: 51.98%
+2024-10-14 18:51:54,189 - INFO - Trial 4, Epoch 5/10, Train Loss: 56.8581, Val Loss: 8.7413, Val Accuracy: 49.01%
+2024-10-14 18:52:00,859 - INFO - Trial 4, Epoch 6/10, Train Loss: 55.7569, Val Loss: 8.0316, Val Accuracy: 72.28%
+2024-10-14 18:52:07,654 - INFO - Trial 4, Epoch 7/10, Train Loss: 54.5300, Val Loss: 7.7706, Val Accuracy: 76.73%
+2024-10-14 18:52:14,194 - INFO - Trial 4, Epoch 8/10, Train Loss: 53.8685, Val Loss: 7.5230, Val Accuracy: 76.24%
+2024-10-14 18:52:20,904 - INFO - Trial 4, Epoch 9/10, Train Loss: 52.5870, Val Loss: 7.4386, Val Accuracy: 75.74%
+2024-10-14 18:52:27,615 - INFO - Trial 4, Epoch 10/10, Train Loss: 51.7543, Val Loss: 7.1743, Val Accuracy: 77.72%
+2024-10-14 18:52:36,163 - INFO - Trial 5, Epoch 1/10, Train Loss: 31.1713, Val Loss: 4.6102, Val Accuracy: 55.45%
+2024-10-14 18:52:36,164 - INFO - Trial 5 pruned at epoch 1
+2024-10-14 18:52:43,116 - INFO - Trial 6, Epoch 1/10, Train Loss: 15.9683, Val Loss: 2.8435, Val Accuracy: 46.53%
+2024-10-14 18:52:43,117 - INFO - Trial 6 pruned at epoch 1
+2024-10-14 18:52:50,406 - INFO - Trial 7, Epoch 1/10, Train Loss: 30.3807, Val Loss: 4.7826, Val Accuracy: 53.96%
+2024-10-14 18:52:50,406 - INFO - Trial 7 pruned at epoch 1
+2024-10-14 18:52:56,834 - INFO - Trial 8, Epoch 1/10, Train Loss: 15.4386, Val Loss: 2.8130, Val Accuracy: 46.04%
+2024-10-14 18:52:56,835 - INFO - Trial 8 pruned at epoch 1
+2024-10-14 18:53:06,587 - INFO - Trial 9, Epoch 1/10, Train Loss: 60.5536, Val Loss: 8.7807, Val Accuracy: 63.86%
+2024-10-14 18:53:06,588 - INFO - Trial 9 pruned at epoch 1
+2024-10-14 18:53:15,710 - INFO - Trial 10, Epoch 1/10, Train Loss: 61.7989, Val Loss: 6.8525, Val Accuracy: 76.73%
+2024-10-14 18:53:24,763 - INFO - Trial 10, Epoch 2/10, Train Loss: 48.6312, Val Loss: 5.8639, Val Accuracy: 82.67%
+2024-10-14 18:53:33,762 - INFO - Trial 10, Epoch 3/10, Train Loss: 39.6530, Val Loss: 7.3070, Val Accuracy: 71.78%
+2024-10-14 18:53:42,836 - INFO - Trial 10, Epoch 4/10, Train Loss: 35.5507, Val Loss: 5.5362, Val Accuracy: 79.21%
+2024-10-14 18:53:51,927 - INFO - Trial 10, Epoch 5/10, Train Loss: 34.2108, Val Loss: 4.7950, Val Accuracy: 84.16%
+2024-10-14 18:54:00,903 - INFO - Trial 10, Epoch 6/10, Train Loss: 31.2774, Val Loss: 4.8869, Val Accuracy: 84.65%
+2024-10-14 18:54:10,004 - INFO - Trial 10, Epoch 7/10, Train Loss: 29.3415, Val Loss: 4.1407, Val Accuracy: 89.60%
+2024-10-14 18:54:18,994 - INFO - Trial 10, Epoch 8/10, Train Loss: 26.7837, Val Loss: 5.7285, Val Accuracy: 78.71%
+2024-10-14 18:54:28,039 - INFO - Trial 10, Epoch 9/10, Train Loss: 28.0046, Val Loss: 4.7600, Val Accuracy: 88.61%
+2024-10-14 18:54:37,102 - INFO - Trial 10, Epoch 10/10, Train Loss: 23.7403, Val Loss: 3.4158, Val Accuracy: 92.57%
+2024-10-14 18:54:46,150 - INFO - Trial 11, Epoch 1/10, Train Loss: 61.2121, Val Loss: 6.4452, Val Accuracy: 80.20%
+2024-10-14 18:54:55,174 - INFO - Trial 11, Epoch 2/10, Train Loss: 43.0355, Val Loss: 6.5865, Val Accuracy: 73.76%
+2024-10-14 18:55:04,220 - INFO - Trial 11, Epoch 3/10, Train Loss: 34.2642, Val Loss: 4.0642, Val Accuracy: 89.11%
+2024-10-14 18:55:13,316 - INFO - Trial 11, Epoch 4/10, Train Loss: 26.9583, Val Loss: 3.9357, Val Accuracy: 86.63%
+2024-10-14 18:55:22,346 - INFO - Trial 11, Epoch 5/10, Train Loss: 22.9861, Val Loss: 2.4973, Val Accuracy: 90.10%
+2024-10-14 18:55:31,317 - INFO - Trial 11, Epoch 6/10, Train Loss: 23.8201, Val Loss: 2.8741, Val Accuracy: 92.08%
+2024-10-14 18:55:40,399 - INFO - Trial 11, Epoch 7/10, Train Loss: 22.0160, Val Loss: 3.1725, Val Accuracy: 90.10%
+2024-10-14 18:55:49,369 - INFO - Trial 11, Epoch 8/10, Train Loss: 26.8497, Val Loss: 3.9177, Val Accuracy: 85.15%
+2024-10-14 18:55:58,434 - INFO - Trial 11, Epoch 9/10, Train Loss: 22.9166, Val Loss: 4.8085, Val Accuracy: 87.62%
+2024-10-14 18:56:07,513 - INFO - Trial 11, Epoch 10/10, Train Loss: 23.2475, Val Loss: 3.4433, Val Accuracy: 90.10%
+2024-10-14 18:56:16,605 - INFO - Trial 12, Epoch 1/10, Train Loss: 60.7229, Val Loss: 6.8082, Val Accuracy: 80.69%
+2024-10-14 18:56:25,648 - INFO - Trial 12, Epoch 2/10, Train Loss: 43.5616, Val Loss: 5.8410, Val Accuracy: 81.19%
+2024-10-14 18:56:34,707 - INFO - Trial 12, Epoch 3/10, Train Loss: 34.1346, Val Loss: 6.9631, Val Accuracy: 77.72%
+2024-10-14 18:56:43,739 - INFO - Trial 12, Epoch 4/10, Train Loss: 28.4009, Val Loss: 17.0582, Val Accuracy: 61.88%
+2024-10-14 18:56:52,799 - INFO - Trial 12, Epoch 5/10, Train Loss: 26.3549, Val Loss: 3.1306, Val Accuracy: 92.57%
+2024-10-14 18:57:01,916 - INFO - Trial 12, Epoch 6/10, Train Loss: 25.6040, Val Loss: 12.5937, Val Accuracy: 71.78%
+2024-10-14 18:57:10,997 - INFO - Trial 12, Epoch 7/10, Train Loss: 26.4629, Val Loss: 14.4102, Val Accuracy: 70.30%
+2024-10-14 18:57:20,098 - INFO - Trial 12, Epoch 8/10, Train Loss: 24.4125, Val Loss: 16.3364, Val Accuracy: 70.30%
+2024-10-14 18:57:29,181 - INFO - Trial 12, Epoch 9/10, Train Loss: 26.2313, Val Loss: 8.0905, Val Accuracy: 77.23%
+2024-10-14 18:57:38,724 - INFO - Trial 12, Epoch 10/10, Train Loss: 23.3754, Val Loss: 6.3042, Val Accuracy: 81.68%
+2024-10-14 18:57:48,032 - INFO - Trial 13, Epoch 1/10, Train Loss: 55.1954, Val Loss: 7.1364, Val Accuracy: 72.77%
+2024-10-14 18:57:57,028 - INFO - Trial 13, Epoch 2/10, Train Loss: 39.6534, Val Loss: 4.3021, Val Accuracy: 86.14%
+2024-10-14 18:58:06,087 - INFO - Trial 13, Epoch 3/10, Train Loss: 29.6979, Val Loss: 3.8593, Val Accuracy: 89.11%
+2024-10-14 18:58:15,131 - INFO - Trial 13, Epoch 4/10, Train Loss: 27.0386, Val Loss: 8.0520, Val Accuracy: 77.72%
+2024-10-14 18:58:24,232 - INFO - Trial 13, Epoch 5/10, Train Loss: 26.2683, Val Loss: 5.3482, Val Accuracy: 82.67%
+2024-10-14 18:58:33,299 - INFO - Trial 13, Epoch 6/10, Train Loss: 23.9992, Val Loss: 2.6454, Val Accuracy: 92.57%
+2024-10-14 18:58:42,409 - INFO - Trial 13, Epoch 7/10, Train Loss: 21.3328, Val Loss: 3.1962, Val Accuracy: 90.10%
+2024-10-14 18:58:51,461 - INFO - Trial 13, Epoch 8/10, Train Loss: 21.6483, Val Loss: 2.4605, Val Accuracy: 93.07%
+2024-10-14 18:59:00,477 - INFO - Trial 13, Epoch 9/10, Train Loss: 21.5421, Val Loss: 2.8263, Val Accuracy: 92.57%
+2024-10-14 18:59:09,582 - INFO - Trial 13, Epoch 10/10, Train Loss: 21.7381, Val Loss: 2.2876, Val Accuracy: 93.56%
+2024-10-14 18:59:23,601 - INFO - Trial 14, Epoch 1/10, Train Loss: 65.2812, Val Loss: 7.9324, Val Accuracy: 64.85%
+2024-10-14 18:59:23,601 - INFO - Trial 14 pruned at epoch 1
+2024-10-14 18:59:32,782 - INFO - Trial 15, Epoch 1/10, Train Loss: 63.7039, Val Loss: 9.4149, Val Accuracy: 46.53%
+2024-10-14 18:59:32,783 - INFO - Trial 15 pruned at epoch 1
+2024-10-14 18:59:51,726 - INFO - Trial 16, Epoch 1/10, Train Loss: 64.0276, Val Loss: 9.4883, Val Accuracy: 53.47%
+2024-10-14 18:59:51,727 - INFO - Trial 16 pruned at epoch 1
+2024-10-14 19:00:00,638 - INFO - Trial 17, Epoch 1/10, Train Loss: 66.3111, Val Loss: 8.6456, Val Accuracy: 71.78%
+2024-10-14 19:00:09,469 - INFO - Trial 17, Epoch 2/10, Train Loss: 54.0227, Val Loss: 6.7850, Val Accuracy: 71.29%
+2024-10-14 19:00:09,469 - INFO - Trial 17 pruned at epoch 2
+2024-10-14 19:00:18,573 - INFO - Trial 18, Epoch 1/10, Train Loss: 54.7944, Val Loss: 6.5079, Val Accuracy: 76.73%
+2024-10-14 19:00:27,493 - INFO - Trial 18, Epoch 2/10, Train Loss: 46.0359, Val Loss: 6.3440, Val Accuracy: 79.70%
+2024-10-14 19:00:36,443 - INFO - Trial 18, Epoch 3/10, Train Loss: 36.1107, Val Loss: 6.5207, Val Accuracy: 74.26%
+2024-10-14 19:00:45,386 - INFO - Trial 18, Epoch 4/10, Train Loss: 31.2058, Val Loss: 4.4963, Val Accuracy: 88.12%
+2024-10-14 19:00:54,311 - INFO - Trial 18, Epoch 5/10, Train Loss: 30.1975, Val Loss: 4.4113, Val Accuracy: 88.12%
+2024-10-14 19:01:03,181 - INFO - Trial 18, Epoch 6/10, Train Loss: 26.6568, Val Loss: 4.0564, Val Accuracy: 89.60%
+2024-10-14 19:01:12,097 - INFO - Trial 18, Epoch 7/10, Train Loss: 25.6798, Val Loss: 5.3146, Val Accuracy: 83.66%
+2024-10-14 19:01:21,023 - INFO - Trial 18, Epoch 8/10, Train Loss: 24.7290, Val Loss: 4.1782, Val Accuracy: 89.60%
+2024-10-14 19:01:29,915 - INFO - Trial 18, Epoch 9/10, Train Loss: 23.0950, Val Loss: 3.8828, Val Accuracy: 91.09%
+2024-10-14 19:01:38,846 - INFO - Trial 18, Epoch 10/10, Train Loss: 22.3699, Val Loss: 3.8532, Val Accuracy: 87.13%
+2024-10-14 19:01:51,533 - INFO - Trial 19, Epoch 1/10, Train Loss: 15.1764, Val Loss: 2.6608, Val Accuracy: 54.95%
+2024-10-14 19:01:51,534 - INFO - Trial 19 pruned at epoch 1
+2024-10-14 19:02:00,641 - INFO - Trial 20, Epoch 1/10, Train Loss: 58.3567, Val Loss: 8.6881, Val Accuracy: 60.40%
+2024-10-14 19:02:00,641 - INFO - Trial 20 pruned at epoch 1
+2024-10-14 19:02:09,743 - INFO - Trial 21, Epoch 1/10, Train Loss: 59.9320, Val Loss: 7.2929, Val Accuracy: 71.78%
+2024-10-14 19:02:18,830 - INFO - Trial 21, Epoch 2/10, Train Loss: 47.3318, Val Loss: 7.5610, Val Accuracy: 65.84%
+2024-10-14 19:02:18,831 - INFO - Trial 21 pruned at epoch 2
+2024-10-14 19:02:27,935 - INFO - Trial 22, Epoch 1/10, Train Loss: 58.5167, Val Loss: 9.2794, Val Accuracy: 54.95%
+2024-10-14 19:02:27,935 - INFO - Trial 22 pruned at epoch 1
+2024-10-14 19:02:37,077 - INFO - Trial 23, Epoch 1/10, Train Loss: 60.1846, Val Loss: 7.9197, Val Accuracy: 68.81%
+2024-10-14 19:02:37,077 - INFO - Trial 23 pruned at epoch 1
+2024-10-14 19:02:46,026 - INFO - Trial 24, Epoch 1/10, Train Loss: 64.8956, Val Loss: 8.0493, Val Accuracy: 74.75%
+2024-10-14 19:02:54,831 - INFO - Trial 24, Epoch 2/10, Train Loss: 49.2890, Val Loss: 6.2062, Val Accuracy: 78.22%
+2024-10-14 19:03:03,645 - INFO - Trial 24, Epoch 3/10, Train Loss: 41.0448, Val Loss: 5.8981, Val Accuracy: 83.17%
+2024-10-14 19:03:12,463 - INFO - Trial 24, Epoch 4/10, Train Loss: 39.8394, Val Loss: 11.8386, Val Accuracy: 50.50%
+2024-10-14 19:03:21,302 - INFO - Trial 24, Epoch 5/10, Train Loss: 38.5190, Val Loss: 7.9275, Val Accuracy: 71.29%
+2024-10-14 19:03:30,137 - INFO - Trial 24, Epoch 6/10, Train Loss: 34.9154, Val Loss: 6.6060, Val Accuracy: 74.75%
+2024-10-14 19:03:39,304 - INFO - Trial 24, Epoch 7/10, Train Loss: 34.6259, Val Loss: 7.9120, Val Accuracy: 72.77%
+2024-10-14 19:03:48,480 - INFO - Trial 24, Epoch 8/10, Train Loss: 32.0664, Val Loss: 6.0045, Val Accuracy: 77.23%
+2024-10-14 19:03:57,681 - INFO - Trial 24, Epoch 9/10, Train Loss: 31.2354, Val Loss: 8.1363, Val Accuracy: 71.78%
+2024-10-14 19:04:06,496 - INFO - Trial 24, Epoch 10/10, Train Loss: 30.7911, Val Loss: 8.2212, Val Accuracy: 73.27%
+2024-10-14 19:04:15,533 - INFO - Trial 25, Epoch 1/10, Train Loss: 58.6561, Val Loss: 6.7483, Val Accuracy: 74.26%
+2024-10-14 19:04:24,635 - INFO - Trial 25, Epoch 2/10, Train Loss: 40.3753, Val Loss: 4.9141, Val Accuracy: 85.15%
+2024-10-14 19:04:33,669 - INFO - Trial 25, Epoch 3/10, Train Loss: 31.2145, Val Loss: 4.1963, Val Accuracy: 88.12%
+2024-10-14 19:04:42,741 - INFO - Trial 25, Epoch 4/10, Train Loss: 24.7045, Val Loss: 3.7300, Val Accuracy: 87.13%
+2024-10-14 19:04:51,843 - INFO - Trial 25, Epoch 5/10, Train Loss: 22.8312, Val Loss: 2.8203, Val Accuracy: 91.09%
+2024-10-14 19:05:00,817 - INFO - Trial 25, Epoch 6/10, Train Loss: 21.5154, Val Loss: 3.3637, Val Accuracy: 93.07%
+2024-10-14 19:05:10,082 - INFO - Trial 25, Epoch 7/10, Train Loss: 21.2684, Val Loss: 2.6111, Val Accuracy: 94.06%
+2024-10-14 19:05:19,351 - INFO - Trial 25, Epoch 8/10, Train Loss: 19.6387, Val Loss: 2.4174, Val Accuracy: 93.56%
+2024-10-14 19:05:28,362 - INFO - Trial 25, Epoch 9/10, Train Loss: 17.4571, Val Loss: 2.7635, Val Accuracy: 90.10%
+2024-10-14 19:05:37,533 - INFO - Trial 25, Epoch 10/10, Train Loss: 18.3170, Val Loss: 2.5331, Val Accuracy: 93.07%
+2024-10-14 19:05:52,496 - INFO - Trial 26, Epoch 1/10, Train Loss: 62.1115, Val Loss: 6.8263, Val Accuracy: 77.72%
+2024-10-14 19:06:06,478 - INFO - Trial 26, Epoch 2/10, Train Loss: 47.5204, Val Loss: 7.0210, Val Accuracy: 74.75%
