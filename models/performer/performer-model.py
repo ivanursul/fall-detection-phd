@@ -18,16 +18,16 @@ print(f'Using device: {device}')
 
 # Constants
 MAX_SEQUENCE_LENGTH = 800
-BATCH_SIZE = 23
+BATCH_SIZE = 16
 
 input_dim = 4  # AccX, AccY, AccZ
 num_heads = 4
-num_layers = 1
+num_layers = 4
 num_classes = 2  # Fall or non-fall
-num_epochs = 20
-dropout = 0.006777644883698697
-hidden_dim = 8
-learning_rate = 0.0007740033761353489
+num_epochs = 50
+dropout = 0.2
+hidden_dim = 128
+learning_rate = 0.00019228009908966122
 
 # Custom Dataset class (unchanged)
 class FallDetectionDataset(Dataset):
@@ -99,13 +99,14 @@ class PerformerModel(nn.Module):
 
         # Use Performer instead of the regular Transformer encoder
         self.performer = Performer(
-            dim=hidden_dim,          # Hidden dimension
-            depth=num_layers,        # Number of layers
-            heads=num_heads,         # Number of attention heads
-            dim_head=hidden_dim // num_heads,  # Dimension of each attention head
-            causal=False,            # Set to True if you want causal self-attention
-            ff_dropout=dropout,      # Feed-forward dropout
-            attn_dropout=dropout     # Attention dropout
+            dim=hidden_dim,
+            depth=num_layers,
+            heads=num_heads,
+            dim_head=hidden_dim // num_heads,
+            causal=False,
+            ff_dropout=dropout,
+            attn_dropout=dropout,
+            nb_features=64  # Add this line to ensure nb_features is not zero
         )
 
         self.fc = nn.Linear(hidden_dim, num_classes)
