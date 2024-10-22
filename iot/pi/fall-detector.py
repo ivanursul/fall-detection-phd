@@ -388,8 +388,6 @@ def collect_and_check_falls():
     # Print the tensor shape and the collection time
     print(f"Collected data tensor shape: {data_tensor.shape}")
 
-    #save_csv(filtered_data)
-
     start_time = time.time()
     batch_data = data_tensor.to(device)
 
@@ -407,6 +405,7 @@ def collect_and_check_falls():
 
     if predicted_class == 1:
         play_alarm(beep_count=3, beep_duration=0.2, pause_duration=0.2)
+        save_csv(filtered_data)
 
 
 def save_csv(filtered_data):
@@ -421,10 +420,14 @@ def save_csv(filtered_data):
     # Convert the data_records to a DataFrame for saving to CSV
     filtered_data.to_csv(file_path, index=False)
 
-
 def collect_interval_records():
-    data_records = pd.DataFrame(0.0, index=np.arange(800), columns=['AccX', 'AccY', 'AccZ', 'Magnitude'])
+    data_records = pd.DataFrame(
+        0.0, index=np.arange(800),
+        columns=['AccX', 'AccY', 'AccZ', 'Magnitude']
+    )
+
     # Collect 800 records at 100Hz
+    start_time = time.time()
     for i in range(800):
         # Read the sensor data
         acc_x, acc_y, acc_z = read_accelerometer(scaling_factor)
@@ -432,11 +435,24 @@ def collect_interval_records():
         # Calculate magnitude
         magnitude = calculate_magnitude(acc_x, acc_y, acc_z - 1)
 
+        # Read and filter altitude
+
         # Assign the data to the DataFrame
         data_records.iloc[i] = [acc_x, acc_y, acc_z - 1, magnitude]
 
-        # Wait for 10ms (100Hz frequency)
-        time.sleep(0.01)
+        # Calculate how long the loop took and adjust sleep to maintain 100Hz
+        elapsed_time = time.time() - start_time
+        expected_time = (i + 1) * 0.01  # 10ms per iteration
+        sleep_time = expected_time - elapsed_time
+
+        if sleep_time > 0:
+            time.sleep(sleep_time)
+
+    # Measure total execution time
+    total_time = time.time() - start_time
+
+    print(f"Total execution time: {total_time:.6f} seconds")
+
     return data_records
 
 
