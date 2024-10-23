@@ -10,17 +10,17 @@ usb_width = 10;         // Width of the USB Type-C hole
 usb_height = 4;         // Height of the USB Type-C hole
 usb_corner_radius = 1;  // Corner radius for the USB hole (optional)
 usb_position_y = 0;     // Y position (centered vertically on the side wall)
-usb_position_z = wall_thickness + usb_height / 2 + 1; // Near bottom edge
+usb_position_z = wall_thickness + usb_height / 2 + 2; // Near bottom edge
 
 // Push button hole parameters
-button_size = 6;        // Size of the push button holes (6mm x 6mm)
+button_size = 7;        // Size of the push button holes (6mm x 6mm)
 button1_position_x = -length / 4;  // Position of the first button hole
 button2_position_x = length / 4;   // Position of the second button hole
 button_position_z = (height / 2) - 4;    // Centered vertically
 
 // New hole parameters
-new_hole_width = 12;        // Width of the new hole (along the x-axis)
-new_hole_height = 8;      // Height of the new hole (along the z-axis)
+new_hole_width = 13;        // Width of the new hole (along the x-axis)
+new_hole_height = 9;      // Height of the new hole (along the z-axis)
 new_hole_position_x = 0;   // Position of the new hole along the x-axis (centered between existing holes)
 new_hole_position_z = button_position_z - 1; // Vertical position (same as existing holes)
 
@@ -52,15 +52,15 @@ difference() {
     // Push button holes on one of the sides
     // First button hole
     translate([button1_position_x, width / 2 + epsilon, button_position_z])
-        cube([button_size, wall_thickness + 2 * epsilon, button_size], center=true);
+        cube([button_size, width + 2 * epsilon, button_size], center=true);
 
     // Second button hole
     translate([button2_position_x, width / 2 + epsilon, button_position_z])
-        cube([button_size, wall_thickness + 2 * epsilon, button_size], center=true);
+        cube([button_size, width + 2 * epsilon, button_size], center=true);
 
     // New rectangular hole between the two existing holes
     translate([new_hole_position_x, width / 2 + epsilon, new_hole_position_z])
-        cube([new_hole_width, wall_thickness + 2 * epsilon, new_hole_height], center=true);
+        cube([new_hole_width, width + 2 * epsilon, new_hole_height], center=true);
 }
 
 // Module to create a rounded rectangle

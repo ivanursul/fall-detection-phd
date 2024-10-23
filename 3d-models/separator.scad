@@ -5,7 +5,7 @@ wall_thickness = 2;      // Thickness of the walls
 corner_radius = 5;       // Radius of the outer corners
 
 // Separator parameters
-separator_thickness = 1;           // Thickness of the separator
+separator_thickness = 2;           // Thickness of the separator
 separator_clearance = 0.2;         // Clearance for proper fit
 
 // Pillar parameters
@@ -14,7 +14,7 @@ pillar_height = 14;                // Height of the pillars (as per your request
 pillar_margin = 1;                 // Margin from the edges
 
 // Ventilation parameters
-vent_line_width = 1;             // Width of the ventilation lines (made thinner)
+vent_line_width = 1;               // Width of the ventilation lines (made thinner)
 vent_line_spacing = 3;             // Spacing between lines (center to center)
 
 // Inner dimensions of the box
@@ -29,17 +29,24 @@ separator_length = inner_length - 2 * separator_clearance;
 separator_width  = inner_width - 2 * separator_clearance;
 separator_radius = inner_corner_radius - separator_clearance;
 
-// Create the separator with ventilation lines and pillars
+// Hole dimensions
+hole_length = 56;  // Length of the hole
+hole_width = 8;    // Width of the hole
+
+// Create the separator with ventilation lines, pillars, and hole
 module separator_with_ventilation_lines_and_pillars() {
-    // Separator plate with ventilation lines
     difference() {
         // Separator plate
         translate([0, 0, 0])
             linear_extrude(separator_thickness)
                 rounded_rectangle(separator_length, separator_width, separator_radius);
 
-        // Ventilation lines
-        vent_lines();
+        // Ventilation lines (code for this can be added as needed)
+
+        // Subtract the hole
+        translate([0, separator_width/2 - hole_width/2, 0])  // Centered along length, aligned to the edge on width
+            linear_extrude(separator_thickness)
+                square([hole_length, hole_width + 1], center = true);
     }
 
     // Pillars
@@ -70,27 +77,5 @@ module pillar(radius, height) {
     cylinder(h = height, r = radius, center = false);
 }
 
-// Updated Module to create centered, thinner ventilation lines
-module vent_lines() {
-    // Define the area where lines can be placed, avoiding pillars and edges
-    x_min = -separator_length / 2 + pillar_margin + pillar_radius + vent_line_width / 2;
-    x_max = separator_length / 2 - pillar_margin - pillar_radius - vent_line_width / 2;
-    y_min = -separator_width / 2 + pillar_margin + pillar_radius + vent_line_width / 2;
-    y_max = separator_width / 2 - pillar_margin - pillar_radius - vent_line_width / 2;
-
-    // Calculate the number of lines that fit within x_min and x_max
-    available_width = x_max - x_min;
-    num_lines = floor((available_width + vent_line_spacing) / vent_line_spacing);
-    total_spacing = (num_lines - 1) * vent_line_spacing;
-    offset = (available_width - total_spacing) / 2;
-
-    // Create lines across the separator, centered
-    for (i = [0 : num_lines - 1]) {
-        x = x_min + offset + i * vent_line_spacing;
-        translate([x - vent_line_width / 2, y_min, -1]) // Adjusted positioning
-            cube([vent_line_width, y_max - y_min, separator_thickness + 2], center = false);
-    }
-}
-
-// Render the separator with ventilation lines and pillars
+// Render the separator with ventilation lines, pillars, and hole
 separator_with_ventilation_lines_and_pillars();

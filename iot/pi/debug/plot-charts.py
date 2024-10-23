@@ -71,7 +71,7 @@ def read_csv_files_and_plot(folder_path):
 
                 # Ensure the necessary columns exist
                 required_columns = ['AccX', 'AccY', 'AccZ', 'acc_x_filtered', 'acc_y_filtered', 'acc_z_filtered',
-                                    'Magnitude', 'acc_magnitude_filtered', 'Altitude', 'MovingAvgAltitude']
+                                    'Magnitude', 'acc_magnitude_filtered', 'Altitude']
 
                 if all(col in data.columns for col in required_columns):
                     # Pass the filtered data to the save_plots function
