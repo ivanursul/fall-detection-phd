@@ -15,16 +15,16 @@ print(f'Using device: {device}')
 
 # Constants
 MAX_SEQUENCE_LENGTH = 800
-BATCH_SIZE = 64
+BATCH_SIZE = 16
 
 input_dim = 4  # AccX, AccY, AccZ
 num_heads = 4
-num_layers = 4
+num_layers = 1
 num_classes = 2  # Fall or non-fall
-num_epochs = 20
-dropout = 0.05346129216584067
+num_epochs = 50
+dropout = 0.5
 hidden_dim = 128
-learning_rate = 0.0007067641382961451
+learning_rate = 0.0006939418263593155
 
 
 # Custom Dataset class (same as your original code)
@@ -43,12 +43,6 @@ class FallDetectionDataset(Dataset):
         acc_data = data[['AccX_filtered_i', 'AccY_filtered_i', 'Corrected_AccZ_i', 'Acc_magnitude_i']].values
 
         acc_data_scaled = self.scaler.fit_transform(acc_data)
-
-        print("Original data (first 10 rows):")
-        print(acc_data[:10])
-
-        print("\nScaled data (first 10 rows):")
-        print(acc_data_scaled[:10])
 
         add_data_final = acc_data_scaled
 
