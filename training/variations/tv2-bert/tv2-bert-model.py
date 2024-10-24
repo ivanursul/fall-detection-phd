@@ -13,6 +13,7 @@ from training.utils.train_utils import train_model, evaluate_model
 from training.utils.constants import fall_folder, non_fall_folder, input_dim, num_classes
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+device = torch.device('cpu')
 print(f'Using device: {device}')
 
 # Constants
@@ -37,7 +38,7 @@ test_dataset = FallDetectionDataset(test_files, test_labels)
 train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True)
 test_loader = DataLoader(test_dataset, batch_size=BATCH_SIZE)
 
-model = T2VBERTModel(input_dim, num_heads, num_layers, num_classes).to(device)
+model = T2VBERTModel(input_dim, num_heads, num_layers, num_classes, hidden_dim, dropout).to(device)
 
 # Loss and optimizer
 criterion = nn.CrossEntropyLoss()
@@ -52,4 +53,4 @@ torch.save(model.state_dict(), model_save_path)
 print(f'Model saved to {model_save_path}')
 
 # Evaluate the model on the test set
-evaluate_model(model, test_loader)
+evaluate_model(model, test_loader, optimizer)

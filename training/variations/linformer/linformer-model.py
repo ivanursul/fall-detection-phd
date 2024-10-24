@@ -33,7 +33,7 @@ test_dataset = FallDetectionDataset(test_files, test_labels)
 train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True)
 test_loader = DataLoader(test_dataset, batch_size=BATCH_SIZE)
 
-model = LinformerTransformerModel(input_dim=input_dim, num_heads=num_heads, num_layers=num_layers,
+model = LinformerTransformerModel(input_dim=input_dim, num_heads=num_heads, num_layers=num_layers, hidden_dim=hidden_dim,
                                   num_classes=num_classes, dropout=dropout, max_sequence_length=max_sequence_length).to(device)
 
 # Loss and optimizer (same as original code)

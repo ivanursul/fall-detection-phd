@@ -1,18 +1,13 @@
-import os
-import pandas as pd
-import numpy as np
+
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
 import torch
 from torch.utils.data import Dataset, DataLoader
 import torch.nn as nn
 import torch.optim as optim
 import optuna
-from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
-import matplotlib.pyplot as plt
-import seaborn as sns
+
 from training.dataset.fall_detection_dataset import FallDetectionDataset
-from training.models.performer import PerformerModel
+
 from training.models.transformer import TransformerModel
 from training.utils.dataset_utils import load_dataset
 from training.utils.train_utils import train_model, evaluate_model, log_model_size

@@ -54,7 +54,7 @@ criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 
 # Train the model
-train_model(model, train_loader, test_loader, criterion, optimizer, epochs=num_epochs)
+train_model(device, model, train_loader, test_loader, criterion, optimizer, epochs=num_epochs)
 
 
 # Save the trained model
@@ -64,4 +64,4 @@ print(f'Model saved to {model_save_path}')
 
 
 # Evaluate the model on the test set
-evaluate_model(model, test_loader)
+evaluate_model(device, model, test_loader)

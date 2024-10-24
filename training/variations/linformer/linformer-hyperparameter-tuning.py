@@ -7,7 +7,6 @@ import torch
 from torch.utils.data import Dataset, DataLoader
 import torch.nn as nn
 import torch.optim as optim
-from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 import optuna  # Import Optuna
 from training.dataset.fall_detection_dataset import FallDetectionDataset
 from training.models.linformer import LinformerTransformerModel
@@ -22,6 +21,7 @@ from training.utils.logging_utils import create_logger
 logger = create_logger()
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+device = torch.device('cpu')
 logger.info(f'Using device: {device}')
 
 # Constants
@@ -54,9 +54,9 @@ all_train_data = np.vstack(all_train_data)
 scaler.fit(all_train_data)
 
 # Create PyTorch datasets
-train_dataset = FallDetectionDataset(train_files, train_labels, scaler=scaler)
-val_dataset = FallDetectionDataset(val_files, val_labels, scaler=scaler)
-test_dataset = FallDetectionDataset(test_files, test_labels, scaler=scaler)
+train_dataset = FallDetectionDataset(train_files, train_labels)
+val_dataset = FallDetectionDataset(val_files, val_labels)
+test_dataset = FallDetectionDataset(test_files, test_labels)
 
 
 # Update the hidden_dim_num_heads_map to ensure hidden_dim is divisible by num_heads

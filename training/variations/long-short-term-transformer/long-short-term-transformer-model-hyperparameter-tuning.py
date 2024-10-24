@@ -45,9 +45,9 @@ all_train_data = np.vstack(all_train_data)
 scaler.fit(all_train_data)
 
 # Create PyTorch datasets
-train_dataset = FallDetectionDataset(train_files, train_labels, scaler=scaler)
-val_dataset = FallDetectionDataset(val_files, val_labels, scaler=scaler)
-test_dataset = FallDetectionDataset(test_files, test_labels, scaler=scaler)
+train_dataset = FallDetectionDataset(train_files, train_labels)
+val_dataset = FallDetectionDataset(val_files, val_labels)
+test_dataset = FallDetectionDataset(test_files, test_labels)
 
 
 hidden_dim_num_heads_map = {

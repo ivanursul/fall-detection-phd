@@ -1,5 +1,6 @@
 import torch.nn as nn
 import torch
+import numpy as np
 
 def get_positional_encoding(seq_len, d_model):
     pe = torch.zeros(seq_len, d_model)
