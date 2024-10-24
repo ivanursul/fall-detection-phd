@@ -484,6 +484,8 @@ def collect():
         play_alarm(beep_count=2, beep_duration=0.2, pause_duration=0.2)
 
         sleep(5, 100)
+    else:
+        sleep(1, 100)
 
     if is_button_pressed():
         flip_collect_property()
