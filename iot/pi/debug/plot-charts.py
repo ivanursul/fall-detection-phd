@@ -78,6 +78,8 @@ def read_csv_files_and_plot(folder_path):
                     save_plots(data)
                 else:
                     print(f"Skipping {filename}: Missing required columns")
+
+                time.sleep(1)
             except Exception as e:
                 print(f"Error processing {filename}: {e}")
 
