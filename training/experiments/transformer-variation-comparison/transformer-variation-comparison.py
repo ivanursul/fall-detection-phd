@@ -20,6 +20,10 @@ from training.utils.constants import fall_folder, non_fall_folder, input_dim, nu
 from training.models.informer import InformerClassificationModel
 from training.models.linformer import LinformerTransformerModel
 
+import pandas as pd
+
+pd.set_option('display.max_columns', None)
+
 # Define a dictionary for the models you want to evaluate
 model_classes = {
     'Informer': {
@@ -120,16 +124,19 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Load dataset
 file_paths, labels = load_dataset(fall_folder, non_fall_folder)
-train_files, test_files, train_labels, test_labels = train_test_split(file_paths, labels, test_size=0.2, random_state=42)
+train_files, test_files, train_labels, test_labels = train_test_split(file_paths, labels, test_size=0.2,
+                                                                      random_state=42)
 train_dataset = FallDetectionDataset(train_files, train_labels)
 test_dataset = FallDetectionDataset(test_files, test_labels)
 train_loader = DataLoader(train_dataset, batch_size=16, shuffle=True)
 test_loader = DataLoader(test_dataset, batch_size=16)
 
+
 # Evaluation function
 def evaluate_model_performance(model, test_loader):
     y_true, y_pred = [], []
     inference_times = []
+    gpu_memory_usage = []
 
     model.eval()
     with torch.no_grad():
@@ -143,6 +150,11 @@ def evaluate_model_performance(model, test_loader):
             inference_time = (end_time - start_time) * 1000
             inference_times.append(inference_time)
 
+            # Track GPU memory usage during inference
+            if torch.cuda.is_available():
+                memory_allocated = torch.cuda.memory_allocated(device) / (1024 ** 2)  # in MB
+                gpu_memory_usage.append(memory_allocated)
+
             _, preds = torch.max(outputs, 1)
             y_true.extend(labels.cpu().numpy())
             y_pred.extend(preds.cpu().numpy())
@@ -154,6 +166,7 @@ def evaluate_model_performance(model, test_loader):
 
     inference_time_50th = np.percentile(inference_times, 50)
     inference_time_99th = np.percentile(inference_times, 99)
+    avg_gpu_memory_usage = np.mean(gpu_memory_usage) if gpu_memory_usage else 0
 
     return {
         'inference_time_50th_ms': inference_time_50th,
@@ -164,12 +177,15 @@ def evaluate_model_performance(model, test_loader):
         'f1_fall': f1[1],
         'precision_non_fall': precision[0],
         'recall_non_fall': recall[0],
-        'f1_non_fall': f1[0]
+        'f1_non_fall': f1[0],
+        'avg_gpu_memory_usage_mb': avg_gpu_memory_usage  # Avg GPU memory usage during inference
     }
+
 
 # Train the model and measure training time
 def train_model(device, model, train_loader, criterion, optimizer, epochs=10):
     start_time = time.time()  # Start time for training
+    gpu_memory_usage = []
 
     model.train()
     for epoch in range(epochs):
@@ -184,12 +200,19 @@ def train_model(device, model, train_loader, criterion, optimizer, epochs=10):
             optimizer.step()
             epoch_loss += loss.item()
 
+            # Track GPU memory usage during training
+            if torch.cuda.is_available():
+                memory_allocated = torch.cuda.memory_allocated(device) / (1024 ** 2)  # in MB
+                gpu_memory_usage.append(memory_allocated)
+
         print(f'Epoch [{epoch + 1}/{epochs}], Loss: {epoch_loss:.4f}')
 
     end_time = time.time()  # End time for training
     training_time = end_time - start_time  # Total training time in seconds
+    avg_gpu_memory_usage = np.mean(gpu_memory_usage) if gpu_memory_usage else 0
 
-    return training_time
+    return training_time, avg_gpu_memory_usage
+
 
 # Main loop to train, measure time, and evaluate models
 results = []
@@ -207,38 +230,32 @@ for model_name, model_info in model_classes.items():
     criterion = torch.nn.CrossEntropyLoss()
 
     # Train the model and measure training time
-    training_time = train_model(device, model, train_loader, criterion, optimizer, epochs=10)
+    training_time, avg_train_gpu_memory_usage = train_model(device, model, train_loader, criterion, optimizer,
+                                                            epochs=50)
 
-    # Measure model size
-    model_size_mb = sum(p.numel() for p in model.parameters()) * 4 / (1024 * 1024)  # Convert to MB
-
-    # Measure RAM/CPU usage using memory_profiler and psutil
-    ram_before = memory_usage(-1, interval=0.1, timeout=1)
-    cpu_before = psutil.cpu_percent(interval=1)
+    # Measure model size (number of parameters)
+    total_params = sum(p.numel() for p in model.parameters())
+    model_size_mb = total_params * 4 / (1024 ** 2)  # Convert to MB
 
     # Perform evaluation
     performance_metrics = evaluate_model_performance(model, test_loader)
 
-    ram_after = memory_usage(-1, interval=0.1, timeout=1)
-    cpu_after = psutil.cpu_percent(interval=1)
-
-    ram_usage = max(ram_after) - min(ram_before)
-    cpu_usage = cpu_after - cpu_before
-
     # Store the results
-    results.append({
+    result = {
         'model': model_name,
         'training_time_seconds': training_time,
         'model_size_mb': model_size_mb,
-        'cpu_usage_percent': cpu_usage,
-        'ram_usage_mb': ram_usage,
+        'avg_train_gpu_memory_usage_mb': avg_train_gpu_memory_usage,
         **performance_metrics
-    })
+    }
+
+    results.append(result)
+
+    # Print the results for this model
+    df_result = pd.DataFrame([result])
+    print(df_result)
 
 # Convert results to a structured format and print the comparison
-import pandas as pd
-pd.set_option('display.max_columns', None)
-
 df_results = pd.DataFrame(results)
 df_results.to_csv('model_evaluation_results.csv', index=False)
 
