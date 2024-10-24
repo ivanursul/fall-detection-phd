@@ -32,8 +32,7 @@ model_classes = {
             'n_heads': 4,
             'e_layers': 1,
             'dropout': 0.1
-        },
-        'saved_model_path': 'models/informer-model.pth'
+        }
     },
     'Linformer': {
         'class': LinformerTransformerModel,
@@ -45,8 +44,7 @@ model_classes = {
             'num_classes': num_classes,
             'dropout': 0.5,
             'max_sequence_length': max_sequence_length
-        },
-        'saved_model_path': 'models/linformer_transformer_model.pt'
+        }
     },
     'LongShortTermTransformer': {
         'class': LongShortTermTransformerModel,
@@ -58,8 +56,7 @@ model_classes = {
             'max_sequence_length': max_sequence_length,
             'hidden_dim': 24,
             'dropout': 0.3
-        },
-        'saved_model_path': 'models/long-short-term-memory-model.pth'
+        }
     },
     'MultiScaleTransformer': {
         'class': MultiScaleTransformerModel,
@@ -70,8 +67,7 @@ model_classes = {
             'num_classes': num_classes,
             'hidden_dim': 48,
             'dropout': 0.2
-        },
-        'saved_model_path': 'models/multi-scale-transformer-model.pth'
+        }
     },
     'Performer': {
         'class': PerformerModel,
@@ -82,8 +78,7 @@ model_classes = {
             'num_classes': num_classes,
             'hidden_dim': 128,
             'dropout': 0.2
-        },
-        'saved_model_path': 'models/performer_model.pt'
+        }
     },
     'TemporalConvolutionalTransformer': {
         'class': TemporalConvolutionalTransformerModel,
@@ -95,8 +90,7 @@ model_classes = {
             'hidden_dim': 64,
             'tcn_channels': [64, 64],
             'dropout': 0.5
-        },
-        'saved_model_path': 'models/temporal-convolutional-transformer-memory-model.pth'
+        }
     },
     'Transformer': {
         'class': TransformerModel,
@@ -107,65 +101,57 @@ model_classes = {
             'num_classes': num_classes,
             'hidden_dim': 128,
             'dropout': 0.011037393228528439
-        },
-        'saved_model_path': 'models/transformer_model.pth'
+        }
+    },
+    'T2VBERT': {
+        'class': T2VBERTModel,
+        'params': {
+            'input_dim': input_dim,
+            'num_heads': 4,
+            'num_layers': 2,
+            'num_classes': num_classes,
+            'hidden_dim': 128,
+            'dropout': 0.1
+        }
     }
-    # ,
-    # 'T2VBERT': {
-    #     'class': T2VBERTModel,
-    #     'params': {
-    #         'input_dim': input_dim,
-    #         'num_heads': 4,
-    #         'num_layers': 2,
-    #         'num_classes': num_classes,
-    #         'hidden_dim': 128,
-    #         'dropout': 0.1
-    #     },
-    #     'saved_model_path': 'models/t2v_bert_model.pth'
-    # }
 }
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Load dataset
 file_paths, labels = load_dataset(fall_folder, non_fall_folder)
-train_files, test_files, train_labels, test_labels = train_test_split(file_paths, labels, test_size=0.2,
-                                                                      random_state=42)
+train_files, test_files, train_labels, test_labels = train_test_split(file_paths, labels, test_size=0.2, random_state=42)
+train_dataset = FallDetectionDataset(train_files, train_labels)
 test_dataset = FallDetectionDataset(test_files, test_labels)
+train_loader = DataLoader(train_dataset, batch_size=16, shuffle=True)
 test_loader = DataLoader(test_dataset, batch_size=16)
-
 
 # Evaluation function
 def evaluate_model_performance(model, test_loader):
     y_true, y_pred = [], []
-    inference_times = []  # Store per-batch inference times
+    inference_times = []
 
     model.eval()
     with torch.no_grad():
         for inputs, labels in test_loader:
             inputs, labels = inputs.to(device), labels.to(device)
 
-            # Measure time for inference on each batch
             start_time = time.time()
             outputs = model(inputs)
             end_time = time.time()
 
-            # Record inference time in milliseconds
             inference_time = (end_time - start_time) * 1000
             inference_times.append(inference_time)
 
-            # Collect predictions and true labels
             _, preds = torch.max(outputs, 1)
             y_true.extend(labels.cpu().numpy())
             y_pred.extend(preds.cpu().numpy())
 
-    # Calculate metrics
     accuracy = accuracy_score(y_true, y_pred)
     precision = precision_score(y_true, y_pred, average=None)
     recall = recall_score(y_true, y_pred, average=None)
     f1 = f1_score(y_true, y_pred, average=None)
 
-    # Compute 50th and 99th percentiles for inference times
     inference_time_50th = np.percentile(inference_times, 50)
     inference_time_99th = np.percentile(inference_times, 99)
 
@@ -181,22 +167,50 @@ def evaluate_model_performance(model, test_loader):
         'f1_non_fall': f1[0]
     }
 
+# Train the model and measure training time
+def train_model(device, model, train_loader, criterion, optimizer, epochs=10):
+    start_time = time.time()  # Start time for training
 
-# Main loop to evaluate models
+    model.train()
+    for epoch in range(epochs):
+        epoch_loss = 0.0
+        for inputs, labels in train_loader:
+            inputs, labels = inputs.to(device), labels.to(device)
+
+            optimizer.zero_grad()
+            outputs = model(inputs)
+            loss = criterion(outputs, labels)
+            loss.backward()
+            optimizer.step()
+            epoch_loss += loss.item()
+
+        print(f'Epoch [{epoch + 1}/{epochs}], Loss: {epoch_loss:.4f}')
+
+    end_time = time.time()  # End time for training
+    training_time = end_time - start_time  # Total training time in seconds
+
+    return training_time
+
+# Main loop to train, measure time, and evaluate models
 results = []
 for model_name, model_info in model_classes.items():
-    print(f"Evaluating {model_name}")
+    print(f"Training and evaluating {model_name}")
 
     model_class = model_info['class']
     model_params = model_info['params']
-    model_path = model_info['saved_model_path']
 
-    # Load model
+    # Instantiate model
     model = model_class(**model_params).to(device)
-    model.load_state_dict(torch.load(model_path))
+
+    # Define optimizer and loss function
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
+    criterion = torch.nn.CrossEntropyLoss()
+
+    # Train the model and measure training time
+    training_time = train_model(device, model, train_loader, criterion, optimizer, epochs=10)
 
     # Measure model size
-    model_size_mb = os.path.getsize(model_path) / (1024 * 1024)
+    model_size_mb = sum(p.numel() for p in model.parameters()) * 4 / (1024 * 1024)  # Convert to MB
 
     # Measure RAM/CPU usage using memory_profiler and psutil
     ram_before = memory_usage(-1, interval=0.1, timeout=1)
@@ -214,6 +228,7 @@ for model_name, model_info in model_classes.items():
     # Store the results
     results.append({
         'model': model_name,
+        'training_time_seconds': training_time,
         'model_size_mb': model_size_mb,
         'cpu_usage_percent': cpu_usage,
         'ram_usage_mb': ram_usage,
@@ -223,7 +238,6 @@ for model_name, model_info in model_classes.items():
 # Convert results to a structured format and print the comparison
 import pandas as pd
 pd.set_option('display.max_columns', None)
-
 
 df_results = pd.DataFrame(results)
 df_results.to_csv('model_evaluation_results.csv', index=False)
